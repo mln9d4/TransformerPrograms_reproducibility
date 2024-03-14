@@ -1,3 +1,9 @@
+### Custom
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+### Custom
+
 import argparse
 import copy
 from copy import deepcopy
