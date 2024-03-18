@@ -1,3 +1,9 @@
+### Custom
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+### Custom
+
 from collections import Counter
 import copy
 from copy import deepcopy
@@ -687,3 +693,8 @@ def get_glove_embeddings(
             n_components=dim, random_state=0
         ).fit_transform(emb)
     return emb
+
+
+if __file__ == __name__:
+    reverse_long = make_reverse(10, 1000, min_length=2, max_length=16)
+    print(reverse_long)
