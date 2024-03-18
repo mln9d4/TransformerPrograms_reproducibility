@@ -869,8 +869,6 @@ def run(tokens):
         predictions[-1] = "</s>"
     return predictions.tolist()
 
-# Kevin: comment this away, let the example run in test/test_sort.py
-'''
 examples = [
     (
         ["<s>", "3", "1", "4", "2", "4", "0", "</s>"],
