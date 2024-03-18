@@ -910,7 +910,6 @@ examples = [
         ["<pad>", "0", "2", "4", "4", "4", "4", "<pad>"],
     ),
 ]
-<<<<<<< HEAD
 
 if __file__ == __name__:
     for x, y in examples:
@@ -919,12 +918,3 @@ if __file__ == __name__:
         y_hat = run(x)
         print(f"y_hat: {y_hat}")
         print()
-=======
-for x, y in examples:
-    print(f"x: {x}")
-    print(f"y: {y}")
-    y_hat = run(x)
-    print(f"y_hat: {y_hat}")
-    print()
-'''
->>>>>>> a4283ac5da9a29ba2594b9a8721b36da0fb5a0a9
