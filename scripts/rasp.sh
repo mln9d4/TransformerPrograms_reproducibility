@@ -9,7 +9,7 @@ N_CAT_MLPS=2
 N_NUM_MLPS=2
 SEED=0
 
-python src/run.py \
+python3 src/run.py \
      --dataset "${DATASET}" \
      --vocab_size "${VOCAB_SIZE}" \
      --dataset_size 20000 \
