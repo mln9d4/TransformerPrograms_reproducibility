@@ -6,8 +6,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from programs.rasp.sort import sort
 from programs.rasp.reverse import reverse
-from programs.rasp.hist import histogram
-from programs.rasp.double_hist import double_histogram
+from programs.rasp.hist import hist
+from programs.rasp.double_hist import double_hist
 from programs.rasp.most_freq import most_freq
 from src.utils import data_utils
 
