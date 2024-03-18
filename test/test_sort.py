@@ -15,56 +15,25 @@ from src.utils import data_utils
 # We try sequences of 16, 32 and 64
 
 # Create dataset for sort
-sort16 =  data_utils.make_sort(vocab_size=10, dataset_size=10000, min_length=16, max_length=18, seed=0)
-print(sort16["sent"])
-print(sort16["tags"])
+b = 8
+c = b+2
+sort16 =  data_utils.make_sort(vocab_size=c, dataset_size=10000, min_length=b, max_length=c, seed=0)
 
 # Create rest of datasets
-reverse16 = data_utils.make_reverse(vocab_size=10, dataset_size=10000, min_length=16, max_length=18, seed=0)
-histogram16 = data_utils.make_histogram(vocab_size=10, dataset_size=10000, min_length=16, max_length=18, seed=0)
-double_histogram16 = data_utils.make_double_histogram(vocab_size=10, dataset_size=10000, min_length=16, max_length=18, seed=0)  
-most_freq16 = data_utils.make_most_freq(vocab_size=10, dataset_size=10000, min_length=16, max_length=18, seed=0)    
-
+reverse16 = data_utils.make_reverse(vocab_size=8, dataset_size=10000, min_length=16, max_length=18, seed=0)
+histogram16 = data_utils.make_hist(vocab_size=8, dataset_size=10000, min_length=16, max_length=18, seed=0)
+double_histogram16 = data_utils.make_double_hist(vocab_size=8, dataset_size=10000, min_length=16, max_length=18, seed=0)  
+most_freq16 = data_utils.make_most_freq(vocab_size=8, dataset_size=10000, min_length=16, max_length=18, seed=0)    
+print(sort16["sent"][0])
+print(sort.run(sort16["sent"][0]))
 
 a = sort.run(["<s>", "3", "1", "4", "2", "4", "0", "</s>"])
 
+def test_program(df, program):
+    for i in range(len(df)):
+        print(df["sent"][i])
+        print(df["tags"][i])
+        print(program.run(df["sent"][i]))
 
-def create_dataset(num_sequences, sequence_length):
-    dataset = []
-    for _ in range(num_sequences):
-        sequence = []
-        for _ in range(sequence_length):
-            sequence.append(str(random.randint(0, 9)))
-        dataset.append(sequence)
-    return dataset
+#test_program(sort16, sort)
 
-dataset = create_dataset(2, 5)
-print(f"Dataset: {dataset}")
-
-
-ground_truth = []
-for sequence in dataset:
-    ground_truth.append(sorted(sequence))
-
-ground_truth = sorted(ground_truth)
-print(f"Ground truth: {ground_truth}")
-
-
-# for sequence in dataset:
-#     result = sort.run(["<s>"] + sequence + ["</s>"])
-#     accuracy = 1.0 if result == ground_truth else 0.0
-#     print(f"Sequence: {sequence}, Result: {result}, Accuracy: {accuracy}")
-
-'''
-for sequence in create_dataset(10, 5):
-    result = sort.run(["<s>"] + sequence + ["</s>"])
-    accuracy = 1.0 if result == ground_truth else 0.0
-    print(f"Sequence: {sequence}, Result: {result}, Accuracy: {accuracy}")    
-    for sequence in dataset:
-        result = sort.run(["<s>"] + sequence + ["</s>"])
-        accuracy = 1.0 if result == ground_truth else 0.0
-        print(f"Sequence: {sequence}, Result: {result}, Accuracy: {accuracy}")
-'''
-
-# dataset = create_dataset(10, 5)
-# print(f"Dataset: {dataset}")
