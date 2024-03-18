@@ -701,9 +701,10 @@ examples = [
         ["<pad>", "0", "1", "0", "3", "3", "2", "<pad>"],
     ),
 ]
-for x, y in examples:
-    print(f"x: {x}")
-    print(f"y: {y}")
-    y_hat = run(x)
-    print(f"y_hat: {y_hat}")
-    print()
+if __file__ == __name__:
+    for x, y in examples:
+        print(f"x: {x}")
+        print(f"y: {y}")
+        y_hat = run(x)
+        print(f"y_hat: {y_hat}")
+        print()
