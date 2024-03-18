@@ -1,4 +1,5 @@
 _site
+.venv
 .sass-cache
 Gemfile.lock
 *.gem
