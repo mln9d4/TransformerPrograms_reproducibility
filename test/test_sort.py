@@ -43,7 +43,7 @@ sort16 =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=1, max_
 
 def test_program(program):
     sequence_lengths = np.arange(10, 20, 10)
-    sequence_lengths = np.array([8])
+    sequence_lengths = np.array([6])
     results = {}
     for c in sequence_lengths:
         print(f"Sequence length: {c}")
@@ -53,7 +53,7 @@ def test_program(program):
             print(f'sent: {df["sent"][i][1:-1]}')
             print(f'found: {program.run(df["sent"][i])[1:-1]}')
             print(f'tags: {df["tags"][i][1:-1]}')
-            same.append(program.run(df["sent"][i][1:-2]) == df["tags"][i][1:-2])
+            same.append(program.run(df["sent"][i])[1:-1] == df["tags"][i][1:-1])
         results[c] = same.count(True)/len(same)
     return results
 
