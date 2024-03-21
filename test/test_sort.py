@@ -42,12 +42,12 @@ sort16 =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=1, max_
 #test_program(sort16, sort)
 
 def test_program(program):
-    sequence_lengths = np.arange(10, 20, 10)
-    sequence_lengths = np.array([6])
+    sequence_lengths = np.arange(10, 100, 10)
+
     results = {}
     for c in sequence_lengths:
         print(f"Sequence length: {c}")
-        df =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=c, max_length=c+2, seed=0)
+        df =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=c-2, max_length=c, seed=0)
         same = []
         for i in range(len(df)):
             print(f'sent: {df["sent"][i][1:-1]}')
