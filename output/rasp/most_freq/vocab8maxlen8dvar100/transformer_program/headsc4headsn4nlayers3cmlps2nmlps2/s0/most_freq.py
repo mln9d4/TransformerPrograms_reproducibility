@@ -30,7 +30,7 @@ def run(tokens):
 
     # classifier weights ##########################################
     classifier_weights = pd.read_csv(
-        "output/rasp/most-freq/vocab8maxlen8dvar100/transformer_program/headsc4headsn4nlayers3cmlps2nmlps2/s0/most_freq_weights.csv",
+        "output/rasp/most_freq/vocab8maxlen8dvar100/transformer_program/headsc4headsn4nlayers3cmlps2nmlps2/s0/most_freq_weights.csv",
         index_col=[0, 1],
         dtype={"feature": str},
     )
