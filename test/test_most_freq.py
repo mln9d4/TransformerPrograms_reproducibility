@@ -42,12 +42,14 @@ sort16 =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=1, max_
 
 def test_program(program):
     sequence_lengths = np.arange(10, 100, 10)
+    sequence_lengths = np.insert(sequence_lengths, 0, 8)
 
     results_seq = {}
     results_tok = {}
     for c in sequence_lengths:
         print(f"Sequence length: {c}")
-        df =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=c-2, max_length=c, seed=0)
+        df =  data_utils.make_most_freq(vocab_size=8, dataset_size=12, min_length=c-1, max_length=c, seed=0)
+        print(df)
         same_seq = []
         same_tok = []
         for i in range(len(df)):
@@ -62,10 +64,12 @@ def test_program(program):
 
         unique, counts = np.unique(same_tok, return_counts=True)
         counts_dict = dict(zip(unique, counts))
-        results_seq[c] = same_seq.count(True)/len(same_seq)
-        results_tok[c] = counts_dict[True]/(counts_dict[True] + counts_dict[False])
-    return results_seq, results_tok
 
+        results_seq[c] = same_seq.count(True)/len(same_seq)
+        results_tok[c] = counts_dict[True]/np.sum(counts)
+
+
+    return results_seq, results_tok
 results_seq, results_tok = test_program(length_most_freq)
 print(results_seq)
 print(results_tok)

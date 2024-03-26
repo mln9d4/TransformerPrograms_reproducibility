@@ -62,6 +62,7 @@ def test_program(program):
             same_seq.append(program.run(df["sent"][i])[1:-1] == df["tags"][i][1:-1])
             same_tok.append(found == tags)
 
+        print(same_tok)
         unique, counts = np.unique(same_tok, return_counts=True)
         counts_dict = dict(zip(unique, counts))
 
