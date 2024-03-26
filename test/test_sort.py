@@ -62,11 +62,12 @@ def test_program(program):
             same_seq.append(program.run(df["sent"][i])[1:-1] == df["tags"][i][1:-1])
             same_tok.append(found == tags)
 
+        print(same_tok)
         unique, counts = np.unique(same_tok, return_counts=True)
         counts_dict = dict(zip(unique, counts))
 
-        results_seq[c] = same_seq.count(True)/len(same_seq)
-        results_tok[c] = counts_dict[True]/np.sum(counts)
+        results_seq[c] = round(same_seq.count(True)/len(same_seq), 4)
+        results_tok[c] = round(counts_dict[True]/np.sum(counts), 4)
 
 
     return results_seq, results_tok
