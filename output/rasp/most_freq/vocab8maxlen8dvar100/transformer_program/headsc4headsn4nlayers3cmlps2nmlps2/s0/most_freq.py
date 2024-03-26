@@ -45,144 +45,134 @@ def run(tokens):
 
     # attn_0_0 ####################################################
     def predicate_0_0(q_position, k_position):
-        if q_position in {0, 5, 6}:
-            return k_position == 1
-        elif q_position in {1}:
-            return k_position == 87
-        elif q_position in {2, 4}:
+        if q_position in {0}:
             return k_position == 2
-        elif q_position in {3}:
+        elif q_position in {1}:
             return k_position == 5
-        elif q_position in {81, 7}:
-            return k_position == 6
-        elif q_position in {8, 77}:
-            return k_position == 77
-        elif q_position in {40, 9, 71}:
+        elif q_position in {2, 3, 4, 5}:
+            return k_position == 1
+        elif q_position in {6, 7}:
+            return k_position == 4
+        elif q_position in {8}:
+            return k_position == 32
+        elif q_position in {40, 9, 68, 71}:
             return k_position == 10
-        elif q_position in {10}:
-            return k_position == 62
+        elif q_position in {
+            10,
+            12,
+            14,
+            18,
+            25,
+            28,
+            32,
+            38,
+            42,
+            44,
+            46,
+            51,
+            52,
+            54,
+            55,
+            64,
+            65,
+            77,
+            89,
+            90,
+            91,
+        }:
+            return k_position == 6
         elif q_position in {11}:
             return k_position == 78
-        elif q_position in {12}:
-            return k_position == 43
         elif q_position in {13}:
             return k_position == 56
-        elif q_position in {14}:
-            return k_position == 40
-        elif q_position in {62, 15}:
+        elif q_position in {93, 62, 15}:
             return k_position == 16
         elif q_position in {16}:
             return k_position == 14
-        elif q_position in {17, 68}:
-            return k_position == 48
-        elif q_position in {18}:
-            return k_position == 30
+        elif q_position in {17, 94}:
+            return k_position == 64
         elif q_position in {19}:
-            return k_position == 20
-        elif q_position in {20}:
+            return k_position == 35
+        elif q_position in {20, 22}:
             return k_position == 86
-        elif q_position in {21}:
-            return k_position == 58
-        elif q_position in {22}:
-            return k_position == 70
-        elif q_position in {75, 29, 23}:
-            return k_position == 76
+        elif q_position in {21, 86}:
+            return k_position == 96
+        elif q_position in {23}:
+            return k_position == 40
         elif q_position in {24}:
-            return k_position == 11
-        elif q_position in {25}:
-            return k_position == 46
-        elif q_position in {26, 55}:
-            return k_position == 13
-        elif q_position in {65, 27}:
-            return k_position == 23
-        elif q_position in {28}:
-            return k_position == 93
-        elif q_position in {30}:
+            return k_position == 73
+        elif q_position in {80, 26}:
+            return k_position == 91
+        elif q_position in {27}:
+            return k_position == 55
+        elif q_position in {75, 29}:
+            return k_position == 76
+        elif q_position in {72, 30}:
             return k_position == 88
-        elif q_position in {64, 31}:
+        elif q_position in {88, 81, 31}:
             return k_position == 9
-        elif q_position in {32, 43, 92}:
-            return k_position == 81
         elif q_position in {33}:
-            return k_position == 99
-        elif q_position in {34, 95}:
-            return k_position == 47
+            return k_position == 89
+        elif q_position in {34, 76, 37}:
+            return k_position == 95
         elif q_position in {35}:
             return k_position == 41
         elif q_position in {36}:
             return k_position == 28
-        elif q_position in {37}:
-            return k_position == 90
-        elif q_position in {74, 38}:
-            return k_position == 44
         elif q_position in {39}:
             return k_position == 42
-        elif q_position in {41, 52}:
-            return k_position == 94
-        elif q_position in {42, 53}:
-            return k_position == 19
-        elif q_position in {44, 63}:
-            return k_position == 82
+        elif q_position in {96, 41, 66, 60}:
+            return k_position == 24
+        elif q_position in {43}:
+            return k_position == 87
         elif q_position in {45}:
             return k_position == 38
-        elif q_position in {46}:
-            return k_position == 92
         elif q_position in {47}:
             return k_position == 68
         elif q_position in {48}:
-            return k_position == 15
+            return k_position == 93
         elif q_position in {49}:
             return k_position == 45
-        elif q_position in {89, 50}:
-            return k_position == 33
-        elif q_position in {51}:
-            return k_position == 80
-        elif q_position in {97, 54}:
-            return k_position == 36
-        elif q_position in {56}:
-            return k_position == 75
-        elif q_position in {57, 82}:
+        elif q_position in {50, 83}:
+            return k_position == 37
+        elif q_position in {53}:
+            return k_position == 19
+        elif q_position in {56, 92}:
+            return k_position == 81
+        elif q_position in {57}:
             return k_position == 66
         elif q_position in {58, 78}:
             return k_position == 22
         elif q_position in {59}:
             return k_position == 74
-        elif q_position in {96, 66, 60}:
-            return k_position == 24
-        elif q_position in {88, 61}:
+        elif q_position in {61}:
             return k_position == 57
+        elif q_position in {63}:
+            return k_position == 82
         elif q_position in {67}:
             return k_position == 53
         elif q_position in {69}:
             return k_position == 29
-        elif q_position in {93, 70}:
-            return k_position == 31
-        elif q_position in {72}:
-            return k_position == 34
+        elif q_position in {70}:
+            return k_position == 21
         elif q_position in {73}:
             return k_position == 50
-        elif q_position in {76}:
-            return k_position == 95
-        elif q_position in {87, 79}:
-            return k_position == 61
-        elif q_position in {80}:
-            return k_position == 91
-        elif q_position in {83}:
-            return k_position == 37
-        elif q_position in {84}:
+        elif q_position in {74, 84}:
             return k_position == 60
+        elif q_position in {79}:
+            return k_position == 44
+        elif q_position in {82}:
+            return k_position == 70
         elif q_position in {85}:
             return k_position == 12
-        elif q_position in {86}:
-            return k_position == 96
-        elif q_position in {90}:
-            return k_position == 72
-        elif q_position in {91}:
-            return k_position == 73
-        elif q_position in {94}:
-            return k_position == 64
+        elif q_position in {87}:
+            return k_position == 61
+        elif q_position in {95}:
+            return k_position == 11
+        elif q_position in {97}:
+            return k_position == 36
         elif q_position in {98}:
-            return k_position == 84
+            return k_position == 34
         elif q_position in {99}:
             return k_position == 59
 
@@ -194,144 +184,126 @@ def run(tokens):
 
     # attn_0_1 ####################################################
     def predicate_0_1(q_position, k_position):
-        if q_position in {0, 7}:
+        if q_position in {0}:
             return k_position == 3
-        elif q_position in {1}:
-            return k_position == 6
-        elif q_position in {2, 3, 6}:
+        elif q_position in {1, 2}:
             return k_position == 1
-        elif q_position in {4}:
+        elif q_position in {3}:
             return k_position == 2
-        elif q_position in {5}:
+        elif q_position in {4}:
             return k_position == 4
+        elif q_position in {5}:
+            return k_position == 6
+        elif q_position in {6}:
+            return k_position == 7
+        elif q_position in {7}:
+            return k_position == 5
         elif q_position in {8}:
             return k_position == 96
-        elif q_position in {9}:
-            return k_position == 54
-        elif q_position in {10, 14}:
-            return k_position == 85
+        elif q_position in {9, 71}:
+            return k_position == 15
+        elif q_position in {10}:
+            return k_position == 67
         elif q_position in {11}:
-            return k_position == 84
-        elif q_position in {12, 62}:
-            return k_position == 94
-        elif q_position in {13}:
-            return k_position == 55
-        elif q_position in {36, 15}:
+            return k_position == 26
+        elif q_position in {12, 30}:
+            return k_position == 19
+        elif q_position in {13, 54}:
+            return k_position == 38
+        elif q_position in {14}:
+            return k_position == 47
+        elif q_position in {15}:
             return k_position == 80
-        elif q_position in {16, 38}:
-            return k_position == 71
+        elif q_position in {16}:
+            return k_position == 9
         elif q_position in {17, 93}:
             return k_position == 23
         elif q_position in {18, 47}:
             return k_position == 46
-        elif q_position in {91, 19, 79}:
+        elif q_position in {19, 62, 79}:
             return k_position == 68
-        elif q_position in {20, 71}:
-            return k_position == 15
-        elif q_position in {48, 21}:
-            return k_position == 33
+        elif q_position in {20, 38, 95}:
+            return k_position == 71
+        elif q_position in {72, 28, 21}:
+            return k_position == 79
         elif q_position in {57, 22}:
             return k_position == 17
-        elif q_position in {23}:
-            return k_position == 58
-        elif q_position in {24, 30}:
-            return k_position == 77
+        elif q_position in {61, 23}:
+            return k_position == 92
+        elif q_position in {24, 67, 94}:
+            return k_position == 40
         elif q_position in {25}:
-            return k_position == 20
-        elif q_position in {97, 26}:
-            return k_position == 10
-        elif q_position in {27}:
-            return k_position == 72
-        elif q_position in {28}:
-            return k_position == 79
-        elif q_position in {68, 29}:
-            return k_position == 50
-        elif q_position in {88, 31}:
-            return k_position == 36
-        elif q_position in {32}:
-            return k_position == 65
-        elif q_position in {40, 33, 96}:
-            return k_position == 69
-        elif q_position in {34, 39}:
             return k_position == 83
-        elif q_position in {35}:
+        elif q_position in {26}:
+            return k_position == 81
+        elif q_position in {27}:
+            return k_position == 70
+        elif q_position in {74, 29}:
+            return k_position == 86
+        elif q_position in {88, 36, 31}:
+            return k_position == 36
+        elif q_position in {32, 98}:
+            return k_position == 31
+        elif q_position in {40, 33, 96, 39}:
+            return k_position == 69
+        elif q_position in {41, 34, 69}:
+            return k_position == 14
+        elif q_position in {91, 83, 35}:
             return k_position == 18
         elif q_position in {37, 78}:
             return k_position == 48
-        elif q_position in {41}:
-            return k_position == 14
-        elif q_position in {42, 90}:
-            return k_position == 59
+        elif q_position in {42}:
+            return k_position == 49
         elif q_position in {43}:
             return k_position == 32
-        elif q_position in {44}:
-            return k_position == 47
-        elif q_position in {45}:
-            return k_position == 53
+        elif q_position in {89, 44, 45, 60}:
+            return k_position == 72
         elif q_position in {46}:
-            return k_position == 64
-        elif q_position in {49}:
-            return k_position == 27
+            return k_position == 77
+        elif q_position in {48}:
+            return k_position == 33
+        elif q_position in {49, 86}:
+            return k_position == 94
         elif q_position in {50}:
             return k_position == 28
         elif q_position in {51}:
-            return k_position == 61
-        elif q_position in {52}:
-            return k_position == 60
+            return k_position == 43
+        elif q_position in {59, 52}:
+            return k_position == 30
         elif q_position in {53}:
             return k_position == 51
-        elif q_position in {54}:
-            return k_position == 38
-        elif q_position in {55}:
+        elif q_position in {80, 97, 55}:
             return k_position == 89
         elif q_position in {56}:
             return k_position == 44
         elif q_position in {58}:
             return k_position == 42
-        elif q_position in {59}:
-            return k_position == 30
-        elif q_position in {60}:
-            return k_position == 82
-        elif q_position in {84, 61}:
-            return k_position == 92
-        elif q_position in {63}:
-            return k_position == 56
-        elif q_position in {64}:
+        elif q_position in {99, 76, 63}:
+            return k_position == 87
+        elif q_position in {64, 82}:
             return k_position == 63
-        elif q_position in {65, 92}:
-            return k_position == 78
-        elif q_position in {80, 66, 98}:
+        elif q_position in {65, 75}:
+            return k_position == 99
+        elif q_position in {66}:
             return k_position == 16
-        elif q_position in {67, 94}:
-            return k_position == 40
-        elif q_position in {69}:
-            return k_position == 29
-        elif q_position in {81, 70}:
-            return k_position == 81
-        elif q_position in {72}:
-            return k_position == 11
+        elif q_position in {68, 70}:
+            return k_position == 50
         elif q_position in {73}:
             return k_position == 75
-        elif q_position in {74, 86, 87}:
-            return k_position == 86
-        elif q_position in {75}:
-            return k_position == 66
-        elif q_position in {76}:
-            return k_position == 87
         elif q_position in {77}:
-            return k_position == 37
-        elif q_position in {82}:
-            return k_position == 57
-        elif q_position in {83}:
-            return k_position == 62
+            return k_position == 11
+        elif q_position in {81}:
+            return k_position == 35
+        elif q_position in {84}:
+            return k_position == 74
         elif q_position in {85}:
-            return k_position == 73
-        elif q_position in {89}:
-            return k_position == 70
-        elif q_position in {95}:
-            return k_position == 97
-        elif q_position in {99}:
-            return k_position == 21
+            return k_position == 66
+        elif q_position in {87}:
+            return k_position == 53
+        elif q_position in {90}:
+            return k_position == 45
+        elif q_position in {92}:
+            return k_position == 78
 
     attn_0_1_pattern = select_closest(positions, positions, predicate_0_1)
     attn_0_1_outputs = aggregate(attn_0_1_pattern, tokens)
@@ -341,128 +313,136 @@ def run(tokens):
 
     # attn_0_2 ####################################################
     def predicate_0_2(q_position, k_position):
-        if q_position in {0, 7}:
-            return k_position == 3
+        if q_position in {0, 4}:
+            return k_position == 2
         elif q_position in {1}:
-            return k_position == 7
-        elif q_position in {2, 4}:
+            return k_position == 4
+        elif q_position in {2}:
             return k_position == 1
         elif q_position in {3}:
             return k_position == 6
-        elif q_position in {5}:
-            return k_position == 2
+        elif q_position in {5, 7}:
+            return k_position == 3
         elif q_position in {6}:
-            return k_position == 4
+            return k_position == 5
         elif q_position in {8}:
-            return k_position == 70
-        elif q_position in {56, 9}:
+            return k_position == 50
+        elif q_position in {56, 9, 64, 44}:
             return k_position == 21
-        elif q_position in {10, 58, 82}:
-            return k_position == 96
-        elif q_position in {18, 11, 14, 95}:
-            return k_position == 79
-        elif q_position in {12, 63}:
+        elif q_position in {10, 68, 30}:
+            return k_position == 89
+        elif q_position in {81, 11}:
+            return k_position == 72
+        elif q_position in {12, 93, 63}:
             return k_position == 19
-        elif q_position in {49, 13}:
+        elif q_position in {13}:
+            return k_position == 17
+        elif q_position in {14}:
+            return k_position == 98
+        elif q_position in {15}:
             return k_position == 22
-        elif q_position in {35, 60, 15}:
-            return k_position == 78
-        elif q_position in {16, 94}:
-            return k_position == 85
-        elif q_position in {17}:
-            return k_position == 38
-        elif q_position in {64, 72, 19, 86}:
-            return k_position == 48
-        elif q_position in {50, 20}:
-            return k_position == 53
-        elif q_position in {42, 21, 38}:
-            return k_position == 95
-        elif q_position in {27, 22}:
-            return k_position == 36
-        elif q_position in {34, 23}:
+        elif q_position in {16, 58}:
+            return k_position == 87
+        elif q_position in {17, 23}:
             return k_position == 13
-        elif q_position in {24, 68}:
+        elif q_position in {18}:
+            return k_position == 41
+        elif q_position in {73, 19}:
+            return k_position == 48
+        elif q_position in {20, 38}:
+            return k_position == 92
+        elif q_position in {21}:
+            return k_position == 95
+        elif q_position in {22}:
+            return k_position == 16
+        elif q_position in {24, 65, 94}:
             return k_position == 83
         elif q_position in {25}:
-            return k_position == 43
-        elif q_position in {73, 26}:
+            return k_position == 56
+        elif q_position in {26}:
             return k_position == 74
+        elif q_position in {27}:
+            return k_position == 36
         elif q_position in {97, 28}:
             return k_position == 63
-        elif q_position in {88, 29}:
+        elif q_position in {29}:
             return k_position == 58
-        elif q_position in {74, 52, 30}:
-            return k_position == 66
         elif q_position in {31}:
             return k_position == 15
-        elif q_position in {32}:
+        elif q_position in {32, 52, 96, 47}:
             return k_position == 32
-        elif q_position in {33, 39}:
-            return k_position == 28
-        elif q_position in {36}:
-            return k_position == 89
+        elif q_position in {33}:
+            return k_position == 43
+        elif q_position in {34}:
+            return k_position == 68
+        elif q_position in {35}:
+            return k_position == 49
+        elif q_position in {67, 36, 45}:
+            return k_position == 14
         elif q_position in {37}:
-            return k_position == 86
+            return k_position == 80
+        elif q_position in {39}:
+            return k_position == 33
         elif q_position in {40}:
             return k_position == 76
-        elif q_position in {41, 76}:
-            return k_position == 10
+        elif q_position in {41, 42, 69}:
+            return k_position == 23
         elif q_position in {43}:
             return k_position == 9
-        elif q_position in {44, 46}:
-            return k_position == 62
-        elif q_position in {45}:
-            return k_position == 82
-        elif q_position in {47}:
-            return k_position == 67
+        elif q_position in {46}:
+            return k_position == 65
         elif q_position in {48}:
             return k_position == 45
+        elif q_position in {49}:
+            return k_position == 90
+        elif q_position in {50}:
+            return k_position == 51
         elif q_position in {51}:
             return k_position == 52
-        elif q_position in {53}:
+        elif q_position in {53, 87}:
             return k_position == 30
         elif q_position in {80, 54}:
             return k_position == 88
-        elif q_position in {89, 55}:
+        elif q_position in {89, 98, 55}:
             return k_position == 37
-        elif q_position in {96, 57}:
-            return k_position == 97
+        elif q_position in {57}:
+            return k_position == 26
         elif q_position in {59, 77}:
             return k_position == 47
-        elif q_position in {61, 70}:
-            return k_position == 57
+        elif q_position in {60}:
+            return k_position == 61
+        elif q_position in {61}:
+            return k_position == 53
         elif q_position in {75, 62}:
             return k_position == 94
-        elif q_position in {65}:
-            return k_position == 65
         elif q_position in {66}:
-            return k_position == 91
-        elif q_position in {67}:
-            return k_position == 14
-        elif q_position in {69}:
-            return k_position == 23
-        elif q_position in {71}:
-            return k_position == 68
+            return k_position == 24
+        elif q_position in {72, 70}:
+            return k_position == 57
+        elif q_position in {83, 71}:
+            return k_position == 44
+        elif q_position in {74}:
+            return k_position == 40
+        elif q_position in {76}:
+            return k_position == 10
         elif q_position in {78}:
-            return k_position == 61
+            return k_position == 25
         elif q_position in {79}:
             return k_position == 77
-        elif q_position in {81}:
-            return k_position == 72
-        elif q_position in {98, 83}:
-            return k_position == 44
-        elif q_position in {84}:
-            return k_position == 40
+        elif q_position in {82}:
+            return k_position == 85
+        elif q_position in {84, 86}:
+            return k_position == 46
         elif q_position in {85}:
+            return k_position == 91
+        elif q_position in {88}:
             return k_position == 60
-        elif q_position in {87}:
-            return k_position == 11
         elif q_position in {90, 91}:
             return k_position == 34
         elif q_position in {92}:
-            return k_position == 24
-        elif q_position in {93}:
-            return k_position == 31
+            return k_position == 38
+        elif q_position in {95}:
+            return k_position == 69
         elif q_position in {99}:
             return k_position == 73
 
@@ -474,40 +454,30 @@ def run(tokens):
 
     # attn_0_3 ####################################################
     def predicate_0_3(position, token):
-        if position in {0}:
-            return token == "2"
+        if position in {0, 32, 7}:
+            return token == "0"
         elif position in {
             1,
             8,
             9,
             10,
             11,
-            12,
-            13,
-            14,
             15,
-            16,
             17,
-            18,
             19,
             20,
             21,
             22,
             24,
             25,
-            26,
+            27,
             28,
             29,
+            30,
             31,
-            32,
-            33,
-            34,
-            35,
             36,
-            37,
             38,
             39,
-            40,
             41,
             42,
             43,
@@ -520,10 +490,235 @@ def run(tokens):
             50,
             51,
             52,
+            54,
+            61,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            73,
+            74,
+            75,
+            76,
+            78,
+            79,
+            80,
+            81,
+            83,
+            84,
+            85,
+            86,
+            90,
+            91,
+            92,
+            93,
+            96,
+            98,
+            99,
+        }:
+            return token == "5"
+        elif position in {2, 12, 4, 5}:
+            return token == "3"
+        elif position in {97, 3}:
+            return token == "4"
+        elif position in {
+            6,
+            13,
+            14,
+            16,
+            18,
+            23,
+            26,
+            33,
+            34,
+            35,
+            37,
+            40,
+            53,
+            55,
+            57,
+            58,
+            59,
+            60,
+            62,
+            82,
+            87,
+            88,
+            89,
+            94,
+            95,
+        }:
+            return token == ""
+        elif position in {56, 72, 77}:
+            return token == "1"
+
+    attn_0_3_pattern = select_closest(tokens, positions, predicate_0_3)
+    attn_0_3_outputs = aggregate(attn_0_3_pattern, tokens)
+    attn_0_3_output_scores = classifier_weights.loc[
+        [("attn_0_3_outputs", str(v)) for v in attn_0_3_outputs]
+    ]
+
+    # num_attn_0_0 ####################################################
+    def num_predicate_0_0(position, token):
+        if position in {
+            0,
+            1,
+            7,
+            9,
+            10,
+            11,
+            20,
+            23,
+            26,
+            27,
+            28,
+            30,
+            33,
+            38,
+            39,
+            50,
+            51,
+            59,
+            68,
+            72,
+            78,
+            81,
+            84,
+            87,
+            89,
+            92,
+            95,
+        }:
+            return token == "2"
+        elif position in {
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            21,
+            22,
+            24,
+            25,
+            31,
+            32,
+            34,
+            35,
+            37,
+            41,
+            42,
+            43,
+            45,
+            46,
+            47,
+            48,
+            49,
+            52,
             53,
             54,
             55,
             56,
+            57,
+            58,
+            60,
+            62,
+            63,
+            66,
+            67,
+            69,
+            73,
+            75,
+            76,
+            77,
+            80,
+            82,
+            83,
+            88,
+            90,
+            91,
+            93,
+            94,
+            96,
+            98,
+            99,
+        }:
+            return token == ""
+        elif position in {64, 65, 97, 71, 40, 74, 44, 29, 85, 61}:
+            return token == "4"
+        elif position in {36, 70, 79}:
+            return token == "3"
+        elif position in {86}:
+            return token == "0"
+
+    num_attn_0_0_pattern = select(tokens, positions, num_predicate_0_0)
+    num_attn_0_0_outputs = aggregate_sum(num_attn_0_0_pattern, ones)
+    num_attn_0_0_output_scores = classifier_weights.loc[
+        [("num_attn_0_0_outputs", "_") for v in num_attn_0_0_outputs]
+    ].mul(num_attn_0_0_outputs, axis=0)
+
+    # num_attn_0_1 ####################################################
+    def num_predicate_0_1(position, token):
+        if position in {0, 1, 70, 7}:
+            return token == "1"
+        elif position in {
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20,
+            21,
+            22,
+            23,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            42,
+            43,
+            44,
+            45,
+            46,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            55,
             57,
             58,
             59,
@@ -537,15 +732,13 @@ def run(tokens):
             67,
             68,
             69,
-            70,
             71,
             72,
-            73,
             74,
             75,
             76,
+            77,
             78,
-            79,
             80,
             81,
             82,
@@ -557,267 +750,22 @@ def run(tokens):
             88,
             89,
             90,
-            91,
             92,
             93,
             94,
             95,
             96,
             97,
-            98,
-            99,
-        }:
-            return token == "5"
-        elif position in {2}:
-            return token == "0"
-        elif position in {3, 7}:
-            return token == "3"
-        elif position in {4, 5, 6}:
-            return token == "1"
-        elif position in {30, 23}:
-            return token == ""
-        elif position in {27, 77}:
-            return token == "4"
-
-    attn_0_3_pattern = select_closest(tokens, positions, predicate_0_3)
-    attn_0_3_outputs = aggregate(attn_0_3_pattern, tokens)
-    attn_0_3_output_scores = classifier_weights.loc[
-        [("attn_0_3_outputs", str(v)) for v in attn_0_3_outputs]
-    ]
-
-    # num_attn_0_0 ####################################################
-    def num_predicate_0_0(position, token):
-        if position in {0, 32, 36, 8, 40, 43, 76, 79, 17, 85, 87, 27}:
-            return token == "3"
-        elif position in {
-            1,
-            9,
-            10,
-            11,
-            13,
-            14,
-            15,
-            18,
-            23,
-            25,
-            26,
-            33,
-            37,
-            38,
-            41,
-            47,
-            48,
-            49,
-            50,
-            51,
-            53,
-            58,
-            64,
-            66,
-            67,
-            69,
-            70,
-            72,
-            77,
-            83,
-            92,
-            95,
-            96,
-            98,
-        }:
-            return token == "2"
-        elif position in {
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            12,
-            16,
-            22,
-            24,
-            28,
-            30,
-            34,
-            35,
-            39,
-            44,
-            46,
-            52,
-            54,
-            55,
-            59,
-            60,
-            62,
-            63,
-            73,
-            75,
-            80,
-            81,
-            82,
-            86,
-            90,
-            91,
-            99,
         }:
             return token == ""
-        elif position in {
-            19,
-            20,
-            29,
-            31,
-            42,
-            45,
-            56,
-            57,
-            61,
-            65,
-            68,
-            71,
-            74,
-            78,
-            84,
-            88,
-            89,
-            93,
-            94,
-            97,
-        }:
-            return token == "4"
-        elif position in {21}:
+        elif position in {6}:
             return token == "<s>"
+        elif position in {98, 99, 40, 41, 73, 79, 19, 54, 24, 91, 29}:
+            return token == "3"
+        elif position in {32, 56, 47}:
+            return token == "2"
 
-    num_attn_0_0_pattern = select(tokens, positions, num_predicate_0_0)
-    num_attn_0_0_outputs = aggregate_sum(num_attn_0_0_pattern, ones)
-    num_attn_0_0_output_scores = classifier_weights.loc[
-        [("num_attn_0_0_outputs", "_") for v in num_attn_0_0_outputs]
-    ].mul(num_attn_0_0_outputs, axis=0)
-
-    # num_attn_0_1 ####################################################
-    def num_predicate_0_1(q_position, k_position):
-        if q_position in {0}:
-            return k_position == 3
-        elif q_position in {65, 1, 90}:
-            return k_position == 81
-        elif q_position in {2}:
-            return k_position == 64
-        elif q_position in {3}:
-            return k_position == 17
-        elif q_position in {4}:
-            return k_position == 35
-        elif q_position in {5, 6, 7}:
-            return k_position == 4
-        elif q_position in {8, 75}:
-            return k_position == 56
-        elif q_position in {9, 63, 39}:
-            return k_position == 12
-        elif q_position in {72, 10, 50}:
-            return k_position == 24
-        elif q_position in {88, 11}:
-            return k_position == 32
-        elif q_position in {80, 43, 12}:
-            return k_position == 16
-        elif q_position in {97, 13, 47}:
-            return k_position == 8
-        elif q_position in {91, 14}:
-            return k_position == 42
-        elif q_position in {32, 15}:
-            return k_position == 92
-        elif q_position in {16}:
-            return k_position == 80
-        elif q_position in {17, 58, 92, 46}:
-            return k_position == 31
-        elif q_position in {64, 33, 18}:
-            return k_position == 67
-        elif q_position in {19, 45, 31}:
-            return k_position == 71
-        elif q_position in {73, 20}:
-            return k_position == 9
-        elif q_position in {21}:
-            return k_position == 72
-        elif q_position in {36, 40, 77, 22, 61}:
-            return k_position == 76
-        elif q_position in {23}:
-            return k_position == 82
-        elif q_position in {24}:
-            return k_position == 23
-        elif q_position in {25, 99}:
-            return k_position == 88
-        elif q_position in {26}:
-            return k_position == 83
-        elif q_position in {35, 27, 78}:
-            return k_position == 74
-        elif q_position in {28}:
-            return k_position == 51
-        elif q_position in {66, 44, 29}:
-            return k_position == 27
-        elif q_position in {30}:
-            return k_position == 63
-        elif q_position in {34}:
-            return k_position == 86
-        elif q_position in {81, 37}:
-            return k_position == 62
-        elif q_position in {38}:
-            return k_position == 89
-        elif q_position in {41}:
-            return k_position == 28
-        elif q_position in {42, 83}:
-            return k_position == 60
-        elif q_position in {48}:
-            return k_position == 41
-        elif q_position in {49, 94, 87}:
-            return k_position == 65
-        elif q_position in {51}:
-            return k_position == 29
-        elif q_position in {52}:
-            return k_position == 78
-        elif q_position in {53}:
-            return k_position == 18
-        elif q_position in {85, 54}:
-            return k_position == 37
-        elif q_position in {55}:
-            return k_position == 26
-        elif q_position in {56}:
-            return k_position == 52
-        elif q_position in {57}:
-            return k_position == 47
-        elif q_position in {59}:
-            return k_position == 49
-        elif q_position in {60}:
-            return k_position == 11
-        elif q_position in {62}:
-            return k_position == 39
-        elif q_position in {67}:
-            return k_position == 30
-        elif q_position in {68}:
-            return k_position == 90
-        elif q_position in {69}:
-            return k_position == 38
-        elif q_position in {70, 79}:
-            return k_position == 61
-        elif q_position in {71}:
-            return k_position == 94
-        elif q_position in {74}:
-            return k_position == 19
-        elif q_position in {76}:
-            return k_position == 34
-        elif q_position in {82}:
-            return k_position == 45
-        elif q_position in {96, 84}:
-            return k_position == 46
-        elif q_position in {86}:
-            return k_position == 66
-        elif q_position in {89}:
-            return k_position == 48
-        elif q_position in {93}:
-            return k_position == 22
-        elif q_position in {95}:
-            return k_position == 93
-        elif q_position in {98}:
-            return k_position == 40
-
-    num_attn_0_1_pattern = select(positions, positions, num_predicate_0_1)
+    num_attn_0_1_pattern = select(tokens, positions, num_predicate_0_1)
     num_attn_0_1_outputs = aggregate_sum(num_attn_0_1_pattern, ones)
     num_attn_0_1_output_scores = classifier_weights.loc[
         [("num_attn_0_1_outputs", "_") for v in num_attn_0_1_outputs]
@@ -828,75 +776,86 @@ def run(tokens):
         if position in {
             0,
             11,
-            14,
-            15,
+            16,
+            17,
             18,
+            19,
             22,
-            25,
-            28,
+            24,
+            26,
+            27,
             30,
-            32,
             35,
+            36,
             39,
             40,
+            46,
             48,
-            50,
+            49,
+            52,
             54,
             57,
-            58,
+            59,
             60,
-            64,
+            62,
             66,
             68,
-            71,
-            73,
-            75,
+            76,
             79,
-            80,
-            83,
-            89,
+            81,
+            85,
+            86,
+            87,
             90,
+            92,
+            94,
+            97,
         }:
-            return token == "3"
-        elif position in {1, 99, 36, 77, 49, 23}:
+            return token == "5"
+        elif position in {1, 34, 41, 42, 44, 13, 14, 78, 53, 55, 23, 89, 58}:
             return token == "1"
+        elif position in {2}:
+            return token == "<pad>"
+        elif position in {98, 3, 4, 5, 6, 7, 72, 12, 77, 15, 28}:
+            return token == ""
         elif position in {
-            2,
-            3,
+            8,
+            9,
             10,
-            13,
-            17,
             20,
+            21,
+            25,
+            29,
             31,
+            32,
             33,
-            34,
-            42,
-            43,
-            52,
-            55,
+            45,
+            47,
+            50,
+            51,
             56,
             63,
-            67,
-            72,
-            82,
+            64,
+            65,
+            69,
+            70,
+            71,
+            73,
+            80,
+            83,
             84,
-            87,
             88,
             91,
             93,
+            95,
             96,
+            99,
         }:
             return token == "<s>"
-        elif position in {4, 5, 6, 7, 37, 38, 70, 44, 53, 29}:
-            return token == ""
-        elif position in {8, 74, 76, 46, 26, 27, 92, 61, 94}:
+        elif position in {67, 37, 38, 74, 43, 75, 61}:
             return token == "4"
-        elif position in {65, 69, 9, 12, 78, 47, 16, 81, 21, 24, 59}:
-            return token == "0"
-        elif position in {19, 45, 86, 95}:
-            return token == "2"
-        elif position in {97, 98, 41, 51, 85, 62}:
-            return token == "5"
+        elif position in {82}:
+            return token == "3"
 
     num_attn_0_2_pattern = select(tokens, positions, num_predicate_0_2)
     num_attn_0_2_outputs = aggregate_sum(num_attn_0_2_pattern, ones)
@@ -906,17 +865,15 @@ def run(tokens):
 
     # num_attn_0_3 ####################################################
     def num_predicate_0_3(position, token):
-        if position in {0, 1, 67, 76, 22, 87, 57, 26, 60, 95}:
+        if position in {0, 1, 10, 76, 30}:
             return token == "3"
         elif position in {
             2,
             3,
             4,
             5,
-            7,
             8,
             9,
-            10,
             11,
             12,
             13,
@@ -928,13 +885,14 @@ def run(tokens):
             19,
             20,
             21,
+            22,
             23,
             24,
             25,
+            26,
             27,
             28,
             29,
-            30,
             31,
             32,
             33,
@@ -949,6 +907,7 @@ def run(tokens):
             42,
             43,
             44,
+            45,
             46,
             47,
             48,
@@ -960,20 +919,24 @@ def run(tokens):
             54,
             55,
             56,
+            57,
             58,
             59,
+            60,
             61,
             62,
             63,
             64,
             65,
             66,
+            67,
             68,
             69,
             70,
             71,
             72,
             73,
+            74,
             75,
             77,
             78,
@@ -985,6 +948,7 @@ def run(tokens):
             84,
             85,
             86,
+            87,
             88,
             89,
             90,
@@ -992,16 +956,15 @@ def run(tokens):
             92,
             93,
             94,
+            95,
             96,
             97,
             98,
             99,
         }:
             return token == ""
-        elif position in {6}:
+        elif position in {6, 7}:
             return token == "<s>"
-        elif position in {74, 45}:
-            return token == "2"
 
     num_attn_0_3_pattern = select(tokens, positions, num_predicate_0_3)
     num_attn_0_3_outputs = aggregate_sum(num_attn_0_3_pattern, ones)
@@ -1013,300 +976,15 @@ def run(tokens):
     def mlp_0_0(position, attn_0_3_output):
         key = (position, attn_0_3_output)
         if key in {
-            (0, "0"),
-            (0, "2"),
-            (0, "4"),
-            (0, "<s>"),
-            (1, "0"),
-            (1, "2"),
-            (1, "4"),
-            (2, "4"),
-            (8, "0"),
-            (8, "2"),
-            (8, "4"),
-            (9, "0"),
-            (9, "2"),
-            (9, "4"),
-            (10, "0"),
-            (10, "2"),
-            (10, "4"),
-            (11, "0"),
-            (11, "4"),
-            (12, "0"),
-            (12, "2"),
-            (12, "4"),
-            (13, "0"),
-            (13, "2"),
-            (13, "4"),
-            (14, "0"),
-            (14, "2"),
-            (14, "4"),
-            (15, "0"),
-            (15, "2"),
-            (15, "4"),
-            (16, "0"),
-            (16, "2"),
-            (16, "4"),
-            (17, "0"),
-            (17, "2"),
-            (17, "4"),
-            (18, "0"),
-            (18, "2"),
-            (18, "4"),
-            (19, "0"),
-            (19, "2"),
-            (19, "4"),
-            (20, "0"),
-            (20, "2"),
-            (20, "4"),
-            (21, "0"),
-            (21, "2"),
-            (21, "4"),
-            (22, "0"),
-            (22, "2"),
-            (22, "4"),
-            (23, "0"),
-            (23, "2"),
-            (23, "4"),
-            (24, "0"),
-            (24, "2"),
-            (24, "4"),
-            (25, "0"),
-            (25, "2"),
-            (25, "4"),
-            (26, "0"),
-            (26, "2"),
-            (26, "4"),
-            (27, "0"),
-            (27, "2"),
-            (27, "4"),
-            (28, "0"),
-            (28, "2"),
-            (28, "4"),
-            (29, "0"),
-            (29, "2"),
-            (29, "4"),
-            (30, "0"),
-            (30, "2"),
-            (30, "4"),
-            (31, "0"),
-            (31, "2"),
-            (31, "4"),
-            (32, "0"),
-            (32, "2"),
-            (32, "4"),
-            (33, "0"),
-            (33, "2"),
-            (33, "4"),
-            (34, "0"),
-            (34, "2"),
-            (34, "4"),
-            (35, "0"),
-            (35, "2"),
-            (35, "4"),
-            (36, "0"),
-            (36, "2"),
-            (36, "4"),
-            (37, "0"),
-            (37, "2"),
-            (37, "4"),
-            (38, "0"),
-            (38, "2"),
-            (38, "4"),
-            (39, "0"),
-            (39, "2"),
-            (39, "4"),
-            (40, "0"),
-            (40, "2"),
-            (40, "4"),
-            (41, "0"),
-            (41, "4"),
-            (42, "0"),
-            (42, "2"),
-            (42, "4"),
-            (43, "0"),
-            (43, "2"),
-            (43, "4"),
-            (44, "0"),
-            (44, "2"),
-            (44, "4"),
-            (45, "0"),
-            (45, "2"),
-            (45, "4"),
-            (46, "0"),
-            (46, "4"),
-            (47, "0"),
-            (47, "2"),
-            (47, "4"),
-            (48, "0"),
-            (48, "2"),
-            (48, "4"),
-            (49, "0"),
-            (49, "4"),
-            (50, "0"),
-            (50, "2"),
-            (50, "4"),
-            (51, "0"),
-            (51, "2"),
-            (51, "4"),
-            (52, "0"),
-            (52, "2"),
-            (52, "4"),
-            (53, "0"),
-            (53, "2"),
-            (53, "4"),
-            (54, "0"),
-            (54, "2"),
-            (54, "4"),
-            (55, "0"),
-            (55, "2"),
-            (55, "4"),
-            (56, "0"),
-            (56, "2"),
-            (56, "4"),
-            (57, "0"),
-            (57, "2"),
-            (57, "4"),
-            (58, "0"),
-            (58, "2"),
-            (58, "4"),
-            (59, "0"),
-            (59, "2"),
-            (59, "4"),
-            (60, "0"),
-            (60, "2"),
-            (60, "4"),
-            (61, "0"),
-            (61, "2"),
-            (61, "4"),
-            (62, "0"),
-            (62, "2"),
-            (62, "4"),
-            (63, "0"),
-            (63, "2"),
-            (63, "4"),
-            (64, "0"),
-            (64, "2"),
-            (64, "4"),
-            (65, "0"),
-            (65, "2"),
-            (65, "4"),
-            (66, "0"),
-            (66, "2"),
-            (66, "4"),
-            (67, "0"),
-            (67, "2"),
-            (67, "4"),
-            (68, "0"),
-            (68, "2"),
-            (68, "4"),
-            (69, "0"),
-            (69, "2"),
-            (69, "4"),
-            (70, "0"),
-            (70, "2"),
-            (70, "4"),
-            (71, "0"),
-            (71, "2"),
-            (71, "4"),
-            (72, "0"),
-            (72, "2"),
-            (72, "4"),
-            (73, "0"),
-            (73, "2"),
-            (73, "4"),
-            (74, "0"),
-            (74, "2"),
-            (74, "4"),
-            (75, "0"),
-            (75, "2"),
-            (75, "4"),
-            (76, "0"),
-            (76, "2"),
-            (76, "4"),
-            (77, "0"),
-            (77, "2"),
-            (77, "4"),
-            (78, "0"),
-            (78, "2"),
-            (78, "4"),
-            (79, "0"),
-            (79, "4"),
-            (80, "0"),
-            (80, "2"),
-            (80, "4"),
-            (81, "0"),
-            (81, "2"),
-            (81, "4"),
-            (82, "0"),
-            (82, "2"),
-            (82, "4"),
-            (83, "0"),
-            (83, "2"),
-            (83, "4"),
-            (84, "0"),
-            (84, "2"),
-            (84, "4"),
-            (85, "0"),
-            (85, "4"),
-            (86, "0"),
-            (86, "2"),
-            (86, "4"),
-            (87, "0"),
-            (87, "2"),
-            (87, "4"),
-            (88, "0"),
-            (88, "2"),
-            (88, "4"),
-            (89, "0"),
-            (89, "2"),
-            (89, "4"),
-            (90, "0"),
-            (90, "2"),
-            (90, "4"),
-            (91, "0"),
-            (91, "2"),
-            (91, "4"),
-            (92, "0"),
-            (92, "2"),
-            (92, "4"),
-            (93, "0"),
-            (93, "2"),
-            (93, "4"),
-            (94, "0"),
-            (94, "2"),
-            (94, "4"),
-            (95, "0"),
-            (95, "2"),
-            (95, "4"),
-            (96, "0"),
-            (96, "4"),
-            (97, "0"),
-            (97, "2"),
-            (97, "4"),
-            (98, "0"),
-            (98, "2"),
-            (98, "4"),
-            (99, "0"),
-            (99, "2"),
-            (99, "4"),
-        }:
-            return 65
-        elif key in {
-            (0, "1"),
-            (0, "5"),
-            (1, "5"),
-            (2, "1"),
-            (2, "5"),
-            (5, "5"),
             (6, "5"),
+            (6, "<s>"),
+            (7, "3"),
             (7, "5"),
-            (8, "5"),
+            (7, "<s>"),
             (9, "5"),
             (10, "5"),
             (11, "5"),
             (12, "5"),
-            (13, "5"),
             (14, "5"),
             (15, "5"),
             (16, "5"),
@@ -1319,17 +997,12 @@ def run(tokens):
             (23, "5"),
             (24, "5"),
             (25, "5"),
-            (26, "5"),
             (27, "5"),
-            (28, "5"),
             (29, "5"),
-            (30, "5"),
             (31, "5"),
             (32, "5"),
-            (33, "5"),
             (34, "5"),
             (35, "5"),
-            (36, "5"),
             (37, "5"),
             (38, "5"),
             (39, "5"),
@@ -1349,8 +1022,6 @@ def run(tokens):
             (53, "5"),
             (54, "5"),
             (55, "5"),
-            (56, "5"),
-            (57, "5"),
             (58, "5"),
             (59, "5"),
             (60, "5"),
@@ -1365,10 +1036,8 @@ def run(tokens):
             (69, "5"),
             (70, "5"),
             (71, "5"),
-            (72, "5"),
             (73, "5"),
             (74, "5"),
-            (75, "5"),
             (76, "5"),
             (77, "5"),
             (78, "5"),
@@ -1384,133 +1053,378 @@ def run(tokens):
             (88, "5"),
             (89, "5"),
             (90, "5"),
-            (91, "5"),
             (92, "5"),
-            (93, "5"),
             (94, "5"),
             (95, "5"),
             (96, "5"),
             (97, "5"),
-            (98, "5"),
-            (99, "5"),
         }:
-            return 58
+            return 81
         elif key in {
+            (0, "4"),
+            (1, "4"),
+            (3, "0"),
+            (3, "2"),
+            (3, "4"),
             (4, "0"),
             (4, "2"),
+            (4, "3"),
             (4, "4"),
+            (4, "5"),
             (4, "<s>"),
             (5, "0"),
-            (5, "2"),
             (5, "4"),
-            (5, "<s>"),
             (6, "0"),
+            (6, "2"),
+            (6, "3"),
+            (6, "4"),
+            (7, "2"),
+            (7, "4"),
+            (8, "2"),
+            (8, "4"),
+            (9, "2"),
+            (9, "3"),
+            (9, "4"),
+            (10, "2"),
+            (10, "4"),
+            (11, "0"),
+            (11, "2"),
+            (11, "4"),
+            (12, "2"),
+            (12, "4"),
+            (13, "0"),
+            (13, "2"),
+            (13, "4"),
+            (14, "2"),
+            (14, "4"),
+            (15, "2"),
+            (15, "4"),
+            (16, "0"),
+            (16, "2"),
+            (16, "4"),
+            (17, "2"),
+            (17, "3"),
+            (17, "4"),
+            (18, "2"),
+            (18, "3"),
+            (18, "4"),
+            (19, "0"),
+            (19, "2"),
+            (19, "4"),
+            (20, "2"),
+            (20, "4"),
+            (21, "2"),
+            (21, "4"),
+            (22, "2"),
+            (22, "4"),
+            (23, "2"),
+            (23, "4"),
+            (24, "2"),
+            (24, "4"),
+            (25, "2"),
+            (25, "4"),
+            (26, "0"),
+            (26, "2"),
+            (26, "4"),
+            (27, "2"),
+            (27, "4"),
+            (28, "2"),
+            (28, "4"),
+            (29, "2"),
+            (29, "4"),
+            (30, "2"),
+            (30, "4"),
+            (31, "2"),
+            (31, "4"),
+            (32, "2"),
+            (32, "4"),
+            (33, "2"),
+            (33, "4"),
+            (34, "2"),
+            (34, "3"),
+            (34, "4"),
+            (35, "2"),
+            (35, "4"),
+            (36, "4"),
+            (37, "2"),
+            (37, "4"),
+            (38, "2"),
+            (38, "4"),
+            (39, "0"),
+            (39, "2"),
+            (39, "3"),
+            (39, "4"),
+            (40, "2"),
+            (40, "4"),
+            (41, "2"),
+            (41, "4"),
+            (42, "2"),
+            (42, "4"),
+            (43, "2"),
+            (43, "4"),
+            (44, "0"),
+            (44, "2"),
+            (44, "4"),
+            (45, "2"),
+            (45, "3"),
+            (45, "4"),
+            (46, "2"),
+            (46, "4"),
+            (47, "2"),
+            (47, "4"),
+            (48, "2"),
+            (48, "4"),
+            (49, "2"),
+            (49, "4"),
+            (50, "0"),
+            (50, "2"),
+            (50, "4"),
+            (51, "2"),
+            (51, "3"),
+            (51, "4"),
+            (52, "2"),
+            (52, "3"),
+            (52, "4"),
+            (53, "2"),
+            (53, "3"),
+            (53, "4"),
+            (54, "2"),
+            (54, "4"),
+            (55, "2"),
+            (55, "4"),
+            (56, "2"),
+            (56, "4"),
+            (57, "2"),
+            (57, "4"),
+            (58, "2"),
+            (58, "4"),
+            (59, "2"),
+            (59, "4"),
+            (60, "2"),
+            (60, "4"),
+            (61, "2"),
+            (61, "3"),
+            (61, "4"),
+            (62, "0"),
+            (62, "2"),
+            (62, "4"),
+            (63, "2"),
+            (63, "4"),
+            (64, "2"),
+            (64, "3"),
+            (64, "4"),
+            (65, "0"),
+            (65, "2"),
+            (65, "3"),
+            (65, "4"),
+            (66, "2"),
+            (66, "4"),
+            (67, "2"),
+            (67, "4"),
+            (68, "2"),
+            (68, "3"),
+            (68, "4"),
+            (69, "0"),
+            (69, "2"),
+            (69, "4"),
+            (70, "2"),
+            (70, "4"),
+            (71, "2"),
+            (71, "4"),
+            (72, "2"),
+            (72, "4"),
+            (73, "2"),
+            (73, "4"),
+            (74, "2"),
+            (74, "4"),
+            (75, "2"),
+            (75, "4"),
+            (76, "0"),
+            (76, "2"),
+            (76, "4"),
+            (77, "2"),
+            (77, "4"),
+            (78, "2"),
+            (78, "4"),
+            (79, "2"),
+            (79, "4"),
+            (80, "2"),
+            (80, "3"),
+            (80, "4"),
+            (81, "0"),
+            (81, "2"),
+            (81, "4"),
+            (82, "2"),
+            (82, "3"),
+            (82, "4"),
+            (83, "2"),
+            (83, "4"),
+            (84, "2"),
+            (84, "4"),
+            (85, "2"),
+            (85, "3"),
+            (85, "4"),
+            (86, "2"),
+            (86, "4"),
+            (87, "2"),
+            (87, "4"),
+            (88, "2"),
+            (88, "4"),
+            (89, "2"),
+            (89, "3"),
+            (89, "4"),
+            (90, "2"),
+            (90, "4"),
+            (91, "0"),
+            (91, "2"),
+            (91, "4"),
+            (92, "2"),
+            (92, "4"),
+            (93, "2"),
+            (93, "4"),
+            (94, "2"),
+            (94, "4"),
+            (95, "0"),
+            (95, "2"),
+            (95, "4"),
+            (96, "2"),
+            (96, "4"),
+            (97, "2"),
+            (97, "4"),
+            (98, "0"),
+            (98, "2"),
+            (98, "4"),
+            (99, "4"),
         }:
-            return 70
+            return 0
+        elif key in {
+            (1, "5"),
+            (2, "0"),
+            (2, "1"),
+            (2, "2"),
+            (2, "3"),
+            (2, "5"),
+            (2, "<s>"),
+            (18, "1"),
+            (19, "1"),
+            (20, "1"),
+            (23, "1"),
+            (34, "1"),
+            (39, "1"),
+            (49, "1"),
+            (51, "1"),
+            (52, "1"),
+            (59, "1"),
+            (65, "1"),
+            (69, "1"),
+            (70, "1"),
+            (79, "1"),
+            (89, "1"),
+            (94, "1"),
+        }:
+            return 98
+        elif key in {(1, "0"), (1, "1"), (1, "2"), (1, "3")}:
+            return 16
+        elif key in {
+            (0, "0"),
+            (7, "0"),
+            (8, "0"),
+            (9, "0"),
+            (10, "0"),
+            (12, "0"),
+            (14, "0"),
+            (15, "0"),
+            (17, "0"),
+            (18, "0"),
+            (20, "0"),
+            (21, "0"),
+            (22, "0"),
+            (23, "0"),
+            (24, "0"),
+            (25, "0"),
+            (27, "0"),
+            (28, "0"),
+            (29, "0"),
+            (30, "0"),
+            (31, "0"),
+            (32, "0"),
+            (33, "0"),
+            (34, "0"),
+            (35, "0"),
+            (36, "0"),
+            (37, "0"),
+            (38, "0"),
+            (40, "0"),
+            (41, "0"),
+            (42, "0"),
+            (43, "0"),
+            (45, "0"),
+            (46, "0"),
+            (47, "0"),
+            (48, "0"),
+            (49, "0"),
+            (51, "0"),
+            (52, "0"),
+            (53, "0"),
+            (54, "0"),
+            (55, "0"),
+            (56, "0"),
+            (57, "0"),
+            (58, "0"),
+            (59, "0"),
+            (60, "0"),
+            (61, "0"),
+            (63, "0"),
+            (64, "0"),
+            (66, "0"),
+            (67, "0"),
+            (68, "0"),
+            (70, "0"),
+            (71, "0"),
+            (72, "0"),
+            (73, "0"),
+            (74, "0"),
+            (75, "0"),
+            (77, "0"),
+            (78, "0"),
+            (79, "0"),
+            (80, "0"),
+            (82, "0"),
+            (83, "0"),
+            (84, "0"),
+            (85, "0"),
+            (86, "0"),
+            (87, "0"),
+            (88, "0"),
+            (89, "0"),
+            (90, "0"),
+            (92, "0"),
+            (93, "0"),
+            (94, "0"),
+            (96, "0"),
+            (97, "0"),
+            (99, "0"),
+        }:
+            return 18
+        elif key in {(3, "5"), (3, "<s>")}:
+            return 33
         elif key in {
             (1, "<s>"),
-            (8, "<s>"),
-            (9, "<s>"),
-            (10, "<s>"),
-            (11, "<s>"),
-            (12, "<s>"),
-            (13, "<s>"),
-            (14, "<s>"),
-            (15, "<s>"),
-            (16, "<s>"),
-            (17, "<s>"),
-            (18, "<s>"),
-            (19, "<s>"),
-            (20, "<s>"),
-            (21, "<s>"),
-            (22, "<s>"),
-            (23, "<s>"),
-            (24, "<s>"),
-            (25, "<s>"),
-            (26, "<s>"),
-            (27, "<s>"),
-            (28, "<s>"),
-            (29, "<s>"),
-            (30, "<s>"),
-            (31, "<s>"),
-            (32, "<s>"),
-            (33, "<s>"),
-            (34, "<s>"),
-            (35, "<s>"),
-            (36, "<s>"),
-            (37, "<s>"),
-            (38, "<s>"),
-            (39, "<s>"),
-            (40, "<s>"),
-            (41, "<s>"),
-            (42, "<s>"),
-            (43, "<s>"),
-            (44, "<s>"),
-            (45, "<s>"),
-            (47, "<s>"),
-            (48, "<s>"),
-            (49, "<s>"),
-            (50, "<s>"),
-            (51, "<s>"),
-            (52, "<s>"),
-            (53, "<s>"),
-            (54, "<s>"),
-            (55, "<s>"),
-            (56, "<s>"),
-            (57, "<s>"),
-            (58, "<s>"),
-            (59, "<s>"),
-            (60, "<s>"),
-            (61, "<s>"),
-            (62, "<s>"),
-            (63, "<s>"),
-            (64, "<s>"),
-            (65, "<s>"),
-            (66, "<s>"),
-            (67, "<s>"),
-            (68, "<s>"),
-            (69, "<s>"),
-            (70, "<s>"),
-            (71, "<s>"),
-            (72, "<s>"),
-            (73, "<s>"),
-            (74, "<s>"),
-            (75, "<s>"),
-            (76, "<s>"),
-            (77, "<s>"),
-            (78, "<s>"),
-            (79, "<s>"),
-            (80, "<s>"),
-            (81, "<s>"),
-            (82, "<s>"),
-            (83, "<s>"),
-            (84, "<s>"),
-            (85, "<s>"),
-            (86, "<s>"),
-            (87, "<s>"),
-            (88, "<s>"),
-            (89, "<s>"),
-            (90, "<s>"),
-            (91, "<s>"),
-            (92, "<s>"),
-            (93, "<s>"),
-            (94, "<s>"),
-            (95, "<s>"),
-            (96, "<s>"),
-            (97, "<s>"),
-            (98, "<s>"),
-            (99, "<s>"),
+            (4, "1"),
+            (5, "1"),
+            (5, "2"),
+            (5, "3"),
+            (5, "<s>"),
+            (76, "3"),
         }:
-            return 87
-        elif key in {(2, "2"), (2, "<s>")}:
-            return 37
-        elif key in {(3, "<s>"), (6, "4"), (6, "<s>"), (7, "<s>"), (46, "<s>")}:
-            return 15
-        elif key in {(4, "5")}:
-            return 40
-        elif key in {(2, "0")}:
-            return 98
-        return 78
+            return 34
+        elif key in {(6, "1"), (7, "1")}:
+            return 69
+        elif key in {(3, "3")}:
+            return 73
+        elif key in {(3, "1")}:
+            return 52
+        return 75
 
     mlp_0_0_outputs = [mlp_0_0(k0, k1) for k0, k1 in zip(positions, attn_0_3_outputs)]
     mlp_0_0_output_scores = classifier_weights.loc[
@@ -1521,504 +1435,21 @@ def run(tokens):
     def mlp_0_1(attn_0_3_output, position):
         key = (attn_0_3_output, position)
         if key in {
-            ("0", 0),
             ("0", 5),
-            ("0", 6),
-            ("0", 7),
-            ("0", 8),
-            ("0", 9),
-            ("0", 10),
-            ("0", 11),
-            ("0", 12),
-            ("0", 13),
-            ("0", 14),
-            ("0", 15),
-            ("0", 16),
-            ("0", 17),
-            ("0", 18),
-            ("0", 19),
-            ("0", 20),
-            ("0", 21),
-            ("0", 22),
-            ("0", 23),
-            ("0", 24),
-            ("0", 25),
-            ("0", 26),
-            ("0", 27),
-            ("0", 28),
-            ("0", 29),
-            ("0", 30),
-            ("0", 31),
-            ("0", 32),
-            ("0", 33),
-            ("0", 34),
-            ("0", 35),
-            ("0", 36),
-            ("0", 37),
-            ("0", 38),
-            ("0", 39),
-            ("0", 40),
-            ("0", 41),
-            ("0", 42),
-            ("0", 43),
-            ("0", 44),
-            ("0", 45),
-            ("0", 46),
-            ("0", 47),
-            ("0", 48),
-            ("0", 49),
-            ("0", 50),
-            ("0", 51),
-            ("0", 52),
-            ("0", 53),
-            ("0", 54),
-            ("0", 55),
-            ("0", 56),
-            ("0", 57),
-            ("0", 58),
-            ("0", 59),
-            ("0", 60),
-            ("0", 61),
-            ("0", 62),
-            ("0", 63),
-            ("0", 64),
-            ("0", 65),
-            ("0", 66),
-            ("0", 67),
-            ("0", 68),
-            ("0", 69),
-            ("0", 70),
-            ("0", 71),
-            ("0", 72),
-            ("0", 73),
-            ("0", 74),
-            ("0", 75),
-            ("0", 76),
-            ("0", 77),
-            ("0", 78),
-            ("0", 79),
-            ("0", 80),
-            ("0", 81),
-            ("0", 82),
-            ("0", 83),
-            ("0", 84),
-            ("0", 85),
-            ("0", 86),
-            ("0", 87),
-            ("0", 88),
-            ("0", 89),
-            ("0", 90),
-            ("0", 91),
-            ("0", 92),
-            ("0", 93),
-            ("0", 94),
-            ("0", 95),
-            ("0", 96),
-            ("0", 97),
-            ("0", 98),
-            ("0", 99),
             ("1", 5),
-            ("1", 6),
-            ("1", 7),
-            ("3", 5),
-            ("3", 6),
-            ("3", 7),
-            ("3", 14),
-            ("4", 5),
-            ("4", 6),
-            ("4", 7),
-            ("4", 14),
-            ("5", 0),
-            ("5", 5),
-            ("5", 6),
-            ("5", 7),
-            ("5", 8),
-            ("5", 9),
-            ("5", 10),
-            ("5", 11),
-            ("5", 12),
-            ("5", 13),
-            ("5", 14),
-            ("5", 15),
-            ("5", 16),
-            ("5", 17),
-            ("5", 18),
-            ("5", 19),
-            ("5", 20),
-            ("5", 21),
-            ("5", 22),
-            ("5", 23),
-            ("5", 24),
-            ("5", 25),
-            ("5", 26),
-            ("5", 27),
-            ("5", 28),
-            ("5", 29),
-            ("5", 30),
-            ("5", 31),
-            ("5", 32),
-            ("5", 33),
-            ("5", 34),
-            ("5", 35),
-            ("5", 36),
-            ("5", 37),
-            ("5", 38),
-            ("5", 39),
-            ("5", 40),
-            ("5", 41),
-            ("5", 42),
-            ("5", 43),
-            ("5", 44),
-            ("5", 45),
-            ("5", 46),
-            ("5", 47),
-            ("5", 48),
-            ("5", 49),
-            ("5", 50),
-            ("5", 51),
-            ("5", 52),
-            ("5", 53),
-            ("5", 54),
-            ("5", 55),
-            ("5", 56),
-            ("5", 57),
-            ("5", 58),
-            ("5", 59),
-            ("5", 60),
-            ("5", 61),
-            ("5", 62),
-            ("5", 63),
-            ("5", 64),
-            ("5", 65),
-            ("5", 66),
-            ("5", 67),
-            ("5", 68),
-            ("5", 69),
-            ("5", 70),
-            ("5", 71),
-            ("5", 72),
-            ("5", 73),
-            ("5", 74),
-            ("5", 75),
-            ("5", 76),
-            ("5", 77),
-            ("5", 78),
-            ("5", 79),
-            ("5", 80),
-            ("5", 81),
-            ("5", 82),
-            ("5", 83),
-            ("5", 84),
-            ("5", 85),
-            ("5", 86),
-            ("5", 87),
-            ("5", 88),
-            ("5", 89),
-            ("5", 90),
-            ("5", 91),
-            ("5", 92),
-            ("5", 93),
-            ("5", 94),
-            ("5", 95),
-            ("5", 96),
-            ("5", 97),
-            ("5", 98),
-            ("5", 99),
-            ("<s>", 5),
-            ("<s>", 6),
-            ("<s>", 7),
-        }:
-            return 54
-        elif key in {
-            ("1", 0),
-            ("1", 2),
-            ("1", 3),
-            ("1", 4),
-            ("1", 11),
-            ("1", 12),
-            ("1", 13),
-            ("1", 15),
-            ("1", 16),
-            ("1", 17),
-            ("1", 18),
-            ("1", 20),
-            ("1", 21),
-            ("1", 22),
-            ("1", 24),
-            ("1", 25),
-            ("1", 26),
-            ("1", 27),
-            ("1", 30),
-            ("1", 31),
-            ("1", 32),
-            ("1", 33),
-            ("1", 34),
-            ("1", 35),
-            ("1", 36),
-            ("1", 38),
-            ("1", 39),
-            ("1", 40),
-            ("1", 41),
-            ("1", 42),
-            ("1", 43),
-            ("1", 44),
-            ("1", 45),
-            ("1", 46),
-            ("1", 48),
-            ("1", 49),
-            ("1", 52),
-            ("1", 54),
-            ("1", 55),
-            ("1", 58),
-            ("1", 59),
-            ("1", 60),
-            ("1", 62),
-            ("1", 63),
-            ("1", 64),
-            ("1", 66),
-            ("1", 67),
-            ("1", 69),
-            ("1", 70),
-            ("1", 72),
-            ("1", 75),
-            ("1", 77),
-            ("1", 78),
-            ("1", 79),
-            ("1", 80),
-            ("1", 82),
-            ("1", 83),
-            ("1", 84),
-            ("1", 85),
-            ("1", 88),
-            ("1", 91),
-            ("1", 92),
-            ("1", 93),
-            ("1", 94),
-            ("1", 97),
-            ("1", 99),
-            ("2", 0),
-            ("2", 1),
-            ("2", 2),
-            ("2", 3),
-            ("2", 4),
             ("2", 5),
-            ("2", 8),
-            ("2", 9),
-            ("2", 10),
-            ("2", 11),
-            ("2", 12),
-            ("2", 13),
-            ("2", 14),
-            ("2", 15),
-            ("2", 16),
-            ("2", 17),
-            ("2", 18),
-            ("2", 19),
-            ("2", 20),
-            ("2", 21),
-            ("2", 22),
-            ("2", 23),
-            ("2", 24),
-            ("2", 25),
-            ("2", 26),
-            ("2", 27),
-            ("2", 28),
-            ("2", 29),
-            ("2", 30),
-            ("2", 31),
-            ("2", 32),
-            ("2", 33),
-            ("2", 34),
-            ("2", 35),
-            ("2", 36),
-            ("2", 37),
-            ("2", 38),
-            ("2", 39),
-            ("2", 40),
-            ("2", 41),
-            ("2", 42),
-            ("2", 43),
-            ("2", 44),
-            ("2", 45),
-            ("2", 46),
-            ("2", 47),
-            ("2", 48),
-            ("2", 49),
-            ("2", 50),
-            ("2", 51),
-            ("2", 52),
-            ("2", 53),
-            ("2", 54),
-            ("2", 55),
-            ("2", 56),
-            ("2", 57),
-            ("2", 58),
-            ("2", 59),
-            ("2", 60),
-            ("2", 61),
-            ("2", 62),
-            ("2", 63),
-            ("2", 64),
-            ("2", 65),
-            ("2", 66),
-            ("2", 67),
-            ("2", 68),
-            ("2", 69),
-            ("2", 70),
-            ("2", 71),
-            ("2", 72),
-            ("2", 73),
-            ("2", 74),
-            ("2", 75),
-            ("2", 76),
-            ("2", 77),
-            ("2", 78),
-            ("2", 79),
-            ("2", 80),
-            ("2", 81),
-            ("2", 82),
-            ("2", 83),
-            ("2", 84),
-            ("2", 85),
-            ("2", 86),
-            ("2", 87),
-            ("2", 88),
-            ("2", 89),
-            ("2", 90),
-            ("2", 91),
-            ("2", 92),
-            ("2", 93),
-            ("2", 94),
-            ("2", 95),
-            ("2", 96),
-            ("2", 97),
-            ("2", 98),
-            ("2", 99),
-            ("3", 2),
+            ("3", 0),
             ("3", 3),
             ("3", 4),
-            ("4", 2),
-            ("4", 4),
-            ("<s>", 2),
-            ("<s>", 3),
-            ("<s>", 4),
-        }:
-            return 13
-        elif key in {
-            ("2", 6),
-            ("4", 0),
-            ("4", 3),
-            ("4", 8),
-            ("4", 9),
-            ("4", 10),
-            ("4", 11),
-            ("4", 12),
-            ("4", 13),
-            ("4", 15),
-            ("4", 16),
-            ("4", 17),
-            ("4", 18),
-            ("4", 19),
-            ("4", 20),
-            ("4", 21),
-            ("4", 22),
-            ("4", 23),
-            ("4", 24),
-            ("4", 25),
-            ("4", 26),
-            ("4", 27),
-            ("4", 28),
-            ("4", 29),
-            ("4", 30),
-            ("4", 31),
-            ("4", 32),
-            ("4", 33),
-            ("4", 34),
-            ("4", 35),
-            ("4", 36),
-            ("4", 37),
-            ("4", 38),
-            ("4", 39),
-            ("4", 40),
-            ("4", 41),
-            ("4", 42),
-            ("4", 43),
-            ("4", 44),
-            ("4", 45),
-            ("4", 46),
-            ("4", 47),
-            ("4", 48),
-            ("4", 49),
-            ("4", 50),
-            ("4", 51),
-            ("4", 52),
-            ("4", 53),
-            ("4", 54),
-            ("4", 55),
-            ("4", 56),
-            ("4", 57),
-            ("4", 58),
-            ("4", 59),
-            ("4", 60),
-            ("4", 61),
-            ("4", 62),
-            ("4", 63),
-            ("4", 64),
-            ("4", 65),
-            ("4", 66),
-            ("4", 67),
-            ("4", 68),
-            ("4", 69),
-            ("4", 70),
-            ("4", 71),
-            ("4", 72),
-            ("4", 73),
-            ("4", 74),
-            ("4", 75),
-            ("4", 76),
-            ("4", 77),
-            ("4", 78),
-            ("4", 79),
-            ("4", 80),
-            ("4", 81),
-            ("4", 82),
-            ("4", 83),
-            ("4", 84),
-            ("4", 85),
-            ("4", 86),
-            ("4", 87),
-            ("4", 88),
-            ("4", 89),
-            ("4", 90),
-            ("4", 91),
-            ("4", 92),
-            ("4", 93),
-            ("4", 94),
-            ("4", 95),
-            ("4", 96),
-            ("4", 97),
-            ("4", 98),
-            ("4", 99),
-        }:
-            return 89
-        elif key in {
-            ("1", 9),
-            ("1", 14),
-            ("1", 23),
-            ("1", 61),
-            ("1", 65),
-            ("1", 73),
-            ("1", 74),
-            ("1", 76),
-            ("1", 81),
-            ("1", 96),
-            ("1", 98),
+            ("3", 5),
+            ("3", 7),
             ("3", 8),
             ("3", 9),
             ("3", 10),
             ("3", 11),
             ("3", 12),
             ("3", 13),
+            ("3", 14),
             ("3", 15),
             ("3", 16),
             ("3", 17),
@@ -2104,1260 +1535,25 @@ def run(tokens):
             ("3", 97),
             ("3", 98),
             ("3", 99),
+            ("4", 5),
         }:
-            return 53
-        elif key in {("0", 2), ("0", 3), ("0", 4)}:
-            return 97
-        elif key in {("2", 7), ("5", 2), ("5", 3), ("5", 4)}:
-            return 64
-        elif key in {("3", 0)}:
-            return 74
-        return 20
-
-    mlp_0_1_outputs = [mlp_0_1(k0, k1) for k0, k1 in zip(attn_0_3_outputs, positions)]
-    mlp_0_1_output_scores = classifier_weights.loc[
-        [("mlp_0_1_outputs", str(v)) for v in mlp_0_1_outputs]
-    ]
-
-    # num_mlp_0_0 #################################################
-    def num_mlp_0_0(num_attn_0_0_output):
-        key = num_attn_0_0_output
-        return 86
-
-    num_mlp_0_0_outputs = [num_mlp_0_0(k0) for k0 in num_attn_0_0_outputs]
-    num_mlp_0_0_output_scores = classifier_weights.loc[
-        [("num_mlp_0_0_outputs", str(v)) for v in num_mlp_0_0_outputs]
-    ]
-
-    # num_mlp_0_1 #################################################
-    def num_mlp_0_1(num_attn_0_1_output, num_attn_0_3_output):
-        key = (num_attn_0_1_output, num_attn_0_3_output)
-        return 88
-
-    num_mlp_0_1_outputs = [
-        num_mlp_0_1(k0, k1)
-        for k0, k1 in zip(num_attn_0_1_outputs, num_attn_0_3_outputs)
-    ]
-    num_mlp_0_1_output_scores = classifier_weights.loc[
-        [("num_mlp_0_1_outputs", str(v)) for v in num_mlp_0_1_outputs]
-    ]
-
-    # attn_1_0 ####################################################
-    def predicate_1_0(q_position, k_position):
-        if q_position in {0}:
-            return k_position == 4
-        elif q_position in {1, 2}:
-            return k_position == 1
-        elif q_position in {3, 7}:
-            return k_position == 0
-        elif q_position in {4}:
-            return k_position == 5
-        elif q_position in {5, 6, 74, 45, 14, 81}:
-            return k_position == 7
-        elif q_position in {
-            8,
-            10,
-            11,
-            13,
-            16,
-            17,
-            18,
-            21,
-            22,
-            25,
-            26,
-            27,
-            30,
-            31,
-            32,
-            34,
-            35,
-            36,
-            37,
-            38,
-            39,
-            40,
-            41,
-            42,
-            44,
-            47,
-            49,
-            50,
-            53,
-            56,
-            58,
-            59,
-            62,
-            64,
-            65,
-            66,
-            70,
-            71,
-            75,
-            76,
-            82,
-            83,
-            84,
-            86,
-            87,
-            88,
-            90,
-            91,
-            92,
-            94,
-            95,
-            96,
-        }:
-            return k_position == 6
-        elif q_position in {9}:
-            return k_position == 29
-        elif q_position in {
-            33,
-            98,
-            67,
-            68,
-            69,
-            43,
-            12,
-            77,
-            79,
-            19,
-            20,
-            52,
-            54,
-            23,
-            55,
-            61,
-            60,
-            29,
-        }:
-            return k_position == 45
-        elif q_position in {15}:
-            return k_position == 95
-        elif q_position in {24}:
-            return k_position == 72
-        elif q_position in {73, 28}:
-            return k_position == 66
-        elif q_position in {46}:
-            return k_position == 14
-        elif q_position in {48}:
-            return k_position == 69
-        elif q_position in {51}:
-            return k_position == 46
-        elif q_position in {57}:
-            return k_position == 99
-        elif q_position in {63}:
-            return k_position == 18
-        elif q_position in {72}:
-            return k_position == 80
-        elif q_position in {78}:
-            return k_position == 36
-        elif q_position in {80}:
-            return k_position == 86
-        elif q_position in {85}:
-            return k_position == 28
-        elif q_position in {89}:
-            return k_position == 43
-        elif q_position in {93}:
-            return k_position == 35
-        elif q_position in {97}:
-            return k_position == 82
-        elif q_position in {99}:
-            return k_position == 75
-
-    attn_1_0_pattern = select_closest(positions, positions, predicate_1_0)
-    attn_1_0_outputs = aggregate(attn_1_0_pattern, tokens)
-    attn_1_0_output_scores = classifier_weights.loc[
-        [("attn_1_0_outputs", str(v)) for v in attn_1_0_outputs]
-    ]
-
-    # attn_1_1 ####################################################
-    def predicate_1_1(q_position, k_position):
-        if q_position in {0, 2, 98, 20, 24}:
-            return k_position == 1
-        elif q_position in {1, 7}:
-            return k_position == 2
-        elif q_position in {3}:
-            return k_position == 6
-        elif q_position in {4, 5, 6}:
-            return k_position == 3
-        elif q_position in {
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            21,
-            22,
-            23,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            33,
-            34,
-            35,
-            36,
-            37,
-            38,
-            39,
-            40,
-            41,
-            42,
-            43,
-            44,
-            46,
-            47,
-            48,
-            49,
-            50,
-            51,
-            52,
-            53,
-            54,
-            55,
-            56,
-            57,
-            58,
-            59,
-            60,
-            61,
-            62,
-            63,
-            64,
-            65,
-            66,
-            67,
-            68,
-            69,
-            70,
-            71,
-            72,
-            73,
-            74,
-            75,
-            76,
-            77,
-            78,
-            79,
-            80,
-            81,
-            82,
-            83,
-            84,
-            85,
-            86,
-            87,
-            88,
-            90,
-            91,
-            92,
-            93,
-            94,
-            95,
-            96,
-            99,
-        }:
-            return k_position == 45
-        elif q_position in {32}:
-            return k_position == 20
-        elif q_position in {45}:
-            return k_position == 89
-        elif q_position in {89}:
-            return k_position == 14
-        elif q_position in {97}:
-            return k_position == 92
-
-    attn_1_1_pattern = select_closest(positions, positions, predicate_1_1)
-    attn_1_1_outputs = aggregate(attn_1_1_pattern, mlp_0_0_outputs)
-    attn_1_1_output_scores = classifier_weights.loc[
-        [("attn_1_1_outputs", str(v)) for v in attn_1_1_outputs]
-    ]
-
-    # attn_1_2 ####################################################
-    def predicate_1_2(q_position, k_position):
-        if q_position in {0}:
-            return k_position == 5
-        elif q_position in {1}:
-            return k_position == 2
-        elif q_position in {2, 3}:
-            return k_position == 0
-        elif q_position in {
-            4,
-            5,
-            8,
-            10,
-            11,
-            12,
-            13,
-            15,
-            16,
-            17,
-            18,
-            19,
-            21,
-            22,
-            25,
-            26,
-            27,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35,
-            37,
-            39,
-            41,
-            42,
-            43,
-            44,
-            47,
-            48,
-            49,
-            50,
-            52,
-            53,
-            55,
-            56,
-            57,
-            58,
-            59,
-            60,
-            61,
-            62,
-            63,
-            64,
-            65,
-            66,
-            68,
-            69,
-            70,
-            71,
-            72,
-            73,
-            74,
-            75,
-            76,
-            77,
-            79,
-            80,
-            81,
-            82,
-            83,
-            84,
-            85,
-            86,
-            87,
-            88,
-            90,
-            91,
-            92,
-            93,
-            94,
-            95,
-            96,
-            97,
-            99,
-        }:
-            return k_position == 6
-        elif q_position in {89, 45, 6}:
-            return k_position == 7
-        elif q_position in {14, 7}:
-            return k_position == 84
-        elif q_position in {67, 36, 38, 40, 9, 46, 78, 51, 20, 23, 24, 28}:
-            return k_position == 45
-        elif q_position in {54}:
-            return k_position == 28
-        elif q_position in {98}:
-            return k_position == 20
-
-    attn_1_2_pattern = select_closest(positions, positions, predicate_1_2)
-    attn_1_2_outputs = aggregate(attn_1_2_pattern, tokens)
-    attn_1_2_output_scores = classifier_weights.loc[
-        [("attn_1_2_outputs", str(v)) for v in attn_1_2_outputs]
-    ]
-
-    # attn_1_3 ####################################################
-    def predicate_1_3(attn_0_1_output, mlp_0_1_output):
-        if attn_0_1_output in {"0", "<s>"}:
-            return mlp_0_1_output == 45
-        elif attn_0_1_output in {"1"}:
-            return mlp_0_1_output == 39
-        elif attn_0_1_output in {"2"}:
-            return mlp_0_1_output == 14
-        elif attn_0_1_output in {"3"}:
-            return mlp_0_1_output == 85
-        elif attn_0_1_output in {"4"}:
-            return mlp_0_1_output == 97
-        elif attn_0_1_output in {"5"}:
-            return mlp_0_1_output == 72
-
-    attn_1_3_pattern = select_closest(mlp_0_1_outputs, attn_0_1_outputs, predicate_1_3)
-    attn_1_3_outputs = aggregate(attn_1_3_pattern, attn_0_1_outputs)
-    attn_1_3_output_scores = classifier_weights.loc[
-        [("attn_1_3_outputs", str(v)) for v in attn_1_3_outputs]
-    ]
-
-    # num_attn_1_0 ####################################################
-    def num_predicate_1_0(position, token):
-        if position in {
-            0,
-            65,
-            96,
-            97,
-            4,
-            5,
-            6,
-            36,
-            43,
-            44,
-            48,
-            84,
-            55,
-            23,
-            24,
-            59,
-            92,
-            30,
-        }:
-            return token == "3"
-        elif position in {32, 1, 68, 9, 46, 15, 20, 58}:
-            return token == "5"
-        elif position in {
-            2,
-            3,
-            7,
-            8,
-            10,
-            11,
-            12,
-            14,
-            16,
-            17,
-            18,
-            21,
-            22,
-            25,
-            26,
-            27,
-            28,
-            29,
-            31,
-            34,
-            35,
-            38,
-            39,
-            41,
-            42,
-            47,
-            49,
-            50,
-            51,
-            52,
-            53,
-            56,
-            57,
-            60,
-            61,
-            62,
-            63,
-            64,
-            66,
-            67,
-            69,
-            73,
-            74,
-            75,
-            76,
-            77,
-            78,
-            79,
-            82,
-            83,
-            85,
-            86,
-            88,
-            89,
-            90,
-            91,
-            93,
-            94,
-            95,
-            98,
-            99,
-        }:
-            return token == ""
-        elif position in {40, 72, 13, 70}:
-            return token == "<s>"
-        elif position in {81, 19, 71}:
-            return token == "0"
-        elif position in {80, 33, 87}:
-            return token == "4"
-        elif position in {37}:
-            return token == "<pad>"
-        elif position in {45, 54}:
-            return token == "2"
-
-    num_attn_1_0_pattern = select(tokens, positions, num_predicate_1_0)
-    num_attn_1_0_outputs = aggregate_sum(num_attn_1_0_pattern, ones)
-    num_attn_1_0_output_scores = classifier_weights.loc[
-        [("num_attn_1_0_outputs", "_") for v in num_attn_1_0_outputs]
-    ].mul(num_attn_1_0_outputs, axis=0)
-
-    # num_attn_1_1 ####################################################
-    def num_predicate_1_1(mlp_0_0_output, token):
-        if mlp_0_0_output in {
-            0,
-            7,
-            12,
-            13,
-            17,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            34,
-            40,
-            46,
-            47,
-            62,
-            70,
-            75,
-            78,
-            82,
-            83,
-            95,
-            98,
-        }:
-            return token == ""
-        elif mlp_0_0_output in {73, 1, 57}:
-            return token == "4"
-        elif mlp_0_0_output in {
-            2,
-            5,
-            6,
-            8,
-            9,
-            14,
-            16,
-            18,
-            20,
-            49,
-            56,
-            58,
-            64,
-            65,
-            68,
-            71,
-            72,
-            76,
-            85,
-            87,
-            89,
-            90,
-            93,
-        }:
-            return token == "0"
-        elif mlp_0_0_output in {3, 39, 45, 77, 15, 79, 80, 81, 92, 52, 54, 86, 60}:
-            return token == "3"
-        elif mlp_0_0_output in {59, 4, 44}:
-            return token == "2"
-        elif mlp_0_0_output in {
-            10,
-            11,
-            19,
-            28,
-            29,
-            30,
-            31,
-            35,
-            36,
-            38,
-            41,
-            42,
-            48,
-            50,
-            51,
-            53,
-            61,
-            63,
-            66,
-            67,
-            69,
-            74,
-            88,
-            91,
-            94,
-            97,
-            99,
-        }:
-            return token == "5"
-        elif mlp_0_0_output in {32, 33, 96, 43, 84, 55}:
-            return token == "1"
-        elif mlp_0_0_output in {37}:
-            return token == "<s>"
-
-    num_attn_1_1_pattern = select(tokens, mlp_0_0_outputs, num_predicate_1_1)
-    num_attn_1_1_outputs = aggregate_sum(num_attn_1_1_pattern, ones)
-    num_attn_1_1_output_scores = classifier_weights.loc[
-        [("num_attn_1_1_outputs", "_") for v in num_attn_1_1_outputs]
-    ].mul(num_attn_1_1_outputs, axis=0)
-
-    # num_attn_1_2 ####################################################
-    def num_predicate_1_2(mlp_0_0_output, token):
-        if mlp_0_0_output in {
-            0,
-            2,
-            3,
-            10,
-            11,
-            17,
-            18,
-            20,
-            22,
-            24,
-            27,
-            31,
-            34,
-            35,
-            37,
-            42,
-            57,
-            58,
-            62,
-            63,
-            65,
-            66,
-            67,
-            73,
-            75,
-            76,
-            78,
-            82,
-            83,
-            85,
-            87,
-            90,
-            91,
-            95,
-            97,
-            98,
-        }:
-            return token == ""
-        elif mlp_0_0_output in {1, 12, 13, 47, 19}:
-            return token == "4"
-        elif mlp_0_0_output in {
-            4,
-            5,
-            6,
-            29,
-            30,
-            36,
-            39,
-            40,
-            41,
-            43,
-            44,
-            48,
-            55,
-            59,
-            61,
-            70,
-            77,
-            84,
-            92,
-            96,
-        }:
-            return token == "0"
-        elif mlp_0_0_output in {69, 7, 45, 60, 15, 80, 81, 52, 54, 28}:
-            return token == "<s>"
-        elif mlp_0_0_output in {
-            8,
-            14,
-            16,
-            21,
-            23,
-            25,
-            26,
-            38,
-            49,
-            50,
-            51,
-            53,
-            56,
-            64,
-            72,
-            74,
-            79,
-            86,
-            88,
-            89,
-            94,
-        }:
-            return token == "2"
-        elif mlp_0_0_output in {9, 46, 71}:
-            return token == "5"
-        elif mlp_0_0_output in {32}:
-            return token == "1"
-        elif mlp_0_0_output in {33, 68, 93}:
-            return token == "3"
-        elif mlp_0_0_output in {99}:
-            return token == "<pad>"
-
-    num_attn_1_2_pattern = select(tokens, mlp_0_0_outputs, num_predicate_1_2)
-    num_attn_1_2_outputs = aggregate_sum(num_attn_1_2_pattern, num_attn_0_0_outputs)
-    num_attn_1_2_output_scores = classifier_weights.loc[
-        [("num_attn_1_2_outputs", "_") for v in num_attn_1_2_outputs]
-    ].mul(num_attn_1_2_outputs, axis=0)
-
-    # num_attn_1_3 ####################################################
-    def num_predicate_1_3(mlp_0_0_output, token):
-        if mlp_0_0_output in {0, 67, 73, 50, 21, 55, 91, 29}:
-            return token == "3"
-        elif mlp_0_0_output in {32, 1, 98, 5, 6, 71, 9, 20, 87, 58}:
-            return token == "2"
-        elif mlp_0_0_output in {
-            2,
-            7,
-            8,
-            12,
-            13,
-            14,
-            16,
-            19,
-            23,
-            24,
-            26,
-            27,
-            31,
-            33,
-            34,
-            36,
-            37,
-            43,
-            44,
-            47,
-            49,
-            54,
-            56,
-            57,
-            59,
-            62,
-            63,
-            64,
-            65,
-            76,
-            79,
-            80,
-            82,
-            83,
-            85,
-            86,
-            88,
-            89,
-            92,
-            93,
-            96,
-            99,
-        }:
-            return token == ""
-        elif mlp_0_0_output in {3, 39, 42, 81, 30}:
-            return token == "1"
-        elif mlp_0_0_output in {35, 4, 75, 18, 22}:
-            return token == "4"
-        elif mlp_0_0_output in {
-            10,
-            11,
-            15,
-            17,
-            25,
-            28,
-            41,
-            46,
-            48,
-            51,
-            52,
-            53,
-            60,
-            61,
-            66,
-            69,
-            70,
-            72,
-            74,
-            77,
-            78,
-            84,
-            90,
-            97,
-        }:
-            return token == "5"
-        elif mlp_0_0_output in {94, 68, 38, 95}:
-            return token == "0"
-        elif mlp_0_0_output in {40, 45}:
-            return token == "<s>"
-
-    num_attn_1_3_pattern = select(tokens, mlp_0_0_outputs, num_predicate_1_3)
-    num_attn_1_3_outputs = aggregate_sum(num_attn_1_3_pattern, ones)
-    num_attn_1_3_output_scores = classifier_weights.loc[
-        [("num_attn_1_3_outputs", "_") for v in num_attn_1_3_outputs]
-    ].mul(num_attn_1_3_outputs, axis=0)
-
-    # mlp_1_0 #####################################################
-    def mlp_1_0(attn_1_1_output, attn_0_3_output):
-        key = (attn_1_1_output, attn_0_3_output)
-        return 80
-
-    mlp_1_0_outputs = [
-        mlp_1_0(k0, k1) for k0, k1 in zip(attn_1_1_outputs, attn_0_3_outputs)
-    ]
-    mlp_1_0_output_scores = classifier_weights.loc[
-        [("mlp_1_0_outputs", str(v)) for v in mlp_1_0_outputs]
-    ]
-
-    # mlp_1_1 #####################################################
-    def mlp_1_1(attn_0_2_output, mlp_0_1_output):
-        key = (attn_0_2_output, mlp_0_1_output)
-        if key in {
-            ("1", 1),
-            ("1", 4),
-            ("1", 7),
-            ("1", 8),
-            ("1", 12),
-            ("1", 29),
-            ("1", 53),
-            ("1", 60),
-            ("1", 81),
-            ("2", 1),
-            ("2", 4),
-            ("2", 5),
-            ("2", 7),
-            ("2", 8),
-            ("2", 53),
-            ("2", 60),
-            ("3", 1),
-            ("3", 4),
-            ("3", 5),
-            ("3", 7),
-            ("3", 8),
-            ("3", 53),
-            ("3", 60),
-            ("4", 13),
-            ("4", 20),
-            ("4", 32),
-            ("5", 1),
-            ("5", 4),
-            ("5", 5),
-            ("5", 7),
-            ("5", 8),
-            ("5", 12),
-            ("5", 29),
-            ("5", 53),
-            ("5", 60),
-            ("5", 81),
-            ("<s>", 1),
-            ("<s>", 4),
-            ("<s>", 7),
-            ("<s>", 8),
-            ("<s>", 12),
-            ("<s>", 29),
-            ("<s>", 53),
-            ("<s>", 60),
-            ("<s>", 76),
-            ("<s>", 81),
-            ("<s>", 92),
-        }:
-            return 12
+            return 55
         elif key in {
-            ("0", 13),
-            ("0", 20),
-            ("0", 31),
-            ("0", 32),
-            ("0", 87),
+            ("0", 0),
+            ("0", 7),
             ("1", 0),
-            ("1", 2),
-            ("1", 3),
-            ("1", 6),
-            ("1", 9),
-            ("1", 10),
-            ("1", 11),
-            ("1", 13),
-            ("1", 14),
-            ("1", 15),
-            ("1", 16),
-            ("1", 17),
-            ("1", 18),
-            ("1", 19),
-            ("1", 20),
-            ("1", 21),
-            ("1", 22),
-            ("1", 23),
-            ("1", 24),
-            ("1", 25),
-            ("1", 26),
-            ("1", 27),
-            ("1", 28),
-            ("1", 30),
-            ("1", 31),
-            ("1", 32),
-            ("1", 33),
-            ("1", 34),
-            ("1", 35),
-            ("1", 36),
-            ("1", 37),
-            ("1", 38),
-            ("1", 39),
-            ("1", 40),
-            ("1", 41),
-            ("1", 42),
-            ("1", 43),
-            ("1", 44),
-            ("1", 46),
-            ("1", 47),
-            ("1", 48),
-            ("1", 49),
-            ("1", 50),
-            ("1", 51),
-            ("1", 52),
-            ("1", 54),
-            ("1", 55),
-            ("1", 56),
-            ("1", 57),
-            ("1", 58),
-            ("1", 59),
-            ("1", 61),
-            ("1", 62),
-            ("1", 63),
-            ("1", 64),
-            ("1", 65),
-            ("1", 66),
-            ("1", 67),
-            ("1", 68),
-            ("1", 69),
-            ("1", 70),
-            ("1", 71),
-            ("1", 72),
-            ("1", 73),
-            ("1", 74),
-            ("1", 75),
-            ("1", 76),
-            ("1", 77),
-            ("1", 78),
-            ("1", 79),
-            ("1", 80),
-            ("1", 82),
-            ("1", 83),
-            ("1", 84),
-            ("1", 85),
-            ("1", 86),
-            ("1", 87),
-            ("1", 88),
-            ("1", 89),
-            ("1", 90),
-            ("1", 91),
-            ("1", 92),
-            ("1", 93),
-            ("1", 94),
-            ("1", 95),
-            ("1", 96),
-            ("1", 97),
-            ("1", 98),
-            ("1", 99),
+            ("1", 7),
             ("2", 0),
-            ("2", 2),
-            ("2", 3),
-            ("2", 6),
-            ("2", 9),
-            ("2", 10),
-            ("2", 11),
-            ("2", 12),
-            ("2", 13),
-            ("2", 14),
-            ("2", 15),
-            ("2", 16),
-            ("2", 17),
-            ("2", 18),
-            ("2", 19),
-            ("2", 20),
-            ("2", 21),
-            ("2", 22),
-            ("2", 23),
-            ("2", 24),
-            ("2", 25),
-            ("2", 26),
-            ("2", 27),
-            ("2", 28),
-            ("2", 29),
-            ("2", 30),
-            ("2", 31),
-            ("2", 32),
-            ("2", 33),
-            ("2", 34),
-            ("2", 35),
-            ("2", 36),
-            ("2", 37),
-            ("2", 38),
-            ("2", 39),
-            ("2", 40),
-            ("2", 41),
-            ("2", 42),
-            ("2", 43),
-            ("2", 44),
-            ("2", 46),
-            ("2", 47),
-            ("2", 48),
-            ("2", 49),
-            ("2", 50),
-            ("2", 51),
-            ("2", 52),
-            ("2", 54),
-            ("2", 55),
-            ("2", 56),
-            ("2", 57),
-            ("2", 58),
-            ("2", 59),
-            ("2", 61),
-            ("2", 62),
-            ("2", 63),
-            ("2", 64),
-            ("2", 65),
-            ("2", 66),
-            ("2", 67),
-            ("2", 68),
-            ("2", 69),
-            ("2", 70),
-            ("2", 71),
-            ("2", 72),
-            ("2", 73),
-            ("2", 74),
-            ("2", 75),
-            ("2", 76),
-            ("2", 77),
-            ("2", 78),
-            ("2", 79),
-            ("2", 80),
-            ("2", 81),
-            ("2", 82),
-            ("2", 83),
-            ("2", 84),
-            ("2", 85),
-            ("2", 86),
-            ("2", 87),
-            ("2", 88),
-            ("2", 89),
-            ("2", 90),
-            ("2", 91),
-            ("2", 92),
-            ("2", 93),
-            ("2", 94),
-            ("2", 95),
-            ("2", 96),
-            ("2", 97),
-            ("2", 98),
-            ("2", 99),
-            ("3", 0),
-            ("3", 2),
-            ("3", 3),
-            ("3", 6),
-            ("3", 9),
-            ("3", 10),
-            ("3", 11),
-            ("3", 12),
-            ("3", 13),
-            ("3", 14),
-            ("3", 15),
-            ("3", 16),
-            ("3", 17),
-            ("3", 18),
-            ("3", 19),
-            ("3", 20),
-            ("3", 21),
-            ("3", 22),
-            ("3", 23),
-            ("3", 24),
-            ("3", 25),
-            ("3", 26),
-            ("3", 27),
-            ("3", 28),
-            ("3", 29),
-            ("3", 30),
-            ("3", 31),
-            ("3", 32),
-            ("3", 33),
-            ("3", 34),
-            ("3", 35),
-            ("3", 36),
-            ("3", 37),
-            ("3", 38),
-            ("3", 39),
-            ("3", 40),
-            ("3", 41),
-            ("3", 42),
-            ("3", 43),
-            ("3", 44),
-            ("3", 46),
-            ("3", 47),
-            ("3", 48),
-            ("3", 49),
-            ("3", 50),
-            ("3", 51),
-            ("3", 52),
-            ("3", 54),
-            ("3", 55),
-            ("3", 56),
-            ("3", 57),
-            ("3", 58),
-            ("3", 59),
-            ("3", 61),
-            ("3", 62),
-            ("3", 63),
-            ("3", 64),
-            ("3", 65),
-            ("3", 66),
-            ("3", 67),
-            ("3", 68),
-            ("3", 69),
-            ("3", 70),
-            ("3", 71),
-            ("3", 72),
-            ("3", 73),
-            ("3", 74),
-            ("3", 75),
-            ("3", 76),
-            ("3", 77),
-            ("3", 78),
-            ("3", 79),
-            ("3", 80),
-            ("3", 81),
-            ("3", 82),
-            ("3", 83),
-            ("3", 84),
-            ("3", 85),
-            ("3", 86),
-            ("3", 87),
-            ("3", 88),
-            ("3", 89),
-            ("3", 90),
-            ("3", 91),
-            ("3", 92),
-            ("3", 93),
-            ("3", 94),
-            ("3", 95),
-            ("3", 96),
-            ("3", 97),
-            ("3", 98),
-            ("3", 99),
-            ("5", 0),
-            ("5", 2),
-            ("5", 3),
-            ("5", 6),
-            ("5", 9),
-            ("5", 10),
-            ("5", 11),
-            ("5", 13),
-            ("5", 14),
-            ("5", 15),
-            ("5", 16),
-            ("5", 17),
-            ("5", 18),
-            ("5", 19),
-            ("5", 20),
-            ("5", 21),
-            ("5", 22),
-            ("5", 23),
-            ("5", 24),
-            ("5", 25),
-            ("5", 26),
-            ("5", 27),
-            ("5", 28),
-            ("5", 30),
-            ("5", 31),
-            ("5", 32),
-            ("5", 33),
-            ("5", 34),
-            ("5", 35),
-            ("5", 36),
-            ("5", 37),
-            ("5", 38),
-            ("5", 39),
-            ("5", 40),
-            ("5", 41),
-            ("5", 42),
-            ("5", 43),
-            ("5", 44),
-            ("5", 46),
-            ("5", 47),
-            ("5", 48),
-            ("5", 49),
-            ("5", 50),
-            ("5", 51),
-            ("5", 52),
-            ("5", 54),
-            ("5", 55),
-            ("5", 56),
-            ("5", 57),
-            ("5", 58),
-            ("5", 59),
-            ("5", 61),
-            ("5", 62),
-            ("5", 63),
-            ("5", 64),
-            ("5", 65),
-            ("5", 66),
-            ("5", 67),
-            ("5", 68),
-            ("5", 69),
-            ("5", 70),
-            ("5", 71),
-            ("5", 72),
-            ("5", 73),
-            ("5", 74),
-            ("5", 75),
-            ("5", 76),
-            ("5", 77),
-            ("5", 78),
-            ("5", 79),
-            ("5", 80),
-            ("5", 82),
-            ("5", 83),
-            ("5", 84),
-            ("5", 85),
-            ("5", 86),
-            ("5", 87),
-            ("5", 88),
-            ("5", 89),
-            ("5", 90),
-            ("5", 91),
-            ("5", 92),
-            ("5", 93),
-            ("5", 94),
-            ("5", 95),
-            ("5", 96),
-            ("5", 97),
-            ("5", 98),
-            ("5", 99),
+            ("2", 7),
+            ("4", 0),
+            ("4", 7),
             ("<s>", 0),
             ("<s>", 2),
-            ("<s>", 3),
-            ("<s>", 6),
+            ("<s>", 8),
             ("<s>", 9),
             ("<s>", 10),
             ("<s>", 11),
+            ("<s>", 12),
             ("<s>", 13),
             ("<s>", 14),
             ("<s>", 15),
@@ -3374,6 +1570,7 @@ def run(tokens):
             ("<s>", 26),
             ("<s>", 27),
             ("<s>", 28),
+            ("<s>", 29),
             ("<s>", 30),
             ("<s>", 31),
             ("<s>", 32),
@@ -3389,6 +1586,7 @@ def run(tokens):
             ("<s>", 42),
             ("<s>", 43),
             ("<s>", 44),
+            ("<s>", 45),
             ("<s>", 46),
             ("<s>", 47),
             ("<s>", 48),
@@ -3396,12 +1594,14 @@ def run(tokens):
             ("<s>", 50),
             ("<s>", 51),
             ("<s>", 52),
+            ("<s>", 53),
             ("<s>", 54),
             ("<s>", 55),
             ("<s>", 56),
             ("<s>", 57),
             ("<s>", 58),
             ("<s>", 59),
+            ("<s>", 60),
             ("<s>", 61),
             ("<s>", 62),
             ("<s>", 63),
@@ -3417,10 +1617,12 @@ def run(tokens):
             ("<s>", 73),
             ("<s>", 74),
             ("<s>", 75),
+            ("<s>", 76),
             ("<s>", 77),
             ("<s>", 78),
             ("<s>", 79),
             ("<s>", 80),
+            ("<s>", 81),
             ("<s>", 82),
             ("<s>", 83),
             ("<s>", 84),
@@ -3431,6 +1633,7 @@ def run(tokens):
             ("<s>", 89),
             ("<s>", 90),
             ("<s>", 91),
+            ("<s>", 92),
             ("<s>", 93),
             ("<s>", 94),
             ("<s>", 95),
@@ -3439,388 +1642,247 @@ def run(tokens):
             ("<s>", 98),
             ("<s>", 99),
         }:
-            return 95
-        elif key in {("1", 5), ("4", 31), ("4", 68), ("4", 87), ("<s>", 5)}:
-            return 44
-        elif key in {
-            ("0", 1),
-            ("0", 4),
-            ("0", 5),
-            ("0", 7),
-            ("0", 8),
-            ("0", 45),
-            ("0", 53),
-            ("0", 60),
-        }:
-            return 34
-        elif key in {
-            ("0", 0),
-            ("0", 2),
-            ("0", 3),
-            ("0", 6),
-            ("0", 9),
-            ("0", 10),
-            ("0", 11),
-            ("0", 12),
-            ("0", 14),
-            ("0", 15),
-            ("0", 16),
-            ("0", 17),
-            ("0", 18),
-            ("0", 19),
-            ("0", 21),
-            ("0", 22),
-            ("0", 23),
-            ("0", 24),
-            ("0", 25),
-            ("0", 26),
-            ("0", 27),
-            ("0", 28),
-            ("0", 29),
-            ("0", 30),
-            ("0", 33),
-            ("0", 34),
-            ("0", 35),
-            ("0", 36),
-            ("0", 37),
-            ("0", 38),
-            ("0", 39),
-            ("0", 40),
-            ("0", 41),
-            ("0", 42),
-            ("0", 43),
-            ("0", 44),
-            ("0", 46),
-            ("0", 47),
-            ("0", 48),
-            ("0", 49),
-            ("0", 50),
-            ("0", 51),
-            ("0", 52),
-            ("0", 54),
-            ("0", 55),
-            ("0", 56),
-            ("0", 57),
-            ("0", 58),
-            ("0", 59),
-            ("0", 61),
-            ("0", 62),
-            ("0", 63),
-            ("0", 64),
-            ("0", 65),
-            ("0", 66),
-            ("0", 67),
-            ("0", 68),
-            ("0", 69),
-            ("0", 70),
-            ("0", 71),
-            ("0", 72),
-            ("0", 73),
-            ("0", 74),
-            ("0", 75),
-            ("0", 76),
-            ("0", 77),
-            ("0", 78),
-            ("0", 79),
-            ("0", 80),
-            ("0", 81),
-            ("0", 82),
-            ("0", 83),
-            ("0", 84),
-            ("0", 85),
-            ("0", 86),
-            ("0", 88),
-            ("0", 89),
-            ("0", 90),
-            ("0", 91),
-            ("0", 92),
-            ("0", 93),
-            ("0", 94),
-            ("0", 95),
-            ("0", 96),
-            ("0", 97),
-            ("0", 98),
-            ("0", 99),
-        }:
-            return 76
-        elif key in {
-            ("4", 0),
-            ("4", 1),
-            ("4", 2),
-            ("4", 3),
-            ("4", 4),
-            ("4", 5),
-            ("4", 6),
-            ("4", 7),
-            ("4", 8),
-            ("4", 9),
-            ("4", 10),
-            ("4", 11),
-            ("4", 12),
-            ("4", 14),
-            ("4", 15),
-            ("4", 16),
-            ("4", 17),
-            ("4", 18),
-            ("4", 19),
-            ("4", 21),
-            ("4", 22),
-            ("4", 23),
-            ("4", 24),
-            ("4", 25),
-            ("4", 26),
-            ("4", 27),
-            ("4", 28),
-            ("4", 29),
-            ("4", 30),
-            ("4", 33),
-            ("4", 34),
-            ("4", 35),
-            ("4", 36),
-            ("4", 37),
-            ("4", 38),
-            ("4", 39),
-            ("4", 40),
-            ("4", 41),
-            ("4", 42),
-            ("4", 43),
-            ("4", 44),
-            ("4", 46),
-            ("4", 47),
-            ("4", 48),
-            ("4", 49),
-            ("4", 50),
-            ("4", 51),
-            ("4", 52),
-            ("4", 53),
-            ("4", 54),
-            ("4", 55),
-            ("4", 56),
-            ("4", 57),
-            ("4", 58),
-            ("4", 59),
-            ("4", 60),
-            ("4", 61),
-            ("4", 62),
-            ("4", 63),
-            ("4", 64),
-            ("4", 65),
-            ("4", 66),
-            ("4", 67),
-            ("4", 69),
-            ("4", 70),
-            ("4", 71),
-            ("4", 72),
-            ("4", 73),
-            ("4", 74),
-            ("4", 75),
-            ("4", 76),
-            ("4", 77),
-            ("4", 78),
-            ("4", 79),
-            ("4", 80),
-            ("4", 81),
-            ("4", 82),
-            ("4", 83),
-            ("4", 84),
-            ("4", 85),
-            ("4", 86),
-            ("4", 88),
-            ("4", 89),
-            ("4", 90),
-            ("4", 91),
-            ("4", 92),
-            ("4", 93),
-            ("4", 94),
-            ("4", 95),
-            ("4", 96),
-            ("4", 97),
-            ("4", 98),
-            ("4", 99),
-        }:
-            return 0
-        elif key in {("4", 45)}:
-            return 85
-        return 11
+            return 33
+        elif key in {("0", 6), ("1", 6), ("2", 6), ("4", 6), ("5", 6), ("<s>", 6)}:
+            return 89
+        elif key in {("<s>", 4), ("<s>", 7)}:
+            return 9
+        elif key in {("3", 6), ("5", 5)}:
+            return 54
+        elif key in {("<s>", 5)}:
+            return 36
+        return 81
 
-    mlp_1_1_outputs = [
-        mlp_1_1(k0, k1) for k0, k1 in zip(attn_0_2_outputs, mlp_0_1_outputs)
-    ]
-    mlp_1_1_output_scores = classifier_weights.loc[
-        [("mlp_1_1_outputs", str(v)) for v in mlp_1_1_outputs]
+    mlp_0_1_outputs = [mlp_0_1(k0, k1) for k0, k1 in zip(attn_0_3_outputs, positions)]
+    mlp_0_1_output_scores = classifier_weights.loc[
+        [("mlp_0_1_outputs", str(v)) for v in mlp_0_1_outputs]
     ]
 
-    # num_mlp_1_0 #################################################
-    def num_mlp_1_0(num_attn_0_3_output, num_attn_0_2_output):
-        key = (num_attn_0_3_output, num_attn_0_2_output)
-        return 59
-
-    num_mlp_1_0_outputs = [
-        num_mlp_1_0(k0, k1)
-        for k0, k1 in zip(num_attn_0_3_outputs, num_attn_0_2_outputs)
-    ]
-    num_mlp_1_0_output_scores = classifier_weights.loc[
-        [("num_mlp_1_0_outputs", str(v)) for v in num_mlp_1_0_outputs]
-    ]
-
-    # num_mlp_1_1 #################################################
-    def num_mlp_1_1(num_attn_0_0_output, num_attn_0_1_output):
+    # num_mlp_0_0 #################################################
+    def num_mlp_0_0(num_attn_0_0_output, num_attn_0_1_output):
         key = (num_attn_0_0_output, num_attn_0_1_output)
-        return 67
+        return 78
 
-    num_mlp_1_1_outputs = [
-        num_mlp_1_1(k0, k1)
+    num_mlp_0_0_outputs = [
+        num_mlp_0_0(k0, k1)
         for k0, k1 in zip(num_attn_0_0_outputs, num_attn_0_1_outputs)
     ]
-    num_mlp_1_1_output_scores = classifier_weights.loc[
-        [("num_mlp_1_1_outputs", str(v)) for v in num_mlp_1_1_outputs]
+    num_mlp_0_0_output_scores = classifier_weights.loc[
+        [("num_mlp_0_0_outputs", str(v)) for v in num_mlp_0_0_outputs]
     ]
 
-    # attn_2_0 ####################################################
-    def predicate_2_0(mlp_0_0_output, position):
-        if mlp_0_0_output in {0, 94, 86, 97}:
-            return position == 89
-        elif mlp_0_0_output in {1}:
-            return position == 4
-        elif mlp_0_0_output in {2}:
-            return position == 0
-        elif mlp_0_0_output in {98, 3, 37, 20, 29}:
-            return position == 6
-        elif mlp_0_0_output in {4}:
-            return position == 14
-        elif mlp_0_0_output in {5, 55}:
-            return position == 51
-        elif mlp_0_0_output in {18, 6}:
-            return position == 20
-        elif mlp_0_0_output in {7, 72, 12, 77, 53, 63}:
-            return position == 37
-        elif mlp_0_0_output in {8, 41, 66}:
-            return position == 32
-        elif mlp_0_0_output in {9, 74, 19}:
-            return position == 19
-        elif mlp_0_0_output in {10, 59}:
-            return position == 79
-        elif mlp_0_0_output in {11}:
-            return position == 86
-        elif mlp_0_0_output in {48, 13}:
-            return position == 24
-        elif mlp_0_0_output in {14}:
-            return position == 76
-        elif mlp_0_0_output in {78, 70, 15}:
-            return position == 1
-        elif mlp_0_0_output in {16, 58, 82}:
-            return position == 74
-        elif mlp_0_0_output in {17}:
-            return position == 94
-        elif mlp_0_0_output in {91, 21}:
-            return position == 22
-        elif mlp_0_0_output in {22}:
-            return position == 35
-        elif mlp_0_0_output in {23}:
-            return position == 31
-        elif mlp_0_0_output in {24, 43}:
-            return position == 49
-        elif mlp_0_0_output in {25, 83, 35}:
-            return position == 9
-        elif mlp_0_0_output in {81, 26}:
-            return position == 88
-        elif mlp_0_0_output in {27, 47}:
-            return position == 42
-        elif mlp_0_0_output in {62, 28, 46}:
-            return position == 68
-        elif mlp_0_0_output in {49, 30}:
-            return position == 95
-        elif mlp_0_0_output in {31}:
-            return position == 58
-        elif mlp_0_0_output in {32, 52}:
-            return position == 27
-        elif mlp_0_0_output in {33}:
-            return position == 12
-        elif mlp_0_0_output in {34}:
-            return position == 72
-        elif mlp_0_0_output in {65, 36}:
-            return position == 56
-        elif mlp_0_0_output in {54, 38}:
-            return position == 91
-        elif mlp_0_0_output in {95, 39}:
-            return position == 82
-        elif mlp_0_0_output in {40, 45}:
-            return position == 2
-        elif mlp_0_0_output in {42}:
-            return position == 17
-        elif mlp_0_0_output in {92, 44, 69, 87}:
-            return position == 7
-        elif mlp_0_0_output in {89, 50, 51, 90}:
-            return position == 90
-        elif mlp_0_0_output in {56}:
-            return position == 25
-        elif mlp_0_0_output in {57}:
-            return position == 84
-        elif mlp_0_0_output in {60}:
-            return position == 44
-        elif mlp_0_0_output in {61}:
-            return position == 62
-        elif mlp_0_0_output in {64}:
-            return position == 73
-        elif mlp_0_0_output in {88, 67}:
-            return position == 8
-        elif mlp_0_0_output in {68, 76}:
-            return position == 26
-        elif mlp_0_0_output in {71}:
-            return position == 66
-        elif mlp_0_0_output in {80, 73}:
-            return position == 34
-        elif mlp_0_0_output in {75}:
-            return position == 13
-        elif mlp_0_0_output in {79}:
-            return position == 83
-        elif mlp_0_0_output in {84}:
-            return position == 29
-        elif mlp_0_0_output in {85}:
-            return position == 30
-        elif mlp_0_0_output in {93}:
-            return position == 18
-        elif mlp_0_0_output in {96}:
-            return position == 67
-        elif mlp_0_0_output in {99}:
-            return position == 38
+    # num_mlp_0_1 #################################################
+    def num_mlp_0_1(num_attn_0_0_output, num_attn_0_2_output):
+        key = (num_attn_0_0_output, num_attn_0_2_output)
+        return 14
 
-    attn_2_0_pattern = select_closest(positions, mlp_0_0_outputs, predicate_2_0)
-    attn_2_0_outputs = aggregate(attn_2_0_pattern, mlp_0_0_outputs)
-    attn_2_0_output_scores = classifier_weights.loc[
-        [("attn_2_0_outputs", str(v)) for v in attn_2_0_outputs]
+    num_mlp_0_1_outputs = [
+        num_mlp_0_1(k0, k1)
+        for k0, k1 in zip(num_attn_0_0_outputs, num_attn_0_2_outputs)
+    ]
+    num_mlp_0_1_output_scores = classifier_weights.loc[
+        [("num_mlp_0_1_outputs", str(v)) for v in num_mlp_0_1_outputs]
     ]
 
-    # attn_2_1 ####################################################
-    def predicate_2_1(q_position, k_position):
-        if q_position in {
-            0,
+    # attn_1_0 ####################################################
+    def predicate_1_0(q_position, k_position):
+        if q_position in {0}:
+            return k_position == 3
+        elif q_position in {1, 2}:
+            return k_position == 1
+        elif q_position in {3}:
+            return k_position == 0
+        elif q_position in {4, 7}:
+            return k_position == 5
+        elif q_position in {5, 6}:
+            return k_position == 7
+        elif q_position in {
+            66,
+            98,
+            69,
+            39,
+            8,
+            91,
+            76,
+            46,
+            47,
+            16,
+            48,
+            81,
+            19,
+            84,
+            55,
+            23,
+            59,
+            60,
+        }:
+            return k_position == 69
+        elif q_position in {9, 10}:
+            return k_position == 89
+        elif q_position in {11, 61}:
+            return k_position == 88
+        elif q_position in {12}:
+            return k_position == 56
+        elif q_position in {13}:
+            return k_position == 87
+        elif q_position in {14}:
+            return k_position == 64
+        elif q_position in {32, 15}:
+            return k_position == 95
+        elif q_position in {17}:
+            return k_position == 47
+        elif q_position in {18, 87}:
+            return k_position == 77
+        elif q_position in {56, 57, 20}:
+            return k_position == 71
+        elif q_position in {21}:
+            return k_position == 15
+        elif q_position in {35, 22}:
+            return k_position == 54
+        elif q_position in {24, 99, 79}:
+            return k_position == 34
+        elif q_position in {25}:
+            return k_position == 99
+        elif q_position in {26}:
+            return k_position == 48
+        elif q_position in {27, 85}:
+            return k_position == 33
+        elif q_position in {80, 28}:
+            return k_position == 86
+        elif q_position in {29, 63}:
+            return k_position == 18
+        elif q_position in {30}:
+            return k_position == 11
+        elif q_position in {33, 31}:
+            return k_position == 21
+        elif q_position in {34, 37, 38}:
+            return k_position == 65
+        elif q_position in {36}:
+            return k_position == 78
+        elif q_position in {40, 95}:
+            return k_position == 26
+        elif q_position in {41}:
+            return k_position == 91
+        elif q_position in {42}:
+            return k_position == 83
+        elif q_position in {43}:
+            return k_position == 68
+        elif q_position in {72, 44}:
+            return k_position == 59
+        elif q_position in {45}:
+            return k_position == 96
+        elif q_position in {49}:
+            return k_position == 61
+        elif q_position in {50}:
+            return k_position == 9
+        elif q_position in {51}:
+            return k_position == 25
+        elif q_position in {52}:
+            return k_position == 36
+        elif q_position in {53}:
+            return k_position == 40
+        elif q_position in {54}:
+            return k_position == 52
+        elif q_position in {58}:
+            return k_position == 31
+        elif q_position in {62}:
+            return k_position == 72
+        elif q_position in {64}:
+            return k_position == 80
+        elif q_position in {65, 93}:
+            return k_position == 17
+        elif q_position in {67, 86}:
+            return k_position == 60
+        elif q_position in {68}:
+            return k_position == 27
+        elif q_position in {70}:
+            return k_position == 46
+        elif q_position in {71}:
+            return k_position == 58
+        elif q_position in {73}:
+            return k_position == 92
+        elif q_position in {74}:
+            return k_position == 30
+        elif q_position in {75}:
+            return k_position == 6
+        elif q_position in {77}:
+            return k_position == 39
+        elif q_position in {78}:
+            return k_position == 8
+        elif q_position in {82}:
+            return k_position == 29
+        elif q_position in {88, 83}:
+            return k_position == 45
+        elif q_position in {89}:
+            return k_position == 63
+        elif q_position in {90}:
+            return k_position == 81
+        elif q_position in {92}:
+            return k_position == 24
+        elif q_position in {94}:
+            return k_position == 51
+        elif q_position in {96}:
+            return k_position == 20
+        elif q_position in {97}:
+            return k_position == 82
+
+    attn_1_0_pattern = select_closest(positions, positions, predicate_1_0)
+    attn_1_0_outputs = aggregate(attn_1_0_pattern, tokens)
+    attn_1_0_output_scores = classifier_weights.loc[
+        [("attn_1_0_outputs", str(v)) for v in attn_1_0_outputs]
+    ]
+
+    # attn_1_1 ####################################################
+    def predicate_1_1(token, mlp_0_0_output):
+        if token in {"0"}:
+            return mlp_0_0_output == 16
+        elif token in {"1"}:
+            return mlp_0_0_output == 0
+        elif token in {"2"}:
+            return mlp_0_0_output == 68
+        elif token in {"5", "4", "3"}:
+            return mlp_0_0_output == 75
+        elif token in {"<s>"}:
+            return mlp_0_0_output == 89
+
+    attn_1_1_pattern = select_closest(mlp_0_0_outputs, tokens, predicate_1_1)
+    attn_1_1_outputs = aggregate(attn_1_1_pattern, mlp_0_0_outputs)
+    attn_1_1_output_scores = classifier_weights.loc[
+        [("attn_1_1_outputs", str(v)) for v in attn_1_1_outputs]
+    ]
+
+    # attn_1_2 ####################################################
+    def predicate_1_2(q_position, k_position):
+        if q_position in {0, 2, 7}:
+            return k_position == 1
+        elif q_position in {1, 98}:
+            return k_position == 41
+        elif q_position in {3, 53}:
+            return k_position == 23
+        elif q_position in {19, 4, 5, 14}:
+            return k_position == 3
+        elif q_position in {6}:
+            return k_position == 33
+        elif q_position in {
             8,
             9,
             10,
             11,
-            12,
-            13,
-            14,
             15,
             16,
             17,
             18,
-            19,
-            20,
             21,
             22,
             23,
             24,
             25,
             26,
-            27,
             28,
             29,
             30,
             31,
             32,
-            33,
             34,
             35,
             36,
@@ -3831,16 +1893,12 @@ def run(tokens):
             41,
             42,
             43,
-            44,
+            45,
             46,
-            47,
             48,
             49,
             50,
             51,
-            52,
-            53,
-            54,
             55,
             56,
             57,
@@ -3853,30 +1911,348 @@ def run(tokens):
             64,
             65,
             66,
-            67,
             68,
-            69,
             70,
             71,
-            72,
-            73,
             74,
             75,
             76,
+            77,
+            79,
+            80,
+            81,
+            83,
+            84,
+            87,
+            90,
+            91,
+            92,
+            94,
+            95,
+            96,
+        }:
+            return k_position == 69
+        elif q_position in {12, 47}:
+            return k_position == 54
+        elif q_position in {13}:
+            return k_position == 67
+        elif q_position in {33, 97, 99, 44, 78, 20}:
+            return k_position == 6
+        elif q_position in {27}:
+            return k_position == 32
+        elif q_position in {52}:
+            return k_position == 75
+        elif q_position in {54}:
+            return k_position == 77
+        elif q_position in {67}:
+            return k_position == 71
+        elif q_position in {89, 69}:
+            return k_position == 7
+        elif q_position in {72}:
+            return k_position == 40
+        elif q_position in {73}:
+            return k_position == 57
+        elif q_position in {82}:
+            return k_position == 95
+        elif q_position in {85}:
+            return k_position == 4
+        elif q_position in {86}:
+            return k_position == 51
+        elif q_position in {88}:
+            return k_position == 66
+        elif q_position in {93}:
+            return k_position == 94
+
+    attn_1_2_pattern = select_closest(positions, positions, predicate_1_2)
+    attn_1_2_outputs = aggregate(attn_1_2_pattern, mlp_0_0_outputs)
+    attn_1_2_output_scores = classifier_weights.loc[
+        [("attn_1_2_outputs", str(v)) for v in attn_1_2_outputs]
+    ]
+
+    # attn_1_3 ####################################################
+    def predicate_1_3(q_position, k_position):
+        if q_position in {0, 42, 88, 7}:
+            return k_position == 1
+        elif q_position in {64, 1, 55}:
+            return k_position == 4
+        elif q_position in {2, 37}:
+            return k_position == 3
+        elif q_position in {3}:
+            return k_position == 7
+        elif q_position in {33, 4, 5, 6, 89}:
+            return k_position == 0
+        elif q_position in {8}:
+            return k_position == 55
+        elif q_position in {69, 70, 9, 92, 54, 22, 28, 93, 30}:
+            return k_position == 89
+        elif q_position in {10}:
+            return k_position == 13
+        elif q_position in {
+            11,
+            12,
+            13,
+            15,
+            16,
+            18,
+            19,
+            21,
+            25,
+            26,
+            29,
+            32,
+            34,
+            35,
+            38,
+            39,
+            40,
+            43,
+            46,
+            48,
+            49,
+            50,
+            51,
+            58,
+            62,
+            63,
+            65,
+            66,
+            71,
+            72,
+            75,
             77,
             78,
             79,
             80,
             81,
             82,
-            83,
             84,
-            85,
+            90,
+            94,
+            97,
+            99,
+        }:
+            return k_position == 69
+        elif q_position in {14}:
+            return k_position == 16
+        elif q_position in {96, 17, 59}:
+            return k_position == 14
+        elif q_position in {20}:
+            return k_position == 71
+        elif q_position in {60, 23}:
+            return k_position == 28
+        elif q_position in {24}:
+            return k_position == 77
+        elif q_position in {57, 27, 44}:
+            return k_position == 54
+        elif q_position in {61, 95, 31}:
+            return k_position == 45
+        elif q_position in {36}:
+            return k_position == 84
+        elif q_position in {41, 98}:
+            return k_position == 37
+        elif q_position in {45}:
+            return k_position == 20
+        elif q_position in {68, 47}:
+            return k_position == 91
+        elif q_position in {52}:
+            return k_position == 70
+        elif q_position in {53}:
+            return k_position == 83
+        elif q_position in {56}:
+            return k_position == 44
+        elif q_position in {67}:
+            return k_position == 43
+        elif q_position in {73}:
+            return k_position == 39
+        elif q_position in {74}:
+            return k_position == 22
+        elif q_position in {76}:
+            return k_position == 90
+        elif q_position in {83}:
+            return k_position == 36
+        elif q_position in {85}:
+            return k_position == 47
+        elif q_position in {86}:
+            return k_position == 46
+        elif q_position in {87}:
+            return k_position == 98
+        elif q_position in {91}:
+            return k_position == 56
+
+    attn_1_3_pattern = select_closest(positions, positions, predicate_1_3)
+    attn_1_3_outputs = aggregate(attn_1_3_pattern, mlp_0_0_outputs)
+    attn_1_3_output_scores = classifier_weights.loc[
+        [("attn_1_3_outputs", str(v)) for v in attn_1_3_outputs]
+    ]
+
+    # num_attn_1_0 ####################################################
+    def num_predicate_1_0(position, token):
+        if position in {
+            0,
+            1,
+            10,
+            11,
+            17,
+            18,
+            20,
+            22,
+            25,
+            26,
+            27,
+            30,
+            31,
+            32,
+            34,
+            35,
+            37,
+            58,
+            59,
+            60,
+            62,
+            63,
+            66,
+            68,
+            70,
+            77,
+            79,
+            80,
+            82,
+            83,
             86,
             87,
-            88,
-            89,
+            91,
+            94,
+            95,
+            98,
+            99,
+        }:
+            return token == "5"
+        elif position in {
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            12,
+            13,
+            15,
+            19,
+            21,
+            28,
+            29,
+            36,
+            40,
+            41,
+            43,
+            44,
+            47,
+            48,
+            49,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            61,
+            64,
+            65,
+            67,
+            71,
+            72,
+            76,
+            84,
+            85,
             90,
+            92,
+            93,
+            97,
+        }:
+            return token == ""
+        elif position in {6}:
+            return token == "<s>"
+        elif position in {51, 7}:
+            return token == "2"
+        elif position in {42, 14}:
+            return token == "1"
+        elif position in {16, 24, 78, 33}:
+            return token == "0"
+        elif position in {96, 69, 38, 39, 45, 46, 81, 50, 23, 89}:
+            return token == "4"
+        elif position in {88, 73, 74, 75}:
+            return token == "3"
+
+    num_attn_1_0_pattern = select(tokens, positions, num_predicate_1_0)
+    num_attn_1_0_outputs = aggregate_sum(num_attn_1_0_pattern, ones)
+    num_attn_1_0_output_scores = classifier_weights.loc[
+        [("num_attn_1_0_outputs", "_") for v in num_attn_1_0_outputs]
+    ].mul(num_attn_1_0_outputs, axis=0)
+
+    # num_attn_1_1 ####################################################
+    def num_predicate_1_1(attn_0_0_output, token):
+        if attn_0_0_output in {"2", "4", "0", "5", "3"}:
+            return token == "1"
+        elif attn_0_0_output in {"1"}:
+            return token == "5"
+        elif attn_0_0_output in {"<s>"}:
+            return token == ""
+
+    num_attn_1_1_pattern = select(tokens, attn_0_0_outputs, num_predicate_1_1)
+    num_attn_1_1_outputs = aggregate_sum(num_attn_1_1_pattern, ones)
+    num_attn_1_1_output_scores = classifier_weights.loc[
+        [("num_attn_1_1_outputs", "_") for v in num_attn_1_1_outputs]
+    ].mul(num_attn_1_1_outputs, axis=0)
+
+    # num_attn_1_2 ####################################################
+    def num_predicate_1_2(mlp_0_0_output, attn_0_1_output):
+        if mlp_0_0_output in {
+            0,
+            1,
+            3,
+            5,
+            7,
+            8,
+            9,
+            13,
+            14,
+            17,
+            19,
+            21,
+            23,
+            24,
+            29,
+            33,
+            34,
+            36,
+            38,
+            39,
+            41,
+            43,
+            44,
+            45,
+            46,
+            50,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            59,
+            63,
+            64,
+            67,
+            69,
+            73,
+            74,
+            75,
+            78,
+            81,
+            82,
+            83,
+            86,
+            88,
             91,
             92,
             93,
@@ -3884,25 +2260,5467 @@ def run(tokens):
             95,
             96,
             97,
-            98,
+        }:
+            return attn_0_1_output == "2"
+        elif mlp_0_0_output in {65, 2, 35, 4, 66, 70, 98, 76, 47, 48, 51, 87, 27, 28}:
+            return attn_0_1_output == ""
+        elif mlp_0_0_output in {37, 6, 31}:
+            return attn_0_1_output == "<s>"
+        elif mlp_0_0_output in {
+            10,
+            11,
+            12,
+            15,
+            16,
+            18,
+            20,
+            25,
+            30,
+            40,
+            58,
+            60,
+            61,
+            62,
+            68,
+            71,
+            72,
+            77,
+            79,
+            84,
+            90,
             99,
         }:
-            return k_position == 45
-        elif q_position in {1, 4}:
-            return k_position == 5
-        elif q_position in {2}:
-            return k_position == 3
-        elif q_position in {3}:
-            return k_position == 0
-        elif q_position in {5}:
-            return k_position == 6
-        elif q_position in {45, 6}:
-            return k_position == 7
-        elif q_position in {7}:
+            return attn_0_1_output == "0"
+        elif mlp_0_0_output in {32, 26, 42, 22}:
+            return attn_0_1_output == "3"
+        elif mlp_0_0_output in {89, 49}:
+            return attn_0_1_output == "1"
+        elif mlp_0_0_output in {80, 85}:
+            return attn_0_1_output == "5"
+
+    num_attn_1_2_pattern = select(attn_0_1_outputs, mlp_0_0_outputs, num_predicate_1_2)
+    num_attn_1_2_outputs = aggregate_sum(num_attn_1_2_pattern, num_attn_0_0_outputs)
+    num_attn_1_2_output_scores = classifier_weights.loc[
+        [("num_attn_1_2_outputs", "_") for v in num_attn_1_2_outputs]
+    ].mul(num_attn_1_2_outputs, axis=0)
+
+    # num_attn_1_3 ####################################################
+    def num_predicate_1_3(attn_0_1_output, attn_0_2_output):
+        if attn_0_1_output in {"4", "0", "2", "3"}:
+            return attn_0_2_output == ""
+        elif attn_0_1_output in {"<s>", "1"}:
+            return attn_0_2_output == "1"
+        elif attn_0_1_output in {"5"}:
+            return attn_0_2_output == "5"
+
+    num_attn_1_3_pattern = select(attn_0_2_outputs, attn_0_1_outputs, num_predicate_1_3)
+    num_attn_1_3_outputs = aggregate_sum(num_attn_1_3_pattern, num_attn_0_1_outputs)
+    num_attn_1_3_output_scores = classifier_weights.loc[
+        [("num_attn_1_3_outputs", "_") for v in num_attn_1_3_outputs]
+    ].mul(num_attn_1_3_outputs, axis=0)
+
+    # mlp_1_0 #####################################################
+    def mlp_1_0(attn_1_3_output, token):
+        key = (attn_1_3_output, token)
+        return 50
+
+    mlp_1_0_outputs = [mlp_1_0(k0, k1) for k0, k1 in zip(attn_1_3_outputs, tokens)]
+    mlp_1_0_output_scores = classifier_weights.loc[
+        [("mlp_1_0_outputs", str(v)) for v in mlp_1_0_outputs]
+    ]
+
+    # mlp_1_1 #####################################################
+    def mlp_1_1(position, attn_1_2_output):
+        key = (position, attn_1_2_output)
+        if key in {
+            (0, 0),
+            (0, 2),
+            (0, 3),
+            (0, 4),
+            (0, 5),
+            (0, 12),
+            (0, 19),
+            (0, 24),
+            (0, 29),
+            (0, 38),
+            (0, 39),
+            (0, 45),
+            (0, 51),
+            (0, 53),
+            (0, 54),
+            (0, 55),
+            (0, 57),
+            (0, 60),
+            (0, 61),
+            (0, 68),
+            (0, 71),
+            (0, 72),
+            (0, 84),
+            (0, 87),
+            (0, 96),
+            (0, 97),
+            (1, 29),
+            (1, 54),
+            (1, 55),
+            (1, 57),
+            (1, 61),
+            (1, 96),
+            (2, 0),
+            (2, 1),
+            (2, 2),
+            (2, 3),
+            (2, 4),
+            (2, 5),
+            (2, 6),
+            (2, 7),
+            (2, 8),
+            (2, 9),
+            (2, 10),
+            (2, 11),
+            (2, 12),
+            (2, 13),
+            (2, 14),
+            (2, 15),
+            (2, 16),
+            (2, 17),
+            (2, 18),
+            (2, 19),
+            (2, 20),
+            (2, 21),
+            (2, 22),
+            (2, 23),
+            (2, 24),
+            (2, 25),
+            (2, 26),
+            (2, 27),
+            (2, 28),
+            (2, 29),
+            (2, 30),
+            (2, 31),
+            (2, 32),
+            (2, 33),
+            (2, 34),
+            (2, 35),
+            (2, 36),
+            (2, 37),
+            (2, 38),
+            (2, 39),
+            (2, 40),
+            (2, 42),
+            (2, 43),
+            (2, 44),
+            (2, 45),
+            (2, 46),
+            (2, 47),
+            (2, 48),
+            (2, 49),
+            (2, 50),
+            (2, 51),
+            (2, 52),
+            (2, 53),
+            (2, 54),
+            (2, 55),
+            (2, 56),
+            (2, 57),
+            (2, 58),
+            (2, 59),
+            (2, 60),
+            (2, 61),
+            (2, 62),
+            (2, 63),
+            (2, 64),
+            (2, 65),
+            (2, 66),
+            (2, 67),
+            (2, 68),
+            (2, 69),
+            (2, 70),
+            (2, 71),
+            (2, 72),
+            (2, 73),
+            (2, 74),
+            (2, 75),
+            (2, 76),
+            (2, 77),
+            (2, 78),
+            (2, 79),
+            (2, 80),
+            (2, 81),
+            (2, 82),
+            (2, 83),
+            (2, 84),
+            (2, 85),
+            (2, 86),
+            (2, 87),
+            (2, 88),
+            (2, 89),
+            (2, 90),
+            (2, 91),
+            (2, 92),
+            (2, 93),
+            (2, 94),
+            (2, 95),
+            (2, 96),
+            (2, 97),
+            (2, 98),
+            (2, 99),
+            (3, 0),
+            (3, 1),
+            (3, 2),
+            (3, 3),
+            (3, 4),
+            (3, 5),
+            (3, 6),
+            (3, 7),
+            (3, 8),
+            (3, 9),
+            (3, 10),
+            (3, 11),
+            (3, 12),
+            (3, 13),
+            (3, 14),
+            (3, 15),
+            (3, 16),
+            (3, 17),
+            (3, 18),
+            (3, 19),
+            (3, 20),
+            (3, 21),
+            (3, 22),
+            (3, 23),
+            (3, 24),
+            (3, 25),
+            (3, 26),
+            (3, 27),
+            (3, 28),
+            (3, 29),
+            (3, 30),
+            (3, 31),
+            (3, 32),
+            (3, 33),
+            (3, 34),
+            (3, 35),
+            (3, 36),
+            (3, 37),
+            (3, 38),
+            (3, 39),
+            (3, 40),
+            (3, 42),
+            (3, 43),
+            (3, 44),
+            (3, 45),
+            (3, 46),
+            (3, 47),
+            (3, 48),
+            (3, 49),
+            (3, 50),
+            (3, 51),
+            (3, 52),
+            (3, 53),
+            (3, 54),
+            (3, 55),
+            (3, 56),
+            (3, 57),
+            (3, 58),
+            (3, 59),
+            (3, 60),
+            (3, 61),
+            (3, 62),
+            (3, 63),
+            (3, 64),
+            (3, 65),
+            (3, 66),
+            (3, 67),
+            (3, 68),
+            (3, 69),
+            (3, 70),
+            (3, 71),
+            (3, 72),
+            (3, 73),
+            (3, 74),
+            (3, 75),
+            (3, 76),
+            (3, 77),
+            (3, 78),
+            (3, 79),
+            (3, 80),
+            (3, 81),
+            (3, 82),
+            (3, 83),
+            (3, 84),
+            (3, 85),
+            (3, 86),
+            (3, 87),
+            (3, 88),
+            (3, 89),
+            (3, 90),
+            (3, 91),
+            (3, 92),
+            (3, 93),
+            (3, 94),
+            (3, 95),
+            (3, 96),
+            (3, 97),
+            (3, 98),
+            (3, 99),
+            (4, 0),
+            (4, 1),
+            (4, 2),
+            (4, 3),
+            (4, 4),
+            (4, 5),
+            (4, 6),
+            (4, 7),
+            (4, 8),
+            (4, 9),
+            (4, 10),
+            (4, 11),
+            (4, 12),
+            (4, 13),
+            (4, 14),
+            (4, 15),
+            (4, 16),
+            (4, 17),
+            (4, 18),
+            (4, 19),
+            (4, 20),
+            (4, 21),
+            (4, 22),
+            (4, 23),
+            (4, 24),
+            (4, 25),
+            (4, 26),
+            (4, 27),
+            (4, 28),
+            (4, 29),
+            (4, 30),
+            (4, 31),
+            (4, 32),
+            (4, 33),
+            (4, 34),
+            (4, 35),
+            (4, 36),
+            (4, 37),
+            (4, 38),
+            (4, 39),
+            (4, 40),
+            (4, 42),
+            (4, 43),
+            (4, 44),
+            (4, 45),
+            (4, 46),
+            (4, 47),
+            (4, 48),
+            (4, 49),
+            (4, 50),
+            (4, 51),
+            (4, 52),
+            (4, 53),
+            (4, 54),
+            (4, 55),
+            (4, 56),
+            (4, 57),
+            (4, 58),
+            (4, 59),
+            (4, 60),
+            (4, 61),
+            (4, 62),
+            (4, 63),
+            (4, 64),
+            (4, 65),
+            (4, 66),
+            (4, 67),
+            (4, 68),
+            (4, 69),
+            (4, 70),
+            (4, 71),
+            (4, 72),
+            (4, 73),
+            (4, 74),
+            (4, 75),
+            (4, 76),
+            (4, 77),
+            (4, 78),
+            (4, 79),
+            (4, 80),
+            (4, 81),
+            (4, 82),
+            (4, 83),
+            (4, 84),
+            (4, 85),
+            (4, 86),
+            (4, 87),
+            (4, 88),
+            (4, 89),
+            (4, 90),
+            (4, 91),
+            (4, 92),
+            (4, 93),
+            (4, 94),
+            (4, 95),
+            (4, 96),
+            (4, 97),
+            (4, 98),
+            (4, 99),
+            (5, 0),
+            (5, 1),
+            (5, 2),
+            (5, 3),
+            (5, 4),
+            (5, 5),
+            (5, 6),
+            (5, 7),
+            (5, 8),
+            (5, 9),
+            (5, 10),
+            (5, 11),
+            (5, 12),
+            (5, 13),
+            (5, 14),
+            (5, 15),
+            (5, 16),
+            (5, 17),
+            (5, 18),
+            (5, 19),
+            (5, 20),
+            (5, 21),
+            (5, 22),
+            (5, 23),
+            (5, 24),
+            (5, 25),
+            (5, 26),
+            (5, 27),
+            (5, 28),
+            (5, 29),
+            (5, 30),
+            (5, 31),
+            (5, 32),
+            (5, 33),
+            (5, 34),
+            (5, 35),
+            (5, 36),
+            (5, 37),
+            (5, 38),
+            (5, 39),
+            (5, 40),
+            (5, 42),
+            (5, 43),
+            (5, 44),
+            (5, 45),
+            (5, 46),
+            (5, 47),
+            (5, 48),
+            (5, 49),
+            (5, 50),
+            (5, 51),
+            (5, 52),
+            (5, 53),
+            (5, 54),
+            (5, 55),
+            (5, 56),
+            (5, 57),
+            (5, 58),
+            (5, 59),
+            (5, 60),
+            (5, 61),
+            (5, 62),
+            (5, 63),
+            (5, 64),
+            (5, 65),
+            (5, 66),
+            (5, 67),
+            (5, 68),
+            (5, 69),
+            (5, 70),
+            (5, 71),
+            (5, 72),
+            (5, 73),
+            (5, 74),
+            (5, 75),
+            (5, 76),
+            (5, 77),
+            (5, 78),
+            (5, 79),
+            (5, 80),
+            (5, 81),
+            (5, 82),
+            (5, 83),
+            (5, 84),
+            (5, 85),
+            (5, 86),
+            (5, 87),
+            (5, 88),
+            (5, 89),
+            (5, 90),
+            (5, 91),
+            (5, 92),
+            (5, 93),
+            (5, 94),
+            (5, 95),
+            (5, 96),
+            (5, 97),
+            (5, 98),
+            (5, 99),
+            (6, 0),
+            (6, 1),
+            (6, 2),
+            (6, 3),
+            (6, 4),
+            (6, 5),
+            (6, 6),
+            (6, 7),
+            (6, 8),
+            (6, 9),
+            (6, 10),
+            (6, 11),
+            (6, 12),
+            (6, 13),
+            (6, 14),
+            (6, 15),
+            (6, 16),
+            (6, 17),
+            (6, 18),
+            (6, 19),
+            (6, 20),
+            (6, 21),
+            (6, 22),
+            (6, 23),
+            (6, 24),
+            (6, 25),
+            (6, 26),
+            (6, 27),
+            (6, 28),
+            (6, 29),
+            (6, 30),
+            (6, 31),
+            (6, 32),
+            (6, 33),
+            (6, 34),
+            (6, 35),
+            (6, 36),
+            (6, 37),
+            (6, 38),
+            (6, 39),
+            (6, 40),
+            (6, 42),
+            (6, 43),
+            (6, 44),
+            (6, 45),
+            (6, 46),
+            (6, 47),
+            (6, 48),
+            (6, 49),
+            (6, 50),
+            (6, 51),
+            (6, 52),
+            (6, 53),
+            (6, 54),
+            (6, 55),
+            (6, 56),
+            (6, 57),
+            (6, 58),
+            (6, 59),
+            (6, 60),
+            (6, 61),
+            (6, 62),
+            (6, 63),
+            (6, 64),
+            (6, 65),
+            (6, 66),
+            (6, 67),
+            (6, 68),
+            (6, 69),
+            (6, 70),
+            (6, 71),
+            (6, 72),
+            (6, 73),
+            (6, 74),
+            (6, 75),
+            (6, 76),
+            (6, 77),
+            (6, 78),
+            (6, 79),
+            (6, 80),
+            (6, 81),
+            (6, 82),
+            (6, 83),
+            (6, 84),
+            (6, 85),
+            (6, 86),
+            (6, 87),
+            (6, 88),
+            (6, 89),
+            (6, 90),
+            (6, 91),
+            (6, 92),
+            (6, 93),
+            (6, 94),
+            (6, 95),
+            (6, 96),
+            (6, 97),
+            (6, 98),
+            (6, 99),
+            (7, 0),
+            (7, 2),
+            (7, 3),
+            (7, 4),
+            (7, 5),
+            (7, 6),
+            (7, 7),
+            (7, 12),
+            (7, 13),
+            (7, 16),
+            (7, 18),
+            (7, 19),
+            (7, 20),
+            (7, 21),
+            (7, 24),
+            (7, 27),
+            (7, 28),
+            (7, 29),
+            (7, 30),
+            (7, 31),
+            (7, 33),
+            (7, 37),
+            (7, 38),
+            (7, 39),
+            (7, 43),
+            (7, 45),
+            (7, 47),
+            (7, 48),
+            (7, 50),
+            (7, 51),
+            (7, 52),
+            (7, 53),
+            (7, 54),
+            (7, 55),
+            (7, 57),
+            (7, 60),
+            (7, 61),
+            (7, 62),
+            (7, 63),
+            (7, 64),
+            (7, 67),
+            (7, 68),
+            (7, 69),
+            (7, 70),
+            (7, 71),
+            (7, 72),
+            (7, 73),
+            (7, 74),
+            (7, 75),
+            (7, 76),
+            (7, 81),
+            (7, 84),
+            (7, 87),
+            (7, 90),
+            (7, 91),
+            (7, 93),
+            (7, 94),
+            (7, 95),
+            (7, 96),
+            (7, 97),
+            (7, 99),
+            (8, 0),
+            (8, 2),
+            (8, 3),
+            (8, 4),
+            (8, 5),
+            (8, 6),
+            (8, 7),
+            (8, 12),
+            (8, 13),
+            (8, 19),
+            (8, 24),
+            (8, 29),
+            (8, 30),
+            (8, 37),
+            (8, 38),
+            (8, 39),
+            (8, 45),
+            (8, 48),
+            (8, 51),
+            (8, 52),
+            (8, 53),
+            (8, 54),
+            (8, 55),
+            (8, 57),
+            (8, 60),
+            (8, 61),
+            (8, 68),
+            (8, 70),
+            (8, 71),
+            (8, 72),
+            (8, 76),
+            (8, 84),
+            (8, 87),
+            (8, 94),
+            (8, 96),
+            (8, 97),
+            (9, 0),
+            (9, 2),
+            (9, 3),
+            (9, 4),
+            (9, 5),
+            (9, 6),
+            (9, 7),
+            (9, 12),
+            (9, 13),
+            (9, 16),
+            (9, 18),
+            (9, 19),
+            (9, 24),
+            (9, 28),
+            (9, 29),
+            (9, 30),
+            (9, 33),
+            (9, 37),
+            (9, 38),
+            (9, 39),
+            (9, 43),
+            (9, 45),
+            (9, 47),
+            (9, 48),
+            (9, 50),
+            (9, 51),
+            (9, 52),
+            (9, 53),
+            (9, 54),
+            (9, 55),
+            (9, 57),
+            (9, 60),
+            (9, 61),
+            (9, 62),
+            (9, 63),
+            (9, 64),
+            (9, 67),
+            (9, 68),
+            (9, 69),
+            (9, 70),
+            (9, 71),
+            (9, 72),
+            (9, 74),
+            (9, 75),
+            (9, 76),
+            (9, 81),
+            (9, 84),
+            (9, 87),
+            (9, 94),
+            (9, 96),
+            (9, 97),
+            (10, 0),
+            (10, 2),
+            (10, 3),
+            (10, 4),
+            (10, 5),
+            (10, 6),
+            (10, 7),
+            (10, 12),
+            (10, 13),
+            (10, 19),
+            (10, 24),
+            (10, 29),
+            (10, 30),
+            (10, 37),
+            (10, 38),
+            (10, 39),
+            (10, 45),
+            (10, 48),
+            (10, 51),
+            (10, 52),
+            (10, 53),
+            (10, 54),
+            (10, 55),
+            (10, 57),
+            (10, 60),
+            (10, 61),
+            (10, 68),
+            (10, 70),
+            (10, 71),
+            (10, 72),
+            (10, 76),
+            (10, 84),
+            (10, 87),
+            (10, 94),
+            (10, 96),
+            (10, 97),
+            (11, 0),
+            (11, 2),
+            (11, 3),
+            (11, 4),
+            (11, 5),
+            (11, 6),
+            (11, 7),
+            (11, 12),
+            (11, 13),
+            (11, 16),
+            (11, 18),
+            (11, 19),
+            (11, 24),
+            (11, 28),
+            (11, 29),
+            (11, 30),
+            (11, 33),
+            (11, 37),
+            (11, 38),
+            (11, 39),
+            (11, 45),
+            (11, 47),
+            (11, 48),
+            (11, 51),
+            (11, 52),
+            (11, 53),
+            (11, 54),
+            (11, 55),
+            (11, 57),
+            (11, 60),
+            (11, 61),
+            (11, 62),
+            (11, 67),
+            (11, 68),
+            (11, 69),
+            (11, 70),
+            (11, 71),
+            (11, 72),
+            (11, 76),
+            (11, 81),
+            (11, 84),
+            (11, 87),
+            (11, 94),
+            (11, 96),
+            (11, 97),
+            (12, 0),
+            (12, 2),
+            (12, 3),
+            (12, 4),
+            (12, 5),
+            (12, 6),
+            (12, 7),
+            (12, 12),
+            (12, 13),
+            (12, 16),
+            (12, 18),
+            (12, 19),
+            (12, 24),
+            (12, 28),
+            (12, 29),
+            (12, 30),
+            (12, 33),
+            (12, 37),
+            (12, 38),
+            (12, 39),
+            (12, 45),
+            (12, 47),
+            (12, 48),
+            (12, 50),
+            (12, 51),
+            (12, 52),
+            (12, 53),
+            (12, 54),
+            (12, 55),
+            (12, 57),
+            (12, 60),
+            (12, 61),
+            (12, 62),
+            (12, 67),
+            (12, 68),
+            (12, 69),
+            (12, 70),
+            (12, 71),
+            (12, 72),
+            (12, 76),
+            (12, 81),
+            (12, 84),
+            (12, 87),
+            (12, 94),
+            (12, 96),
+            (12, 97),
+            (13, 0),
+            (13, 2),
+            (13, 3),
+            (13, 4),
+            (13, 5),
+            (13, 6),
+            (13, 7),
+            (13, 10),
+            (13, 11),
+            (13, 12),
+            (13, 13),
+            (13, 15),
+            (13, 16),
+            (13, 18),
+            (13, 19),
+            (13, 20),
+            (13, 21),
+            (13, 24),
+            (13, 27),
+            (13, 28),
+            (13, 29),
+            (13, 30),
+            (13, 31),
+            (13, 32),
+            (13, 33),
+            (13, 37),
+            (13, 38),
+            (13, 39),
+            (13, 40),
+            (13, 43),
+            (13, 45),
+            (13, 46),
+            (13, 47),
+            (13, 48),
+            (13, 50),
+            (13, 51),
+            (13, 52),
+            (13, 53),
+            (13, 54),
+            (13, 55),
+            (13, 56),
+            (13, 57),
+            (13, 59),
+            (13, 60),
+            (13, 61),
+            (13, 62),
+            (13, 63),
+            (13, 64),
+            (13, 65),
+            (13, 67),
+            (13, 68),
+            (13, 69),
+            (13, 70),
+            (13, 71),
+            (13, 72),
+            (13, 73),
+            (13, 74),
+            (13, 75),
+            (13, 76),
+            (13, 78),
+            (13, 81),
+            (13, 83),
+            (13, 84),
+            (13, 85),
+            (13, 87),
+            (13, 90),
+            (13, 91),
+            (13, 92),
+            (13, 93),
+            (13, 94),
+            (13, 95),
+            (13, 96),
+            (13, 97),
+            (13, 99),
+            (14, 0),
+            (14, 2),
+            (14, 3),
+            (14, 4),
+            (14, 5),
+            (14, 12),
+            (14, 19),
+            (14, 24),
+            (14, 29),
+            (14, 38),
+            (14, 39),
+            (14, 45),
+            (14, 51),
+            (14, 53),
+            (14, 54),
+            (14, 55),
+            (14, 57),
+            (14, 60),
+            (14, 61),
+            (14, 71),
+            (14, 72),
+            (14, 84),
+            (14, 87),
+            (14, 96),
+            (14, 97),
+            (15, 0),
+            (15, 2),
+            (15, 3),
+            (15, 4),
+            (15, 5),
+            (15, 6),
+            (15, 7),
+            (15, 12),
+            (15, 13),
+            (15, 18),
+            (15, 19),
+            (15, 24),
+            (15, 29),
+            (15, 30),
+            (15, 37),
+            (15, 38),
+            (15, 39),
+            (15, 45),
+            (15, 48),
+            (15, 51),
+            (15, 52),
+            (15, 53),
+            (15, 54),
+            (15, 55),
+            (15, 57),
+            (15, 60),
+            (15, 61),
+            (15, 68),
+            (15, 69),
+            (15, 70),
+            (15, 71),
+            (15, 72),
+            (15, 76),
+            (15, 84),
+            (15, 87),
+            (15, 94),
+            (15, 96),
+            (15, 97),
+            (16, 0),
+            (16, 2),
+            (16, 3),
+            (16, 4),
+            (16, 5),
+            (16, 6),
+            (16, 7),
+            (16, 12),
+            (16, 13),
+            (16, 16),
+            (16, 18),
+            (16, 19),
+            (16, 24),
+            (16, 28),
+            (16, 29),
+            (16, 30),
+            (16, 33),
+            (16, 37),
+            (16, 38),
+            (16, 39),
+            (16, 43),
+            (16, 45),
+            (16, 47),
+            (16, 48),
+            (16, 50),
+            (16, 51),
+            (16, 52),
+            (16, 53),
+            (16, 54),
+            (16, 55),
+            (16, 57),
+            (16, 60),
+            (16, 61),
+            (16, 62),
+            (16, 67),
+            (16, 68),
+            (16, 69),
+            (16, 70),
+            (16, 71),
+            (16, 72),
+            (16, 74),
+            (16, 76),
+            (16, 81),
+            (16, 84),
+            (16, 87),
+            (16, 94),
+            (16, 96),
+            (16, 97),
+            (17, 0),
+            (17, 2),
+            (17, 3),
+            (17, 4),
+            (17, 5),
+            (17, 6),
+            (17, 7),
+            (17, 12),
+            (17, 19),
+            (17, 24),
+            (17, 29),
+            (17, 38),
+            (17, 39),
+            (17, 45),
+            (17, 51),
+            (17, 53),
+            (17, 54),
+            (17, 55),
+            (17, 57),
+            (17, 60),
+            (17, 61),
+            (17, 68),
+            (17, 71),
+            (17, 72),
+            (17, 84),
+            (17, 87),
+            (17, 96),
+            (17, 97),
+            (18, 0),
+            (18, 2),
+            (18, 3),
+            (18, 4),
+            (18, 5),
+            (18, 6),
+            (18, 7),
+            (18, 10),
+            (18, 11),
+            (18, 12),
+            (18, 13),
+            (18, 16),
+            (18, 18),
+            (18, 19),
+            (18, 20),
+            (18, 21),
+            (18, 24),
+            (18, 27),
+            (18, 28),
+            (18, 29),
+            (18, 30),
+            (18, 31),
+            (18, 33),
+            (18, 37),
+            (18, 38),
+            (18, 39),
+            (18, 43),
+            (18, 45),
+            (18, 46),
+            (18, 47),
+            (18, 48),
+            (18, 50),
+            (18, 51),
+            (18, 52),
+            (18, 53),
+            (18, 54),
+            (18, 55),
+            (18, 57),
+            (18, 59),
+            (18, 60),
+            (18, 61),
+            (18, 62),
+            (18, 63),
+            (18, 64),
+            (18, 67),
+            (18, 68),
+            (18, 69),
+            (18, 70),
+            (18, 71),
+            (18, 72),
+            (18, 73),
+            (18, 74),
+            (18, 75),
+            (18, 76),
+            (18, 81),
+            (18, 84),
+            (18, 85),
+            (18, 87),
+            (18, 90),
+            (18, 91),
+            (18, 92),
+            (18, 93),
+            (18, 94),
+            (18, 95),
+            (18, 96),
+            (18, 97),
+            (18, 99),
+            (19, 0),
+            (19, 2),
+            (19, 3),
+            (19, 4),
+            (19, 5),
+            (19, 6),
+            (19, 7),
+            (19, 9),
+            (19, 10),
+            (19, 11),
+            (19, 12),
+            (19, 13),
+            (19, 15),
+            (19, 16),
+            (19, 17),
+            (19, 18),
+            (19, 19),
+            (19, 20),
+            (19, 21),
+            (19, 23),
+            (19, 24),
+            (19, 27),
+            (19, 28),
+            (19, 29),
+            (19, 30),
+            (19, 31),
+            (19, 32),
+            (19, 33),
+            (19, 35),
+            (19, 37),
+            (19, 38),
+            (19, 39),
+            (19, 40),
+            (19, 43),
+            (19, 45),
+            (19, 46),
+            (19, 47),
+            (19, 48),
+            (19, 50),
+            (19, 51),
+            (19, 52),
+            (19, 53),
+            (19, 54),
+            (19, 55),
+            (19, 56),
+            (19, 57),
+            (19, 59),
+            (19, 60),
+            (19, 61),
+            (19, 62),
+            (19, 63),
+            (19, 64),
+            (19, 65),
+            (19, 67),
+            (19, 68),
+            (19, 69),
+            (19, 70),
+            (19, 71),
+            (19, 72),
+            (19, 73),
+            (19, 74),
+            (19, 75),
+            (19, 76),
+            (19, 77),
+            (19, 78),
+            (19, 81),
+            (19, 82),
+            (19, 83),
+            (19, 84),
+            (19, 85),
+            (19, 87),
+            (19, 90),
+            (19, 91),
+            (19, 92),
+            (19, 93),
+            (19, 94),
+            (19, 95),
+            (19, 96),
+            (19, 97),
+            (19, 98),
+            (19, 99),
+            (20, 0),
+            (20, 2),
+            (20, 3),
+            (20, 4),
+            (20, 19),
+            (20, 24),
+            (20, 29),
+            (20, 45),
+            (20, 51),
+            (20, 54),
+            (20, 55),
+            (20, 57),
+            (20, 61),
+            (20, 72),
+            (20, 87),
+            (20, 96),
+            (20, 97),
+            (21, 0),
+            (21, 2),
+            (21, 3),
+            (21, 4),
+            (21, 5),
+            (21, 6),
+            (21, 7),
+            (21, 12),
+            (21, 13),
+            (21, 16),
+            (21, 18),
+            (21, 19),
+            (21, 24),
+            (21, 28),
+            (21, 29),
+            (21, 30),
+            (21, 33),
+            (21, 37),
+            (21, 38),
+            (21, 39),
+            (21, 43),
+            (21, 45),
+            (21, 47),
+            (21, 48),
+            (21, 50),
+            (21, 51),
+            (21, 52),
+            (21, 53),
+            (21, 54),
+            (21, 55),
+            (21, 57),
+            (21, 60),
+            (21, 61),
+            (21, 62),
+            (21, 63),
+            (21, 64),
+            (21, 67),
+            (21, 68),
+            (21, 69),
+            (21, 70),
+            (21, 71),
+            (21, 72),
+            (21, 73),
+            (21, 74),
+            (21, 75),
+            (21, 76),
+            (21, 81),
+            (21, 84),
+            (21, 87),
+            (21, 94),
+            (21, 96),
+            (21, 97),
+            (21, 99),
+            (22, 0),
+            (22, 2),
+            (22, 3),
+            (22, 4),
+            (22, 5),
+            (22, 6),
+            (22, 7),
+            (22, 12),
+            (22, 13),
+            (22, 19),
+            (22, 24),
+            (22, 29),
+            (22, 30),
+            (22, 37),
+            (22, 38),
+            (22, 39),
+            (22, 45),
+            (22, 48),
+            (22, 51),
+            (22, 52),
+            (22, 53),
+            (22, 54),
+            (22, 55),
+            (22, 57),
+            (22, 60),
+            (22, 61),
+            (22, 68),
+            (22, 70),
+            (22, 71),
+            (22, 72),
+            (22, 76),
+            (22, 84),
+            (22, 87),
+            (22, 94),
+            (22, 96),
+            (22, 97),
+            (23, 0),
+            (23, 2),
+            (23, 3),
+            (23, 4),
+            (23, 5),
+            (23, 6),
+            (23, 7),
+            (23, 9),
+            (23, 10),
+            (23, 11),
+            (23, 12),
+            (23, 13),
+            (23, 15),
+            (23, 16),
+            (23, 17),
+            (23, 18),
+            (23, 19),
+            (23, 20),
+            (23, 21),
+            (23, 23),
+            (23, 24),
+            (23, 27),
+            (23, 28),
+            (23, 29),
+            (23, 30),
+            (23, 31),
+            (23, 32),
+            (23, 33),
+            (23, 35),
+            (23, 37),
+            (23, 38),
+            (23, 39),
+            (23, 40),
+            (23, 43),
+            (23, 45),
+            (23, 46),
+            (23, 47),
+            (23, 48),
+            (23, 49),
+            (23, 50),
+            (23, 51),
+            (23, 52),
+            (23, 53),
+            (23, 54),
+            (23, 55),
+            (23, 56),
+            (23, 57),
+            (23, 59),
+            (23, 60),
+            (23, 61),
+            (23, 62),
+            (23, 63),
+            (23, 64),
+            (23, 65),
+            (23, 66),
+            (23, 67),
+            (23, 68),
+            (23, 69),
+            (23, 70),
+            (23, 71),
+            (23, 72),
+            (23, 73),
+            (23, 74),
+            (23, 75),
+            (23, 76),
+            (23, 77),
+            (23, 78),
+            (23, 79),
+            (23, 81),
+            (23, 82),
+            (23, 83),
+            (23, 84),
+            (23, 85),
+            (23, 87),
+            (23, 90),
+            (23, 91),
+            (23, 92),
+            (23, 93),
+            (23, 94),
+            (23, 95),
+            (23, 96),
+            (23, 97),
+            (23, 98),
+            (23, 99),
+            (24, 0),
+            (24, 2),
+            (24, 3),
+            (24, 4),
+            (24, 5),
+            (24, 6),
+            (24, 7),
+            (24, 10),
+            (24, 11),
+            (24, 12),
+            (24, 13),
+            (24, 16),
+            (24, 18),
+            (24, 19),
+            (24, 20),
+            (24, 21),
+            (24, 24),
+            (24, 27),
+            (24, 28),
+            (24, 29),
+            (24, 30),
+            (24, 31),
+            (24, 33),
+            (24, 37),
+            (24, 38),
+            (24, 39),
+            (24, 43),
+            (24, 45),
+            (24, 46),
+            (24, 47),
+            (24, 48),
+            (24, 50),
+            (24, 51),
+            (24, 52),
+            (24, 53),
+            (24, 54),
+            (24, 55),
+            (24, 57),
+            (24, 59),
+            (24, 60),
+            (24, 61),
+            (24, 62),
+            (24, 63),
+            (24, 64),
+            (24, 67),
+            (24, 68),
+            (24, 69),
+            (24, 70),
+            (24, 71),
+            (24, 72),
+            (24, 73),
+            (24, 74),
+            (24, 75),
+            (24, 76),
+            (24, 81),
+            (24, 84),
+            (24, 85),
+            (24, 87),
+            (24, 90),
+            (24, 91),
+            (24, 92),
+            (24, 93),
+            (24, 94),
+            (24, 95),
+            (24, 96),
+            (24, 97),
+            (24, 99),
+            (25, 3),
+            (25, 4),
+            (25, 29),
+            (25, 51),
+            (25, 54),
+            (25, 55),
+            (25, 57),
+            (25, 61),
+            (25, 96),
+            (26, 29),
+            (26, 54),
+            (26, 55),
+            (26, 57),
+            (26, 61),
+            (26, 96),
+            (27, 0),
+            (27, 2),
+            (27, 3),
+            (27, 4),
+            (27, 5),
+            (27, 6),
+            (27, 7),
+            (27, 12),
+            (27, 19),
+            (27, 24),
+            (27, 29),
+            (27, 38),
+            (27, 39),
+            (27, 45),
+            (27, 51),
+            (27, 53),
+            (27, 54),
+            (27, 55),
+            (27, 57),
+            (27, 60),
+            (27, 61),
+            (27, 68),
+            (27, 71),
+            (27, 72),
+            (27, 84),
+            (27, 87),
+            (27, 96),
+            (27, 97),
+            (28, 0),
+            (28, 2),
+            (28, 3),
+            (28, 4),
+            (28, 5),
+            (28, 6),
+            (28, 7),
+            (28, 12),
+            (28, 13),
+            (28, 16),
+            (28, 18),
+            (28, 19),
+            (28, 24),
+            (28, 28),
+            (28, 29),
+            (28, 30),
+            (28, 33),
+            (28, 37),
+            (28, 38),
+            (28, 39),
+            (28, 45),
+            (28, 47),
+            (28, 48),
+            (28, 50),
+            (28, 51),
+            (28, 52),
+            (28, 53),
+            (28, 54),
+            (28, 55),
+            (28, 57),
+            (28, 60),
+            (28, 61),
+            (28, 62),
+            (28, 67),
+            (28, 68),
+            (28, 69),
+            (28, 70),
+            (28, 71),
+            (28, 72),
+            (28, 76),
+            (28, 81),
+            (28, 84),
+            (28, 87),
+            (28, 94),
+            (28, 96),
+            (28, 97),
+            (29, 0),
+            (29, 2),
+            (29, 3),
+            (29, 4),
+            (29, 5),
+            (29, 6),
+            (29, 7),
+            (29, 9),
+            (29, 10),
+            (29, 11),
+            (29, 12),
+            (29, 13),
+            (29, 14),
+            (29, 15),
+            (29, 16),
+            (29, 17),
+            (29, 18),
+            (29, 19),
+            (29, 20),
+            (29, 21),
+            (29, 23),
+            (29, 24),
+            (29, 25),
+            (29, 26),
+            (29, 27),
+            (29, 28),
+            (29, 29),
+            (29, 30),
+            (29, 31),
+            (29, 32),
+            (29, 33),
+            (29, 35),
+            (29, 37),
+            (29, 38),
+            (29, 39),
+            (29, 40),
+            (29, 43),
+            (29, 45),
+            (29, 46),
+            (29, 47),
+            (29, 48),
+            (29, 49),
+            (29, 50),
+            (29, 51),
+            (29, 52),
+            (29, 53),
+            (29, 54),
+            (29, 55),
+            (29, 56),
+            (29, 57),
+            (29, 58),
+            (29, 59),
+            (29, 60),
+            (29, 61),
+            (29, 62),
+            (29, 63),
+            (29, 64),
+            (29, 65),
+            (29, 66),
+            (29, 67),
+            (29, 68),
+            (29, 69),
+            (29, 70),
+            (29, 71),
+            (29, 72),
+            (29, 73),
+            (29, 74),
+            (29, 75),
+            (29, 76),
+            (29, 77),
+            (29, 78),
+            (29, 79),
+            (29, 81),
+            (29, 82),
+            (29, 83),
+            (29, 84),
+            (29, 85),
+            (29, 86),
+            (29, 87),
+            (29, 90),
+            (29, 91),
+            (29, 92),
+            (29, 93),
+            (29, 94),
+            (29, 95),
+            (29, 96),
+            (29, 97),
+            (29, 98),
+            (29, 99),
+            (30, 0),
+            (30, 2),
+            (30, 3),
+            (30, 4),
+            (30, 5),
+            (30, 6),
+            (30, 7),
+            (30, 12),
+            (30, 13),
+            (30, 16),
+            (30, 18),
+            (30, 19),
+            (30, 24),
+            (30, 28),
+            (30, 29),
+            (30, 30),
+            (30, 33),
+            (30, 37),
+            (30, 38),
+            (30, 39),
+            (30, 45),
+            (30, 47),
+            (30, 48),
+            (30, 50),
+            (30, 51),
+            (30, 52),
+            (30, 53),
+            (30, 54),
+            (30, 55),
+            (30, 57),
+            (30, 60),
+            (30, 61),
+            (30, 62),
+            (30, 67),
+            (30, 68),
+            (30, 69),
+            (30, 70),
+            (30, 71),
+            (30, 72),
+            (30, 76),
+            (30, 81),
+            (30, 84),
+            (30, 87),
+            (30, 94),
+            (30, 96),
+            (30, 97),
+            (31, 3),
+            (31, 4),
+            (31, 29),
+            (31, 51),
+            (31, 54),
+            (31, 55),
+            (31, 57),
+            (31, 61),
+            (31, 96),
+            (32, 3),
+            (32, 4),
+            (32, 19),
+            (32, 29),
+            (32, 45),
+            (32, 51),
+            (32, 54),
+            (32, 55),
+            (32, 57),
+            (32, 61),
+            (32, 72),
+            (32, 96),
+            (32, 97),
+            (33, 0),
+            (33, 2),
+            (33, 3),
+            (33, 4),
+            (33, 5),
+            (33, 6),
+            (33, 7),
+            (33, 10),
+            (33, 11),
+            (33, 12),
+            (33, 13),
+            (33, 16),
+            (33, 18),
+            (33, 19),
+            (33, 20),
+            (33, 21),
+            (33, 24),
+            (33, 27),
+            (33, 28),
+            (33, 29),
+            (33, 30),
+            (33, 31),
+            (33, 33),
+            (33, 37),
+            (33, 38),
+            (33, 39),
+            (33, 43),
+            (33, 45),
+            (33, 46),
+            (33, 47),
+            (33, 48),
+            (33, 50),
+            (33, 51),
+            (33, 52),
+            (33, 53),
+            (33, 54),
+            (33, 55),
+            (33, 57),
+            (33, 59),
+            (33, 60),
+            (33, 61),
+            (33, 62),
+            (33, 63),
+            (33, 64),
+            (33, 65),
+            (33, 67),
+            (33, 68),
+            (33, 69),
+            (33, 70),
+            (33, 71),
+            (33, 72),
+            (33, 73),
+            (33, 74),
+            (33, 75),
+            (33, 76),
+            (33, 81),
+            (33, 84),
+            (33, 85),
+            (33, 87),
+            (33, 90),
+            (33, 91),
+            (33, 92),
+            (33, 93),
+            (33, 94),
+            (33, 95),
+            (33, 96),
+            (33, 97),
+            (33, 99),
+            (34, 0),
+            (34, 1),
+            (34, 2),
+            (34, 3),
+            (34, 4),
+            (34, 5),
+            (34, 6),
+            (34, 7),
+            (34, 8),
+            (34, 9),
+            (34, 10),
+            (34, 11),
+            (34, 12),
+            (34, 13),
+            (34, 14),
+            (34, 15),
+            (34, 16),
+            (34, 17),
+            (34, 18),
+            (34, 19),
+            (34, 20),
+            (34, 21),
+            (34, 22),
+            (34, 23),
+            (34, 24),
+            (34, 25),
+            (34, 26),
+            (34, 27),
+            (34, 28),
+            (34, 29),
+            (34, 30),
+            (34, 31),
+            (34, 32),
+            (34, 33),
+            (34, 34),
+            (34, 35),
+            (34, 36),
+            (34, 37),
+            (34, 38),
+            (34, 39),
+            (34, 40),
+            (34, 43),
+            (34, 45),
+            (34, 46),
+            (34, 47),
+            (34, 48),
+            (34, 49),
+            (34, 50),
+            (34, 51),
+            (34, 52),
+            (34, 53),
+            (34, 54),
+            (34, 55),
+            (34, 56),
+            (34, 57),
+            (34, 58),
+            (34, 59),
+            (34, 60),
+            (34, 61),
+            (34, 62),
+            (34, 63),
+            (34, 64),
+            (34, 65),
+            (34, 66),
+            (34, 67),
+            (34, 68),
+            (34, 69),
+            (34, 70),
+            (34, 71),
+            (34, 72),
+            (34, 73),
+            (34, 74),
+            (34, 75),
+            (34, 76),
+            (34, 77),
+            (34, 78),
+            (34, 79),
+            (34, 81),
+            (34, 82),
+            (34, 83),
+            (34, 84),
+            (34, 85),
+            (34, 86),
+            (34, 87),
+            (34, 89),
+            (34, 90),
+            (34, 91),
+            (34, 92),
+            (34, 93),
+            (34, 94),
+            (34, 95),
+            (34, 96),
+            (34, 97),
+            (34, 98),
+            (34, 99),
+            (35, 0),
+            (35, 2),
+            (35, 3),
+            (35, 4),
+            (35, 5),
+            (35, 6),
+            (35, 7),
+            (35, 12),
+            (35, 19),
+            (35, 24),
+            (35, 29),
+            (35, 38),
+            (35, 39),
+            (35, 45),
+            (35, 51),
+            (35, 53),
+            (35, 54),
+            (35, 55),
+            (35, 57),
+            (35, 60),
+            (35, 61),
+            (35, 68),
+            (35, 71),
+            (35, 72),
+            (35, 84),
+            (35, 87),
+            (35, 96),
+            (35, 97),
+            (36, 0),
+            (36, 2),
+            (36, 3),
+            (36, 4),
+            (36, 5),
+            (36, 6),
+            (36, 7),
+            (36, 12),
+            (36, 19),
+            (36, 24),
+            (36, 29),
+            (36, 38),
+            (36, 39),
+            (36, 45),
+            (36, 51),
+            (36, 53),
+            (36, 54),
+            (36, 55),
+            (36, 57),
+            (36, 60),
+            (36, 61),
+            (36, 68),
+            (36, 71),
+            (36, 72),
+            (36, 84),
+            (36, 87),
+            (36, 96),
+            (36, 97),
+            (37, 0),
+            (37, 2),
+            (37, 3),
+            (37, 4),
+            (37, 5),
+            (37, 12),
+            (37, 19),
+            (37, 24),
+            (37, 29),
+            (37, 38),
+            (37, 39),
+            (37, 45),
+            (37, 51),
+            (37, 53),
+            (37, 54),
+            (37, 55),
+            (37, 57),
+            (37, 60),
+            (37, 61),
+            (37, 71),
+            (37, 72),
+            (37, 84),
+            (37, 87),
+            (37, 96),
+            (37, 97),
+            (38, 0),
+            (38, 2),
+            (38, 3),
+            (38, 4),
+            (38, 5),
+            (38, 6),
+            (38, 7),
+            (38, 10),
+            (38, 11),
+            (38, 12),
+            (38, 13),
+            (38, 16),
+            (38, 18),
+            (38, 19),
+            (38, 20),
+            (38, 21),
+            (38, 24),
+            (38, 27),
+            (38, 28),
+            (38, 29),
+            (38, 30),
+            (38, 31),
+            (38, 33),
+            (38, 37),
+            (38, 38),
+            (38, 39),
+            (38, 43),
+            (38, 45),
+            (38, 46),
+            (38, 47),
+            (38, 48),
+            (38, 50),
+            (38, 51),
+            (38, 52),
+            (38, 53),
+            (38, 54),
+            (38, 55),
+            (38, 56),
+            (38, 57),
+            (38, 59),
+            (38, 60),
+            (38, 61),
+            (38, 62),
+            (38, 63),
+            (38, 64),
+            (38, 65),
+            (38, 67),
+            (38, 68),
+            (38, 69),
+            (38, 70),
+            (38, 71),
+            (38, 72),
+            (38, 73),
+            (38, 74),
+            (38, 75),
+            (38, 76),
+            (38, 78),
+            (38, 81),
+            (38, 84),
+            (38, 85),
+            (38, 87),
+            (38, 90),
+            (38, 91),
+            (38, 92),
+            (38, 93),
+            (38, 94),
+            (38, 95),
+            (38, 96),
+            (38, 97),
+            (38, 99),
+            (39, 0),
+            (39, 2),
+            (39, 3),
+            (39, 4),
+            (39, 5),
+            (39, 6),
+            (39, 7),
+            (39, 12),
+            (39, 13),
+            (39, 16),
+            (39, 18),
+            (39, 19),
+            (39, 20),
+            (39, 21),
+            (39, 24),
+            (39, 27),
+            (39, 28),
+            (39, 29),
+            (39, 30),
+            (39, 31),
+            (39, 33),
+            (39, 37),
+            (39, 38),
+            (39, 39),
+            (39, 43),
+            (39, 45),
+            (39, 47),
+            (39, 48),
+            (39, 50),
+            (39, 51),
+            (39, 52),
+            (39, 53),
+            (39, 54),
+            (39, 55),
+            (39, 57),
+            (39, 60),
+            (39, 61),
+            (39, 62),
+            (39, 63),
+            (39, 64),
+            (39, 67),
+            (39, 68),
+            (39, 69),
+            (39, 70),
+            (39, 71),
+            (39, 72),
+            (39, 73),
+            (39, 74),
+            (39, 75),
+            (39, 76),
+            (39, 81),
+            (39, 84),
+            (39, 87),
+            (39, 90),
+            (39, 91),
+            (39, 94),
+            (39, 96),
+            (39, 97),
+            (39, 99),
+            (40, 0),
+            (40, 2),
+            (40, 3),
+            (40, 4),
+            (40, 5),
+            (40, 6),
+            (40, 7),
+            (40, 12),
+            (40, 13),
+            (40, 16),
+            (40, 18),
+            (40, 19),
+            (40, 24),
+            (40, 28),
+            (40, 29),
+            (40, 30),
+            (40, 33),
+            (40, 37),
+            (40, 38),
+            (40, 39),
+            (40, 45),
+            (40, 47),
+            (40, 48),
+            (40, 50),
+            (40, 51),
+            (40, 52),
+            (40, 53),
+            (40, 54),
+            (40, 55),
+            (40, 57),
+            (40, 60),
+            (40, 61),
+            (40, 62),
+            (40, 67),
+            (40, 68),
+            (40, 69),
+            (40, 70),
+            (40, 71),
+            (40, 72),
+            (40, 76),
+            (40, 81),
+            (40, 84),
+            (40, 87),
+            (40, 94),
+            (40, 96),
+            (40, 97),
+            (41, 3),
+            (41, 4),
+            (41, 29),
+            (41, 51),
+            (41, 54),
+            (41, 55),
+            (41, 57),
+            (41, 61),
+            (41, 96),
+            (42, 29),
+            (42, 54),
+            (42, 55),
+            (43, 0),
+            (43, 2),
+            (43, 3),
+            (43, 4),
+            (43, 5),
+            (43, 6),
+            (43, 7),
+            (43, 12),
+            (43, 13),
+            (43, 16),
+            (43, 18),
+            (43, 19),
+            (43, 20),
+            (43, 21),
+            (43, 24),
+            (43, 27),
+            (43, 28),
+            (43, 29),
+            (43, 30),
+            (43, 31),
+            (43, 33),
+            (43, 37),
+            (43, 38),
+            (43, 39),
+            (43, 43),
+            (43, 45),
+            (43, 47),
+            (43, 48),
+            (43, 50),
+            (43, 51),
+            (43, 52),
+            (43, 53),
+            (43, 54),
+            (43, 55),
+            (43, 57),
+            (43, 60),
+            (43, 61),
+            (43, 62),
+            (43, 63),
+            (43, 64),
+            (43, 67),
+            (43, 68),
+            (43, 69),
+            (43, 70),
+            (43, 71),
+            (43, 72),
+            (43, 73),
+            (43, 74),
+            (43, 75),
+            (43, 76),
+            (43, 81),
+            (43, 84),
+            (43, 87),
+            (43, 90),
+            (43, 91),
+            (43, 94),
+            (43, 96),
+            (43, 97),
+            (43, 99),
+            (44, 0),
+            (44, 2),
+            (44, 3),
+            (44, 4),
+            (44, 5),
+            (44, 6),
+            (44, 7),
+            (44, 10),
+            (44, 12),
+            (44, 13),
+            (44, 16),
+            (44, 18),
+            (44, 19),
+            (44, 20),
+            (44, 21),
+            (44, 24),
+            (44, 27),
+            (44, 28),
+            (44, 29),
+            (44, 30),
+            (44, 31),
+            (44, 33),
+            (44, 37),
+            (44, 38),
+            (44, 39),
+            (44, 43),
+            (44, 45),
+            (44, 46),
+            (44, 47),
+            (44, 48),
+            (44, 50),
+            (44, 51),
+            (44, 52),
+            (44, 53),
+            (44, 54),
+            (44, 55),
+            (44, 57),
+            (44, 59),
+            (44, 60),
+            (44, 61),
+            (44, 62),
+            (44, 63),
+            (44, 64),
+            (44, 67),
+            (44, 68),
+            (44, 69),
+            (44, 70),
+            (44, 71),
+            (44, 72),
+            (44, 73),
+            (44, 74),
+            (44, 75),
+            (44, 76),
+            (44, 81),
+            (44, 84),
+            (44, 85),
+            (44, 87),
+            (44, 90),
+            (44, 91),
+            (44, 92),
+            (44, 93),
+            (44, 94),
+            (44, 95),
+            (44, 96),
+            (44, 97),
+            (44, 99),
+            (45, 0),
+            (45, 2),
+            (45, 3),
+            (45, 4),
+            (45, 5),
+            (45, 6),
+            (45, 7),
+            (45, 10),
+            (45, 11),
+            (45, 12),
+            (45, 13),
+            (45, 16),
+            (45, 18),
+            (45, 19),
+            (45, 20),
+            (45, 21),
+            (45, 24),
+            (45, 27),
+            (45, 28),
+            (45, 29),
+            (45, 30),
+            (45, 31),
+            (45, 33),
+            (45, 37),
+            (45, 38),
+            (45, 39),
+            (45, 43),
+            (45, 45),
+            (45, 46),
+            (45, 47),
+            (45, 48),
+            (45, 50),
+            (45, 51),
+            (45, 52),
+            (45, 53),
+            (45, 54),
+            (45, 55),
+            (45, 57),
+            (45, 59),
+            (45, 60),
+            (45, 61),
+            (45, 62),
+            (45, 63),
+            (45, 64),
+            (45, 65),
+            (45, 67),
+            (45, 68),
+            (45, 69),
+            (45, 70),
+            (45, 71),
+            (45, 72),
+            (45, 73),
+            (45, 74),
+            (45, 75),
+            (45, 76),
+            (45, 81),
+            (45, 84),
+            (45, 85),
+            (45, 87),
+            (45, 90),
+            (45, 91),
+            (45, 92),
+            (45, 93),
+            (45, 94),
+            (45, 95),
+            (45, 96),
+            (45, 97),
+            (45, 99),
+            (46, 0),
+            (46, 2),
+            (46, 3),
+            (46, 4),
+            (46, 5),
+            (46, 6),
+            (46, 7),
+            (46, 12),
+            (46, 13),
+            (46, 16),
+            (46, 18),
+            (46, 19),
+            (46, 24),
+            (46, 28),
+            (46, 29),
+            (46, 30),
+            (46, 33),
+            (46, 37),
+            (46, 38),
+            (46, 39),
+            (46, 43),
+            (46, 45),
+            (46, 47),
+            (46, 48),
+            (46, 50),
+            (46, 51),
+            (46, 52),
+            (46, 53),
+            (46, 54),
+            (46, 55),
+            (46, 57),
+            (46, 60),
+            (46, 61),
+            (46, 62),
+            (46, 63),
+            (46, 64),
+            (46, 67),
+            (46, 68),
+            (46, 69),
+            (46, 70),
+            (46, 71),
+            (46, 72),
+            (46, 74),
+            (46, 75),
+            (46, 76),
+            (46, 81),
+            (46, 84),
+            (46, 87),
+            (46, 94),
+            (46, 96),
+            (46, 97),
+            (47, 0),
+            (47, 2),
+            (47, 3),
+            (47, 4),
+            (47, 5),
+            (47, 6),
+            (47, 7),
+            (47, 12),
+            (47, 13),
+            (47, 18),
+            (47, 19),
+            (47, 24),
+            (47, 29),
+            (47, 30),
+            (47, 33),
+            (47, 37),
+            (47, 38),
+            (47, 39),
+            (47, 45),
+            (47, 48),
+            (47, 51),
+            (47, 52),
+            (47, 53),
+            (47, 54),
+            (47, 55),
+            (47, 57),
+            (47, 60),
+            (47, 61),
+            (47, 68),
+            (47, 69),
+            (47, 70),
+            (47, 71),
+            (47, 72),
+            (47, 76),
+            (47, 84),
+            (47, 87),
+            (47, 94),
+            (47, 96),
+            (47, 97),
+            (48, 0),
+            (48, 2),
+            (48, 3),
+            (48, 4),
+            (48, 5),
+            (48, 6),
+            (48, 7),
+            (48, 12),
+            (48, 13),
+            (48, 16),
+            (48, 18),
+            (48, 19),
+            (48, 24),
+            (48, 28),
+            (48, 29),
+            (48, 30),
+            (48, 33),
+            (48, 37),
+            (48, 38),
+            (48, 39),
+            (48, 43),
+            (48, 45),
+            (48, 47),
+            (48, 48),
+            (48, 50),
+            (48, 51),
+            (48, 52),
+            (48, 53),
+            (48, 54),
+            (48, 55),
+            (48, 57),
+            (48, 60),
+            (48, 61),
+            (48, 62),
+            (48, 63),
+            (48, 64),
+            (48, 67),
+            (48, 68),
+            (48, 69),
+            (48, 70),
+            (48, 71),
+            (48, 72),
+            (48, 74),
+            (48, 75),
+            (48, 76),
+            (48, 81),
+            (48, 84),
+            (48, 87),
+            (48, 94),
+            (48, 96),
+            (48, 97),
+            (49, 0),
+            (49, 2),
+            (49, 3),
+            (49, 4),
+            (49, 5),
+            (49, 6),
+            (49, 7),
+            (49, 12),
+            (49, 13),
+            (49, 16),
+            (49, 18),
+            (49, 19),
+            (49, 24),
+            (49, 28),
+            (49, 29),
+            (49, 30),
+            (49, 33),
+            (49, 37),
+            (49, 38),
+            (49, 39),
+            (49, 45),
+            (49, 47),
+            (49, 48),
+            (49, 50),
+            (49, 51),
+            (49, 52),
+            (49, 53),
+            (49, 54),
+            (49, 55),
+            (49, 57),
+            (49, 60),
+            (49, 61),
+            (49, 62),
+            (49, 67),
+            (49, 68),
+            (49, 69),
+            (49, 70),
+            (49, 71),
+            (49, 72),
+            (49, 76),
+            (49, 81),
+            (49, 84),
+            (49, 87),
+            (49, 94),
+            (49, 96),
+            (49, 97),
+            (50, 0),
+            (50, 2),
+            (50, 3),
+            (50, 4),
+            (50, 5),
+            (50, 6),
+            (50, 7),
+            (50, 12),
+            (50, 19),
+            (50, 24),
+            (50, 29),
+            (50, 30),
+            (50, 37),
+            (50, 38),
+            (50, 39),
+            (50, 45),
+            (50, 51),
+            (50, 52),
+            (50, 53),
+            (50, 54),
+            (50, 55),
+            (50, 57),
+            (50, 60),
+            (50, 61),
+            (50, 68),
+            (50, 71),
+            (50, 72),
+            (50, 84),
+            (50, 87),
+            (50, 96),
+            (50, 97),
+            (51, 0),
+            (51, 2),
+            (51, 3),
+            (51, 4),
+            (51, 5),
+            (51, 6),
+            (51, 7),
+            (51, 12),
+            (51, 13),
+            (51, 16),
+            (51, 18),
+            (51, 19),
+            (51, 24),
+            (51, 28),
+            (51, 29),
+            (51, 30),
+            (51, 33),
+            (51, 37),
+            (51, 38),
+            (51, 39),
+            (51, 43),
+            (51, 45),
+            (51, 47),
+            (51, 48),
+            (51, 50),
+            (51, 51),
+            (51, 52),
+            (51, 53),
+            (51, 54),
+            (51, 55),
+            (51, 57),
+            (51, 60),
+            (51, 61),
+            (51, 62),
+            (51, 63),
+            (51, 64),
+            (51, 67),
+            (51, 68),
+            (51, 69),
+            (51, 70),
+            (51, 71),
+            (51, 72),
+            (51, 74),
+            (51, 75),
+            (51, 76),
+            (51, 81),
+            (51, 84),
+            (51, 87),
+            (51, 94),
+            (51, 96),
+            (51, 97),
+            (52, 0),
+            (52, 2),
+            (52, 3),
+            (52, 4),
+            (52, 5),
+            (52, 6),
+            (52, 7),
+            (52, 10),
+            (52, 11),
+            (52, 12),
+            (52, 13),
+            (52, 15),
+            (52, 16),
+            (52, 18),
+            (52, 19),
+            (52, 20),
+            (52, 21),
+            (52, 24),
+            (52, 27),
+            (52, 28),
+            (52, 29),
+            (52, 30),
+            (52, 31),
+            (52, 32),
+            (52, 33),
+            (52, 37),
+            (52, 38),
+            (52, 39),
+            (52, 40),
+            (52, 43),
+            (52, 45),
+            (52, 46),
+            (52, 47),
+            (52, 48),
+            (52, 50),
+            (52, 51),
+            (52, 52),
+            (52, 53),
+            (52, 54),
+            (52, 55),
+            (52, 56),
+            (52, 57),
+            (52, 59),
+            (52, 60),
+            (52, 61),
+            (52, 62),
+            (52, 63),
+            (52, 64),
+            (52, 65),
+            (52, 67),
+            (52, 68),
+            (52, 69),
+            (52, 70),
+            (52, 71),
+            (52, 72),
+            (52, 73),
+            (52, 74),
+            (52, 75),
+            (52, 76),
+            (52, 78),
+            (52, 81),
+            (52, 83),
+            (52, 84),
+            (52, 85),
+            (52, 87),
+            (52, 90),
+            (52, 91),
+            (52, 92),
+            (52, 93),
+            (52, 94),
+            (52, 95),
+            (52, 96),
+            (52, 97),
+            (52, 99),
+            (53, 0),
+            (53, 2),
+            (53, 3),
+            (53, 4),
+            (53, 5),
+            (53, 6),
+            (53, 7),
+            (53, 12),
+            (53, 13),
+            (53, 16),
+            (53, 18),
+            (53, 19),
+            (53, 20),
+            (53, 24),
+            (53, 28),
+            (53, 29),
+            (53, 30),
+            (53, 31),
+            (53, 33),
+            (53, 37),
+            (53, 38),
+            (53, 39),
+            (53, 43),
+            (53, 45),
+            (53, 47),
+            (53, 48),
+            (53, 50),
+            (53, 51),
+            (53, 52),
+            (53, 53),
+            (53, 54),
+            (53, 55),
+            (53, 57),
+            (53, 60),
+            (53, 61),
+            (53, 62),
+            (53, 63),
+            (53, 64),
+            (53, 67),
+            (53, 68),
+            (53, 69),
+            (53, 70),
+            (53, 71),
+            (53, 72),
+            (53, 73),
+            (53, 74),
+            (53, 75),
+            (53, 76),
+            (53, 81),
+            (53, 84),
+            (53, 87),
+            (53, 90),
+            (53, 94),
+            (53, 96),
+            (53, 97),
+            (53, 99),
+            (54, 0),
+            (54, 2),
+            (54, 3),
+            (54, 4),
+            (54, 5),
+            (54, 6),
+            (54, 7),
+            (54, 12),
+            (54, 13),
+            (54, 16),
+            (54, 18),
+            (54, 19),
+            (54, 20),
+            (54, 24),
+            (54, 28),
+            (54, 29),
+            (54, 30),
+            (54, 31),
+            (54, 33),
+            (54, 37),
+            (54, 38),
+            (54, 39),
+            (54, 43),
+            (54, 45),
+            (54, 47),
+            (54, 48),
+            (54, 50),
+            (54, 51),
+            (54, 52),
+            (54, 53),
+            (54, 54),
+            (54, 55),
+            (54, 57),
+            (54, 60),
+            (54, 61),
+            (54, 62),
+            (54, 63),
+            (54, 64),
+            (54, 67),
+            (54, 68),
+            (54, 69),
+            (54, 70),
+            (54, 71),
+            (54, 72),
+            (54, 73),
+            (54, 74),
+            (54, 75),
+            (54, 76),
+            (54, 81),
+            (54, 84),
+            (54, 87),
+            (54, 94),
+            (54, 96),
+            (54, 97),
+            (54, 99),
+            (55, 0),
+            (55, 2),
+            (55, 3),
+            (55, 4),
+            (55, 5),
+            (55, 6),
+            (55, 7),
+            (55, 9),
+            (55, 10),
+            (55, 11),
+            (55, 12),
+            (55, 13),
+            (55, 15),
+            (55, 16),
+            (55, 17),
+            (55, 18),
+            (55, 19),
+            (55, 20),
+            (55, 21),
+            (55, 23),
+            (55, 24),
+            (55, 27),
+            (55, 28),
+            (55, 29),
+            (55, 30),
+            (55, 31),
+            (55, 32),
+            (55, 33),
+            (55, 35),
+            (55, 37),
+            (55, 38),
+            (55, 39),
+            (55, 40),
+            (55, 43),
+            (55, 45),
+            (55, 46),
+            (55, 47),
+            (55, 48),
+            (55, 49),
+            (55, 50),
+            (55, 51),
+            (55, 52),
+            (55, 53),
+            (55, 54),
+            (55, 55),
+            (55, 56),
+            (55, 57),
+            (55, 59),
+            (55, 60),
+            (55, 61),
+            (55, 62),
+            (55, 63),
+            (55, 64),
+            (55, 65),
+            (55, 66),
+            (55, 67),
+            (55, 68),
+            (55, 69),
+            (55, 70),
+            (55, 71),
+            (55, 72),
+            (55, 73),
+            (55, 74),
+            (55, 75),
+            (55, 76),
+            (55, 77),
+            (55, 78),
+            (55, 79),
+            (55, 81),
+            (55, 82),
+            (55, 83),
+            (55, 84),
+            (55, 85),
+            (55, 87),
+            (55, 90),
+            (55, 91),
+            (55, 92),
+            (55, 93),
+            (55, 94),
+            (55, 95),
+            (55, 96),
+            (55, 97),
+            (55, 98),
+            (55, 99),
+            (56, 0),
+            (56, 2),
+            (56, 3),
+            (56, 4),
+            (56, 5),
+            (56, 6),
+            (56, 7),
+            (56, 12),
+            (56, 13),
+            (56, 16),
+            (56, 18),
+            (56, 19),
+            (56, 24),
+            (56, 28),
+            (56, 29),
+            (56, 30),
+            (56, 33),
+            (56, 37),
+            (56, 38),
+            (56, 39),
+            (56, 43),
+            (56, 45),
+            (56, 47),
+            (56, 48),
+            (56, 50),
+            (56, 51),
+            (56, 52),
+            (56, 53),
+            (56, 54),
+            (56, 55),
+            (56, 57),
+            (56, 60),
+            (56, 61),
+            (56, 62),
+            (56, 63),
+            (56, 64),
+            (56, 67),
+            (56, 68),
+            (56, 69),
+            (56, 70),
+            (56, 71),
+            (56, 72),
+            (56, 73),
+            (56, 74),
+            (56, 75),
+            (56, 76),
+            (56, 81),
+            (56, 84),
+            (56, 87),
+            (56, 94),
+            (56, 96),
+            (56, 97),
+            (57, 0),
+            (57, 2),
+            (57, 3),
+            (57, 4),
+            (57, 5),
+            (57, 6),
+            (57, 7),
+            (57, 10),
+            (57, 11),
+            (57, 12),
+            (57, 13),
+            (57, 16),
+            (57, 18),
+            (57, 19),
+            (57, 20),
+            (57, 21),
+            (57, 24),
+            (57, 27),
+            (57, 28),
+            (57, 29),
+            (57, 30),
+            (57, 31),
+            (57, 33),
+            (57, 37),
+            (57, 38),
+            (57, 39),
+            (57, 43),
+            (57, 45),
+            (57, 46),
+            (57, 47),
+            (57, 48),
+            (57, 50),
+            (57, 51),
+            (57, 52),
+            (57, 53),
+            (57, 54),
+            (57, 55),
+            (57, 57),
+            (57, 59),
+            (57, 60),
+            (57, 61),
+            (57, 62),
+            (57, 63),
+            (57, 64),
+            (57, 67),
+            (57, 68),
+            (57, 69),
+            (57, 70),
+            (57, 71),
+            (57, 72),
+            (57, 73),
+            (57, 74),
+            (57, 75),
+            (57, 76),
+            (57, 81),
+            (57, 84),
+            (57, 85),
+            (57, 87),
+            (57, 90),
+            (57, 91),
+            (57, 92),
+            (57, 93),
+            (57, 94),
+            (57, 95),
+            (57, 96),
+            (57, 97),
+            (57, 99),
+            (58, 0),
+            (58, 2),
+            (58, 3),
+            (58, 4),
+            (58, 5),
+            (58, 12),
+            (58, 19),
+            (58, 24),
+            (58, 29),
+            (58, 38),
+            (58, 39),
+            (58, 45),
+            (58, 51),
+            (58, 53),
+            (58, 54),
+            (58, 55),
+            (58, 57),
+            (58, 60),
+            (58, 61),
+            (58, 71),
+            (58, 72),
+            (58, 84),
+            (58, 87),
+            (58, 96),
+            (58, 97),
+            (59, 0),
+            (59, 2),
+            (59, 3),
+            (59, 4),
+            (59, 5),
+            (59, 6),
+            (59, 7),
+            (59, 12),
+            (59, 13),
+            (59, 16),
+            (59, 18),
+            (59, 19),
+            (59, 24),
+            (59, 28),
+            (59, 29),
+            (59, 30),
+            (59, 33),
+            (59, 37),
+            (59, 38),
+            (59, 39),
+            (59, 45),
+            (59, 47),
+            (59, 48),
+            (59, 50),
+            (59, 51),
+            (59, 52),
+            (59, 53),
+            (59, 54),
+            (59, 55),
+            (59, 57),
+            (59, 60),
+            (59, 61),
+            (59, 62),
+            (59, 67),
+            (59, 68),
+            (59, 69),
+            (59, 70),
+            (59, 71),
+            (59, 72),
+            (59, 76),
+            (59, 81),
+            (59, 84),
+            (59, 87),
+            (59, 94),
+            (59, 96),
+            (59, 97),
+            (60, 0),
+            (60, 2),
+            (60, 3),
+            (60, 4),
+            (60, 5),
+            (60, 6),
+            (60, 7),
+            (60, 12),
+            (60, 13),
+            (60, 18),
+            (60, 19),
+            (60, 24),
+            (60, 29),
+            (60, 30),
+            (60, 37),
+            (60, 38),
+            (60, 39),
+            (60, 45),
+            (60, 48),
+            (60, 51),
+            (60, 52),
+            (60, 53),
+            (60, 54),
+            (60, 55),
+            (60, 57),
+            (60, 60),
+            (60, 61),
+            (60, 68),
+            (60, 69),
+            (60, 70),
+            (60, 71),
+            (60, 72),
+            (60, 76),
+            (60, 84),
+            (60, 87),
+            (60, 94),
+            (60, 96),
+            (60, 97),
+            (61, 0),
+            (61, 2),
+            (61, 3),
+            (61, 4),
+            (61, 5),
+            (61, 6),
+            (61, 7),
+            (61, 12),
+            (61, 13),
+            (61, 16),
+            (61, 18),
+            (61, 19),
+            (61, 24),
+            (61, 28),
+            (61, 29),
+            (61, 30),
+            (61, 33),
+            (61, 37),
+            (61, 38),
+            (61, 39),
+            (61, 43),
+            (61, 45),
+            (61, 47),
+            (61, 48),
+            (61, 50),
+            (61, 51),
+            (61, 52),
+            (61, 53),
+            (61, 54),
+            (61, 55),
+            (61, 57),
+            (61, 60),
+            (61, 61),
+            (61, 62),
+            (61, 63),
+            (61, 64),
+            (61, 67),
+            (61, 68),
+            (61, 69),
+            (61, 70),
+            (61, 71),
+            (61, 72),
+            (61, 74),
+            (61, 76),
+            (61, 81),
+            (61, 84),
+            (61, 87),
+            (61, 94),
+            (61, 96),
+            (61, 97),
+            (62, 0),
+            (62, 2),
+            (62, 3),
+            (62, 4),
+            (62, 5),
+            (62, 6),
+            (62, 7),
+            (62, 12),
+            (62, 13),
+            (62, 16),
+            (62, 18),
+            (62, 19),
+            (62, 20),
+            (62, 24),
+            (62, 28),
+            (62, 29),
+            (62, 30),
+            (62, 31),
+            (62, 33),
+            (62, 37),
+            (62, 38),
+            (62, 39),
+            (62, 43),
+            (62, 45),
+            (62, 47),
+            (62, 48),
+            (62, 50),
+            (62, 51),
+            (62, 52),
+            (62, 53),
+            (62, 54),
+            (62, 55),
+            (62, 57),
+            (62, 60),
+            (62, 61),
+            (62, 62),
+            (62, 63),
+            (62, 64),
+            (62, 67),
+            (62, 68),
+            (62, 69),
+            (62, 70),
+            (62, 71),
+            (62, 72),
+            (62, 73),
+            (62, 74),
+            (62, 75),
+            (62, 76),
+            (62, 81),
+            (62, 84),
+            (62, 87),
+            (62, 90),
+            (62, 94),
+            (62, 96),
+            (62, 97),
+            (62, 99),
+            (63, 0),
+            (63, 2),
+            (63, 3),
+            (63, 4),
+            (63, 5),
+            (63, 6),
+            (63, 7),
+            (63, 12),
+            (63, 13),
+            (63, 18),
+            (63, 19),
+            (63, 24),
+            (63, 29),
+            (63, 30),
+            (63, 33),
+            (63, 37),
+            (63, 38),
+            (63, 39),
+            (63, 45),
+            (63, 48),
+            (63, 51),
+            (63, 52),
+            (63, 53),
+            (63, 54),
+            (63, 55),
+            (63, 57),
+            (63, 60),
+            (63, 61),
+            (63, 68),
+            (63, 69),
+            (63, 70),
+            (63, 71),
+            (63, 72),
+            (63, 76),
+            (63, 84),
+            (63, 87),
+            (63, 94),
+            (63, 96),
+            (63, 97),
+            (64, 0),
+            (64, 2),
+            (64, 3),
+            (64, 4),
+            (64, 5),
+            (64, 6),
+            (64, 7),
+            (64, 12),
+            (64, 13),
+            (64, 16),
+            (64, 18),
+            (64, 19),
+            (64, 20),
+            (64, 24),
+            (64, 27),
+            (64, 28),
+            (64, 29),
+            (64, 30),
+            (64, 31),
+            (64, 33),
+            (64, 37),
+            (64, 38),
+            (64, 39),
+            (64, 43),
+            (64, 45),
+            (64, 47),
+            (64, 48),
+            (64, 50),
+            (64, 51),
+            (64, 52),
+            (64, 53),
+            (64, 54),
+            (64, 55),
+            (64, 57),
+            (64, 60),
+            (64, 61),
+            (64, 62),
+            (64, 63),
+            (64, 64),
+            (64, 67),
+            (64, 68),
+            (64, 69),
+            (64, 70),
+            (64, 71),
+            (64, 72),
+            (64, 73),
+            (64, 74),
+            (64, 75),
+            (64, 76),
+            (64, 81),
+            (64, 84),
+            (64, 87),
+            (64, 90),
+            (64, 91),
+            (64, 94),
+            (64, 96),
+            (64, 97),
+            (64, 99),
+            (65, 0),
+            (65, 2),
+            (65, 3),
+            (65, 4),
+            (65, 5),
+            (65, 6),
+            (65, 7),
+            (65, 12),
+            (65, 13),
+            (65, 16),
+            (65, 18),
+            (65, 19),
+            (65, 24),
+            (65, 29),
+            (65, 30),
+            (65, 33),
+            (65, 37),
+            (65, 38),
+            (65, 39),
+            (65, 45),
+            (65, 47),
+            (65, 48),
+            (65, 51),
+            (65, 52),
+            (65, 53),
+            (65, 54),
+            (65, 55),
+            (65, 57),
+            (65, 60),
+            (65, 61),
+            (65, 62),
+            (65, 68),
+            (65, 69),
+            (65, 70),
+            (65, 71),
+            (65, 72),
+            (65, 76),
+            (65, 84),
+            (65, 87),
+            (65, 94),
+            (65, 96),
+            (65, 97),
+            (66, 0),
+            (66, 2),
+            (66, 3),
+            (66, 4),
+            (66, 5),
+            (66, 6),
+            (66, 7),
+            (66, 12),
+            (66, 19),
+            (66, 24),
+            (66, 29),
+            (66, 38),
+            (66, 39),
+            (66, 45),
+            (66, 51),
+            (66, 53),
+            (66, 54),
+            (66, 55),
+            (66, 57),
+            (66, 60),
+            (66, 61),
+            (66, 68),
+            (66, 71),
+            (66, 72),
+            (66, 84),
+            (66, 87),
+            (66, 96),
+            (66, 97),
+            (67, 0),
+            (67, 2),
+            (67, 3),
+            (67, 4),
+            (67, 5),
+            (67, 6),
+            (67, 7),
+            (67, 12),
+            (67, 13),
+            (67, 16),
+            (67, 18),
+            (67, 19),
+            (67, 24),
+            (67, 28),
+            (67, 29),
+            (67, 30),
+            (67, 33),
+            (67, 37),
+            (67, 38),
+            (67, 39),
+            (67, 43),
+            (67, 45),
+            (67, 47),
+            (67, 48),
+            (67, 50),
+            (67, 51),
+            (67, 52),
+            (67, 53),
+            (67, 54),
+            (67, 55),
+            (67, 57),
+            (67, 60),
+            (67, 61),
+            (67, 62),
+            (67, 63),
+            (67, 64),
+            (67, 67),
+            (67, 68),
+            (67, 69),
+            (67, 70),
+            (67, 71),
+            (67, 72),
+            (67, 73),
+            (67, 74),
+            (67, 75),
+            (67, 76),
+            (67, 81),
+            (67, 84),
+            (67, 87),
+            (67, 94),
+            (67, 96),
+            (67, 97),
+            (68, 0),
+            (68, 2),
+            (68, 3),
+            (68, 4),
+            (68, 5),
+            (68, 6),
+            (68, 7),
+            (68, 12),
+            (68, 13),
+            (68, 16),
+            (68, 18),
+            (68, 19),
+            (68, 24),
+            (68, 28),
+            (68, 29),
+            (68, 30),
+            (68, 33),
+            (68, 37),
+            (68, 38),
+            (68, 39),
+            (68, 43),
+            (68, 45),
+            (68, 47),
+            (68, 48),
+            (68, 50),
+            (68, 51),
+            (68, 52),
+            (68, 53),
+            (68, 54),
+            (68, 55),
+            (68, 57),
+            (68, 60),
+            (68, 61),
+            (68, 62),
+            (68, 63),
+            (68, 64),
+            (68, 67),
+            (68, 68),
+            (68, 69),
+            (68, 70),
+            (68, 71),
+            (68, 72),
+            (68, 74),
+            (68, 75),
+            (68, 76),
+            (68, 81),
+            (68, 84),
+            (68, 87),
+            (68, 94),
+            (68, 96),
+            (68, 97),
+            (69, 0),
+            (69, 2),
+            (69, 3),
+            (69, 4),
+            (69, 5),
+            (69, 6),
+            (69, 7),
+            (69, 10),
+            (69, 11),
+            (69, 12),
+            (69, 13),
+            (69, 16),
+            (69, 18),
+            (69, 19),
+            (69, 20),
+            (69, 21),
+            (69, 24),
+            (69, 27),
+            (69, 28),
+            (69, 29),
+            (69, 30),
+            (69, 31),
+            (69, 33),
+            (69, 37),
+            (69, 38),
+            (69, 39),
+            (69, 43),
+            (69, 45),
+            (69, 46),
+            (69, 47),
+            (69, 48),
+            (69, 50),
+            (69, 51),
+            (69, 52),
+            (69, 53),
+            (69, 54),
+            (69, 55),
+            (69, 57),
+            (69, 59),
+            (69, 60),
+            (69, 61),
+            (69, 62),
+            (69, 63),
+            (69, 64),
+            (69, 65),
+            (69, 67),
+            (69, 68),
+            (69, 69),
+            (69, 70),
+            (69, 71),
+            (69, 72),
+            (69, 73),
+            (69, 74),
+            (69, 75),
+            (69, 76),
+            (69, 81),
+            (69, 84),
+            (69, 85),
+            (69, 87),
+            (69, 90),
+            (69, 91),
+            (69, 92),
+            (69, 93),
+            (69, 94),
+            (69, 95),
+            (69, 96),
+            (69, 97),
+            (69, 99),
+            (70, 0),
+            (70, 2),
+            (70, 3),
+            (70, 4),
+            (70, 5),
+            (70, 6),
+            (70, 7),
+            (70, 12),
+            (70, 13),
+            (70, 16),
+            (70, 18),
+            (70, 19),
+            (70, 24),
+            (70, 28),
+            (70, 29),
+            (70, 30),
+            (70, 33),
+            (70, 37),
+            (70, 38),
+            (70, 39),
+            (70, 43),
+            (70, 45),
+            (70, 47),
+            (70, 48),
+            (70, 50),
+            (70, 51),
+            (70, 52),
+            (70, 53),
+            (70, 54),
+            (70, 55),
+            (70, 57),
+            (70, 60),
+            (70, 61),
+            (70, 62),
+            (70, 63),
+            (70, 67),
+            (70, 68),
+            (70, 69),
+            (70, 70),
+            (70, 71),
+            (70, 72),
+            (70, 74),
+            (70, 76),
+            (70, 81),
+            (70, 84),
+            (70, 87),
+            (70, 94),
+            (70, 96),
+            (70, 97),
+            (71, 0),
+            (71, 2),
+            (71, 3),
+            (71, 4),
+            (71, 5),
+            (71, 6),
+            (71, 7),
+            (71, 12),
+            (71, 13),
+            (71, 19),
+            (71, 24),
+            (71, 29),
+            (71, 30),
+            (71, 37),
+            (71, 38),
+            (71, 39),
+            (71, 45),
+            (71, 51),
+            (71, 52),
+            (71, 53),
+            (71, 54),
+            (71, 55),
+            (71, 57),
+            (71, 60),
+            (71, 61),
+            (71, 68),
+            (71, 71),
+            (71, 72),
+            (71, 84),
+            (71, 87),
+            (71, 96),
+            (71, 97),
+            (72, 0),
+            (72, 2),
+            (72, 3),
+            (72, 4),
+            (72, 5),
+            (72, 6),
+            (72, 7),
+            (72, 12),
+            (72, 13),
+            (72, 16),
+            (72, 18),
+            (72, 19),
+            (72, 24),
+            (72, 28),
+            (72, 29),
+            (72, 30),
+            (72, 33),
+            (72, 37),
+            (72, 38),
+            (72, 39),
+            (72, 43),
+            (72, 45),
+            (72, 47),
+            (72, 48),
+            (72, 50),
+            (72, 51),
+            (72, 52),
+            (72, 53),
+            (72, 54),
+            (72, 55),
+            (72, 57),
+            (72, 60),
+            (72, 61),
+            (72, 62),
+            (72, 63),
+            (72, 64),
+            (72, 67),
+            (72, 68),
+            (72, 69),
+            (72, 70),
+            (72, 71),
+            (72, 72),
+            (72, 73),
+            (72, 74),
+            (72, 75),
+            (72, 76),
+            (72, 81),
+            (72, 84),
+            (72, 87),
+            (72, 94),
+            (72, 96),
+            (72, 97),
+            (73, 3),
+            (73, 4),
+            (73, 29),
+            (73, 51),
+            (73, 54),
+            (73, 55),
+            (73, 57),
+            (73, 61),
+            (73, 96),
+            (74, 29),
+            (74, 51),
+            (74, 54),
+            (74, 55),
+            (74, 57),
+            (74, 61),
+            (74, 96),
+            (75, 0),
+            (75, 2),
+            (75, 3),
+            (75, 4),
+            (75, 5),
+            (75, 6),
+            (75, 7),
+            (75, 9),
+            (75, 10),
+            (75, 11),
+            (75, 12),
+            (75, 13),
+            (75, 15),
+            (75, 16),
+            (75, 17),
+            (75, 18),
+            (75, 19),
+            (75, 20),
+            (75, 21),
+            (75, 23),
+            (75, 24),
+            (75, 27),
+            (75, 28),
+            (75, 29),
+            (75, 30),
+            (75, 31),
+            (75, 32),
+            (75, 33),
+            (75, 35),
+            (75, 37),
+            (75, 38),
+            (75, 39),
+            (75, 40),
+            (75, 43),
+            (75, 45),
+            (75, 46),
+            (75, 47),
+            (75, 48),
+            (75, 49),
+            (75, 50),
+            (75, 51),
+            (75, 52),
+            (75, 53),
+            (75, 54),
+            (75, 55),
+            (75, 56),
+            (75, 57),
+            (75, 59),
+            (75, 60),
+            (75, 61),
+            (75, 62),
+            (75, 63),
+            (75, 64),
+            (75, 65),
+            (75, 66),
+            (75, 67),
+            (75, 68),
+            (75, 69),
+            (75, 70),
+            (75, 71),
+            (75, 72),
+            (75, 73),
+            (75, 74),
+            (75, 75),
+            (75, 76),
+            (75, 77),
+            (75, 78),
+            (75, 79),
+            (75, 81),
+            (75, 82),
+            (75, 83),
+            (75, 84),
+            (75, 85),
+            (75, 87),
+            (75, 90),
+            (75, 91),
+            (75, 92),
+            (75, 93),
+            (75, 94),
+            (75, 95),
+            (75, 96),
+            (75, 97),
+            (75, 98),
+            (75, 99),
+            (76, 0),
+            (76, 2),
+            (76, 3),
+            (76, 4),
+            (76, 5),
+            (76, 6),
+            (76, 7),
+            (76, 12),
+            (76, 13),
+            (76, 16),
+            (76, 18),
+            (76, 19),
+            (76, 20),
+            (76, 21),
+            (76, 24),
+            (76, 27),
+            (76, 28),
+            (76, 29),
+            (76, 30),
+            (76, 31),
+            (76, 33),
+            (76, 37),
+            (76, 38),
+            (76, 39),
+            (76, 43),
+            (76, 45),
+            (76, 47),
+            (76, 48),
+            (76, 50),
+            (76, 51),
+            (76, 52),
+            (76, 53),
+            (76, 54),
+            (76, 55),
+            (76, 57),
+            (76, 60),
+            (76, 61),
+            (76, 62),
+            (76, 63),
+            (76, 64),
+            (76, 67),
+            (76, 68),
+            (76, 69),
+            (76, 70),
+            (76, 71),
+            (76, 72),
+            (76, 73),
+            (76, 74),
+            (76, 75),
+            (76, 76),
+            (76, 81),
+            (76, 84),
+            (76, 87),
+            (76, 90),
+            (76, 91),
+            (76, 94),
+            (76, 95),
+            (76, 96),
+            (76, 97),
+            (76, 99),
+            (77, 0),
+            (77, 2),
+            (77, 3),
+            (77, 4),
+            (77, 5),
+            (77, 6),
+            (77, 7),
+            (77, 12),
+            (77, 13),
+            (77, 16),
+            (77, 18),
+            (77, 19),
+            (77, 24),
+            (77, 28),
+            (77, 29),
+            (77, 30),
+            (77, 33),
+            (77, 37),
+            (77, 38),
+            (77, 39),
+            (77, 45),
+            (77, 47),
+            (77, 48),
+            (77, 50),
+            (77, 51),
+            (77, 52),
+            (77, 53),
+            (77, 54),
+            (77, 55),
+            (77, 57),
+            (77, 60),
+            (77, 61),
+            (77, 62),
+            (77, 67),
+            (77, 68),
+            (77, 69),
+            (77, 70),
+            (77, 71),
+            (77, 72),
+            (77, 76),
+            (77, 81),
+            (77, 84),
+            (77, 87),
+            (77, 94),
+            (77, 96),
+            (77, 97),
+            (78, 0),
+            (78, 2),
+            (78, 3),
+            (78, 4),
+            (78, 5),
+            (78, 6),
+            (78, 7),
+            (78, 9),
+            (78, 10),
+            (78, 11),
+            (78, 12),
+            (78, 13),
+            (78, 15),
+            (78, 16),
+            (78, 17),
+            (78, 18),
+            (78, 19),
+            (78, 20),
+            (78, 21),
+            (78, 23),
+            (78, 24),
+            (78, 27),
+            (78, 28),
+            (78, 29),
+            (78, 30),
+            (78, 31),
+            (78, 32),
+            (78, 33),
+            (78, 35),
+            (78, 37),
+            (78, 38),
+            (78, 39),
+            (78, 40),
+            (78, 43),
+            (78, 45),
+            (78, 46),
+            (78, 47),
+            (78, 48),
+            (78, 49),
+            (78, 50),
+            (78, 51),
+            (78, 52),
+            (78, 53),
+            (78, 54),
+            (78, 55),
+            (78, 56),
+            (78, 57),
+            (78, 59),
+            (78, 60),
+            (78, 61),
+            (78, 62),
+            (78, 63),
+            (78, 64),
+            (78, 65),
+            (78, 67),
+            (78, 68),
+            (78, 69),
+            (78, 70),
+            (78, 71),
+            (78, 72),
+            (78, 73),
+            (78, 74),
+            (78, 75),
+            (78, 76),
+            (78, 77),
+            (78, 78),
+            (78, 79),
+            (78, 81),
+            (78, 82),
+            (78, 83),
+            (78, 84),
+            (78, 85),
+            (78, 87),
+            (78, 90),
+            (78, 91),
+            (78, 92),
+            (78, 93),
+            (78, 94),
+            (78, 95),
+            (78, 96),
+            (78, 97),
+            (78, 98),
+            (78, 99),
+            (79, 0),
+            (79, 2),
+            (79, 3),
+            (79, 4),
+            (79, 5),
+            (79, 6),
+            (79, 7),
+            (79, 12),
+            (79, 19),
+            (79, 24),
+            (79, 29),
+            (79, 30),
+            (79, 37),
+            (79, 38),
+            (79, 39),
+            (79, 45),
+            (79, 51),
+            (79, 52),
+            (79, 53),
+            (79, 54),
+            (79, 55),
+            (79, 57),
+            (79, 60),
+            (79, 61),
+            (79, 68),
+            (79, 71),
+            (79, 72),
+            (79, 84),
+            (79, 87),
+            (79, 96),
+            (79, 97),
+            (80, 0),
+            (80, 2),
+            (80, 3),
+            (80, 4),
+            (80, 5),
+            (80, 19),
+            (80, 24),
+            (80, 29),
+            (80, 38),
+            (80, 39),
+            (80, 45),
+            (80, 51),
+            (80, 54),
+            (80, 55),
+            (80, 57),
+            (80, 60),
+            (80, 61),
+            (80, 71),
+            (80, 72),
+            (80, 84),
+            (80, 87),
+            (80, 96),
+            (80, 97),
+            (81, 0),
+            (81, 2),
+            (81, 3),
+            (81, 4),
+            (81, 5),
+            (81, 6),
+            (81, 7),
+            (81, 9),
+            (81, 10),
+            (81, 11),
+            (81, 12),
+            (81, 13),
+            (81, 15),
+            (81, 16),
+            (81, 17),
+            (81, 18),
+            (81, 19),
+            (81, 20),
+            (81, 21),
+            (81, 23),
+            (81, 24),
+            (81, 27),
+            (81, 28),
+            (81, 29),
+            (81, 30),
+            (81, 31),
+            (81, 32),
+            (81, 33),
+            (81, 35),
+            (81, 37),
+            (81, 38),
+            (81, 39),
+            (81, 40),
+            (81, 43),
+            (81, 45),
+            (81, 46),
+            (81, 47),
+            (81, 48),
+            (81, 49),
+            (81, 50),
+            (81, 51),
+            (81, 52),
+            (81, 53),
+            (81, 54),
+            (81, 55),
+            (81, 56),
+            (81, 57),
+            (81, 59),
+            (81, 60),
+            (81, 61),
+            (81, 62),
+            (81, 63),
+            (81, 64),
+            (81, 65),
+            (81, 67),
+            (81, 68),
+            (81, 69),
+            (81, 70),
+            (81, 71),
+            (81, 72),
+            (81, 73),
+            (81, 74),
+            (81, 75),
+            (81, 76),
+            (81, 77),
+            (81, 78),
+            (81, 79),
+            (81, 81),
+            (81, 82),
+            (81, 83),
+            (81, 84),
+            (81, 85),
+            (81, 87),
+            (81, 90),
+            (81, 91),
+            (81, 92),
+            (81, 93),
+            (81, 94),
+            (81, 95),
+            (81, 96),
+            (81, 97),
+            (81, 98),
+            (81, 99),
+            (82, 0),
+            (82, 2),
+            (82, 3),
+            (82, 4),
+            (82, 5),
+            (82, 6),
+            (82, 7),
+            (82, 12),
+            (82, 13),
+            (82, 16),
+            (82, 18),
+            (82, 19),
+            (82, 24),
+            (82, 28),
+            (82, 29),
+            (82, 30),
+            (82, 33),
+            (82, 37),
+            (82, 38),
+            (82, 39),
+            (82, 45),
+            (82, 47),
+            (82, 48),
+            (82, 51),
+            (82, 52),
+            (82, 53),
+            (82, 54),
+            (82, 55),
+            (82, 57),
+            (82, 60),
+            (82, 61),
+            (82, 62),
+            (82, 67),
+            (82, 68),
+            (82, 69),
+            (82, 70),
+            (82, 71),
+            (82, 72),
+            (82, 76),
+            (82, 81),
+            (82, 84),
+            (82, 87),
+            (82, 94),
+            (82, 96),
+            (82, 97),
+            (83, 0),
+            (83, 2),
+            (83, 3),
+            (83, 4),
+            (83, 5),
+            (83, 6),
+            (83, 7),
+            (83, 12),
+            (83, 19),
+            (83, 24),
+            (83, 29),
+            (83, 30),
+            (83, 37),
+            (83, 38),
+            (83, 39),
+            (83, 45),
+            (83, 51),
+            (83, 52),
+            (83, 53),
+            (83, 54),
+            (83, 55),
+            (83, 57),
+            (83, 60),
+            (83, 61),
+            (83, 68),
+            (83, 71),
+            (83, 72),
+            (83, 84),
+            (83, 87),
+            (83, 96),
+            (83, 97),
+            (84, 0),
+            (84, 2),
+            (84, 3),
+            (84, 4),
+            (84, 5),
+            (84, 6),
+            (84, 7),
+            (84, 12),
+            (84, 13),
+            (84, 16),
+            (84, 18),
+            (84, 19),
+            (84, 20),
+            (84, 24),
+            (84, 28),
+            (84, 29),
+            (84, 30),
+            (84, 31),
+            (84, 33),
+            (84, 37),
+            (84, 38),
+            (84, 39),
+            (84, 43),
+            (84, 45),
+            (84, 47),
+            (84, 48),
+            (84, 50),
+            (84, 51),
+            (84, 52),
+            (84, 53),
+            (84, 54),
+            (84, 55),
+            (84, 57),
+            (84, 60),
+            (84, 61),
+            (84, 62),
+            (84, 63),
+            (84, 64),
+            (84, 67),
+            (84, 68),
+            (84, 69),
+            (84, 70),
+            (84, 71),
+            (84, 72),
+            (84, 73),
+            (84, 74),
+            (84, 75),
+            (84, 76),
+            (84, 81),
+            (84, 84),
+            (84, 87),
+            (84, 94),
+            (84, 96),
+            (84, 97),
+            (84, 99),
+            (85, 0),
+            (85, 2),
+            (85, 3),
+            (85, 4),
+            (85, 5),
+            (85, 6),
+            (85, 7),
+            (85, 12),
+            (85, 13),
+            (85, 19),
+            (85, 24),
+            (85, 29),
+            (85, 30),
+            (85, 37),
+            (85, 38),
+            (85, 39),
+            (85, 45),
+            (85, 48),
+            (85, 51),
+            (85, 52),
+            (85, 53),
+            (85, 54),
+            (85, 55),
+            (85, 57),
+            (85, 60),
+            (85, 61),
+            (85, 68),
+            (85, 70),
+            (85, 71),
+            (85, 72),
+            (85, 76),
+            (85, 84),
+            (85, 87),
+            (85, 94),
+            (85, 96),
+            (85, 97),
+            (86, 0),
+            (86, 2),
+            (86, 3),
+            (86, 4),
+            (86, 5),
+            (86, 6),
+            (86, 7),
+            (86, 12),
+            (86, 13),
+            (86, 16),
+            (86, 18),
+            (86, 19),
+            (86, 24),
+            (86, 29),
+            (86, 30),
+            (86, 33),
+            (86, 37),
+            (86, 38),
+            (86, 39),
+            (86, 45),
+            (86, 47),
+            (86, 48),
+            (86, 51),
+            (86, 52),
+            (86, 53),
+            (86, 54),
+            (86, 55),
+            (86, 57),
+            (86, 60),
+            (86, 61),
+            (86, 68),
+            (86, 69),
+            (86, 70),
+            (86, 71),
+            (86, 72),
+            (86, 76),
+            (86, 84),
+            (86, 87),
+            (86, 94),
+            (86, 96),
+            (86, 97),
+            (87, 0),
+            (87, 2),
+            (87, 3),
+            (87, 4),
+            (87, 5),
+            (87, 6),
+            (87, 7),
+            (87, 12),
+            (87, 13),
+            (87, 18),
+            (87, 19),
+            (87, 24),
+            (87, 29),
+            (87, 30),
+            (87, 37),
+            (87, 38),
+            (87, 39),
+            (87, 45),
+            (87, 48),
+            (87, 51),
+            (87, 52),
+            (87, 53),
+            (87, 54),
+            (87, 55),
+            (87, 57),
+            (87, 60),
+            (87, 61),
+            (87, 68),
+            (87, 69),
+            (87, 70),
+            (87, 71),
+            (87, 72),
+            (87, 76),
+            (87, 84),
+            (87, 87),
+            (87, 94),
+            (87, 96),
+            (87, 97),
+            (88, 3),
+            (88, 4),
+            (88, 29),
+            (88, 51),
+            (88, 54),
+            (88, 55),
+            (88, 57),
+            (88, 61),
+            (88, 96),
+            (89, 3),
+            (89, 4),
+            (89, 29),
+            (89, 51),
+            (89, 54),
+            (89, 55),
+            (89, 57),
+            (89, 61),
+            (89, 96),
+            (90, 0),
+            (90, 2),
+            (90, 3),
+            (90, 4),
+            (90, 5),
+            (90, 6),
+            (90, 7),
+            (90, 12),
+            (90, 13),
+            (90, 16),
+            (90, 18),
+            (90, 19),
+            (90, 24),
+            (90, 28),
+            (90, 29),
+            (90, 30),
+            (90, 33),
+            (90, 37),
+            (90, 38),
+            (90, 39),
+            (90, 43),
+            (90, 45),
+            (90, 47),
+            (90, 48),
+            (90, 50),
+            (90, 51),
+            (90, 52),
+            (90, 53),
+            (90, 54),
+            (90, 55),
+            (90, 57),
+            (90, 60),
+            (90, 61),
+            (90, 62),
+            (90, 63),
+            (90, 64),
+            (90, 67),
+            (90, 68),
+            (90, 69),
+            (90, 70),
+            (90, 71),
+            (90, 72),
+            (90, 73),
+            (90, 74),
+            (90, 75),
+            (90, 76),
+            (90, 81),
+            (90, 84),
+            (90, 87),
+            (90, 94),
+            (90, 96),
+            (90, 97),
+            (91, 0),
+            (91, 2),
+            (91, 3),
+            (91, 4),
+            (91, 5),
+            (91, 6),
+            (91, 7),
+            (91, 12),
+            (91, 13),
+            (91, 19),
+            (91, 24),
+            (91, 29),
+            (91, 30),
+            (91, 37),
+            (91, 38),
+            (91, 39),
+            (91, 45),
+            (91, 48),
+            (91, 51),
+            (91, 52),
+            (91, 53),
+            (91, 54),
+            (91, 55),
+            (91, 57),
+            (91, 60),
+            (91, 61),
+            (91, 68),
+            (91, 70),
+            (91, 71),
+            (91, 72),
+            (91, 76),
+            (91, 84),
+            (91, 87),
+            (91, 94),
+            (91, 96),
+            (91, 97),
+            (92, 0),
+            (92, 2),
+            (92, 3),
+            (92, 4),
+            (92, 5),
+            (92, 6),
+            (92, 7),
+            (92, 12),
+            (92, 13),
+            (92, 16),
+            (92, 18),
+            (92, 19),
+            (92, 24),
+            (92, 28),
+            (92, 29),
+            (92, 30),
+            (92, 31),
+            (92, 33),
+            (92, 37),
+            (92, 38),
+            (92, 39),
+            (92, 43),
+            (92, 45),
+            (92, 47),
+            (92, 48),
+            (92, 50),
+            (92, 51),
+            (92, 52),
+            (92, 53),
+            (92, 54),
+            (92, 55),
+            (92, 57),
+            (92, 60),
+            (92, 61),
+            (92, 62),
+            (92, 63),
+            (92, 64),
+            (92, 67),
+            (92, 68),
+            (92, 69),
+            (92, 70),
+            (92, 71),
+            (92, 72),
+            (92, 73),
+            (92, 74),
+            (92, 75),
+            (92, 76),
+            (92, 81),
+            (92, 84),
+            (92, 87),
+            (92, 94),
+            (92, 96),
+            (92, 97),
+            (92, 99),
+            (93, 3),
+            (93, 4),
+            (93, 19),
+            (93, 29),
+            (93, 45),
+            (93, 51),
+            (93, 54),
+            (93, 55),
+            (93, 57),
+            (93, 61),
+            (93, 96),
+            (93, 97),
+            (94, 0),
+            (94, 2),
+            (94, 3),
+            (94, 4),
+            (94, 5),
+            (94, 6),
+            (94, 7),
+            (94, 12),
+            (94, 13),
+            (94, 16),
+            (94, 18),
+            (94, 19),
+            (94, 24),
+            (94, 28),
+            (94, 29),
+            (94, 30),
+            (94, 33),
+            (94, 37),
+            (94, 38),
+            (94, 39),
+            (94, 43),
+            (94, 45),
+            (94, 47),
+            (94, 48),
+            (94, 50),
+            (94, 51),
+            (94, 52),
+            (94, 53),
+            (94, 54),
+            (94, 55),
+            (94, 57),
+            (94, 60),
+            (94, 61),
+            (94, 62),
+            (94, 63),
+            (94, 64),
+            (94, 67),
+            (94, 68),
+            (94, 69),
+            (94, 70),
+            (94, 71),
+            (94, 72),
+            (94, 73),
+            (94, 74),
+            (94, 75),
+            (94, 76),
+            (94, 81),
+            (94, 84),
+            (94, 87),
+            (94, 94),
+            (94, 96),
+            (94, 97),
+            (95, 0),
+            (95, 2),
+            (95, 3),
+            (95, 4),
+            (95, 5),
+            (95, 6),
+            (95, 7),
+            (95, 12),
+            (95, 13),
+            (95, 18),
+            (95, 19),
+            (95, 24),
+            (95, 29),
+            (95, 30),
+            (95, 37),
+            (95, 38),
+            (95, 39),
+            (95, 45),
+            (95, 48),
+            (95, 51),
+            (95, 52),
+            (95, 53),
+            (95, 54),
+            (95, 55),
+            (95, 57),
+            (95, 60),
+            (95, 61),
+            (95, 68),
+            (95, 69),
+            (95, 70),
+            (95, 71),
+            (95, 72),
+            (95, 76),
+            (95, 84),
+            (95, 87),
+            (95, 94),
+            (95, 96),
+            (95, 97),
+            (96, 0),
+            (96, 2),
+            (96, 3),
+            (96, 4),
+            (96, 5),
+            (96, 6),
+            (96, 7),
+            (96, 9),
+            (96, 10),
+            (96, 11),
+            (96, 12),
+            (96, 13),
+            (96, 15),
+            (96, 16),
+            (96, 17),
+            (96, 18),
+            (96, 19),
+            (96, 20),
+            (96, 21),
+            (96, 23),
+            (96, 24),
+            (96, 27),
+            (96, 28),
+            (96, 29),
+            (96, 30),
+            (96, 31),
+            (96, 32),
+            (96, 33),
+            (96, 35),
+            (96, 37),
+            (96, 38),
+            (96, 39),
+            (96, 40),
+            (96, 43),
+            (96, 45),
+            (96, 46),
+            (96, 47),
+            (96, 48),
+            (96, 49),
+            (96, 50),
+            (96, 51),
+            (96, 52),
+            (96, 53),
+            (96, 54),
+            (96, 55),
+            (96, 56),
+            (96, 57),
+            (96, 59),
+            (96, 60),
+            (96, 61),
+            (96, 62),
+            (96, 63),
+            (96, 64),
+            (96, 65),
+            (96, 66),
+            (96, 67),
+            (96, 68),
+            (96, 69),
+            (96, 70),
+            (96, 71),
+            (96, 72),
+            (96, 73),
+            (96, 74),
+            (96, 75),
+            (96, 76),
+            (96, 77),
+            (96, 78),
+            (96, 79),
+            (96, 81),
+            (96, 82),
+            (96, 83),
+            (96, 84),
+            (96, 85),
+            (96, 87),
+            (96, 90),
+            (96, 91),
+            (96, 92),
+            (96, 93),
+            (96, 94),
+            (96, 95),
+            (96, 96),
+            (96, 97),
+            (96, 98),
+            (96, 99),
+            (97, 0),
+            (97, 2),
+            (97, 3),
+            (97, 4),
+            (97, 5),
+            (97, 6),
+            (97, 7),
+            (97, 12),
+            (97, 13),
+            (97, 16),
+            (97, 18),
+            (97, 19),
+            (97, 24),
+            (97, 28),
+            (97, 29),
+            (97, 30),
+            (97, 31),
+            (97, 33),
+            (97, 37),
+            (97, 38),
+            (97, 39),
+            (97, 43),
+            (97, 45),
+            (97, 47),
+            (97, 48),
+            (97, 50),
+            (97, 51),
+            (97, 52),
+            (97, 53),
+            (97, 54),
+            (97, 55),
+            (97, 57),
+            (97, 60),
+            (97, 61),
+            (97, 62),
+            (97, 63),
+            (97, 64),
+            (97, 67),
+            (97, 68),
+            (97, 69),
+            (97, 70),
+            (97, 71),
+            (97, 72),
+            (97, 73),
+            (97, 74),
+            (97, 75),
+            (97, 76),
+            (97, 81),
+            (97, 84),
+            (97, 87),
+            (97, 94),
+            (97, 96),
+            (97, 97),
+            (97, 99),
+            (98, 0),
+            (98, 2),
+            (98, 3),
+            (98, 4),
+            (98, 5),
+            (98, 6),
+            (98, 7),
+            (98, 12),
+            (98, 13),
+            (98, 19),
+            (98, 24),
+            (98, 29),
+            (98, 30),
+            (98, 37),
+            (98, 38),
+            (98, 39),
+            (98, 45),
+            (98, 48),
+            (98, 51),
+            (98, 52),
+            (98, 53),
+            (98, 54),
+            (98, 55),
+            (98, 57),
+            (98, 60),
+            (98, 61),
+            (98, 68),
+            (98, 70),
+            (98, 71),
+            (98, 72),
+            (98, 76),
+            (98, 84),
+            (98, 87),
+            (98, 94),
+            (98, 96),
+            (98, 97),
+            (99, 0),
+            (99, 2),
+            (99, 3),
+            (99, 4),
+            (99, 5),
+            (99, 6),
+            (99, 7),
+            (99, 12),
+            (99, 13),
+            (99, 16),
+            (99, 18),
+            (99, 19),
+            (99, 24),
+            (99, 28),
+            (99, 29),
+            (99, 30),
+            (99, 33),
+            (99, 37),
+            (99, 38),
+            (99, 39),
+            (99, 45),
+            (99, 47),
+            (99, 48),
+            (99, 50),
+            (99, 51),
+            (99, 52),
+            (99, 53),
+            (99, 54),
+            (99, 55),
+            (99, 57),
+            (99, 60),
+            (99, 61),
+            (99, 62),
+            (99, 67),
+            (99, 68),
+            (99, 69),
+            (99, 70),
+            (99, 71),
+            (99, 72),
+            (99, 76),
+            (99, 81),
+            (99, 84),
+            (99, 87),
+            (99, 94),
+            (99, 96),
+            (99, 97),
+        }:
+            return 5
+        elif key in {
+            (0, 6),
+            (0, 7),
+            (1, 51),
+            (7, 10),
+            (7, 11),
+            (7, 46),
+            (7, 59),
+            (7, 65),
+            (7, 85),
+            (7, 92),
+            (8, 16),
+            (8, 18),
+            (8, 28),
+            (8, 33),
+            (8, 47),
+            (8, 50),
+            (8, 62),
+            (8, 67),
+            (8, 69),
+            (8, 81),
+            (9, 73),
+            (9, 99),
+            (10, 16),
+            (10, 18),
+            (10, 28),
+            (10, 33),
+            (10, 47),
+            (10, 50),
+            (10, 62),
+            (10, 67),
+            (10, 69),
+            (10, 81),
+            (11, 43),
+            (11, 50),
+            (11, 63),
+            (11, 64),
+            (11, 74),
+            (11, 75),
+            (12, 43),
+            (12, 63),
+            (12, 64),
+            (12, 74),
+            (12, 75),
+            (13, 9),
+            (13, 17),
+            (13, 23),
+            (13, 35),
+            (13, 77),
+            (13, 82),
+            (13, 98),
+            (14, 6),
+            (14, 7),
+            (14, 68),
+            (15, 16),
+            (15, 28),
+            (15, 33),
+            (15, 47),
+            (15, 50),
+            (15, 62),
+            (15, 67),
+            (15, 81),
+            (16, 63),
+            (16, 64),
+            (16, 73),
+            (16, 75),
+            (16, 99),
+            (17, 13),
+            (17, 30),
+            (17, 37),
+            (17, 48),
+            (17, 52),
+            (17, 70),
+            (17, 76),
+            (17, 94),
+            (18, 56),
+            (18, 65),
+            (18, 78),
+            (19, 49),
+            (19, 79),
+            (20, 5),
+            (20, 12),
+            (20, 38),
+            (20, 39),
+            (20, 53),
+            (20, 60),
+            (20, 71),
+            (20, 84),
+            (21, 20),
+            (21, 31),
+            (21, 90),
+            (22, 16),
+            (22, 18),
+            (22, 28),
+            (22, 33),
+            (22, 47),
+            (22, 50),
+            (22, 62),
+            (22, 67),
+            (22, 69),
+            (22, 81),
+            (23, 14),
+            (23, 26),
+            (23, 58),
+            (24, 56),
+            (24, 65),
+            (24, 78),
+            (25, 19),
+            (27, 13),
+            (27, 18),
+            (27, 30),
+            (27, 37),
+            (27, 48),
+            (27, 52),
+            (27, 69),
+            (27, 70),
+            (27, 76),
+            (27, 94),
+            (28, 43),
+            (28, 63),
+            (28, 64),
+            (28, 74),
+            (28, 75),
+            (29, 22),
+            (30, 43),
+            (30, 63),
+            (30, 64),
+            (30, 73),
+            (30, 74),
+            (30, 75),
+            (32, 0),
+            (32, 2),
+            (32, 24),
+            (32, 38),
+            (32, 39),
+            (32, 84),
+            (32, 87),
+            (33, 32),
+            (33, 56),
+            (33, 78),
+            (35, 13),
+            (35, 30),
+            (35, 37),
+            (35, 48),
+            (35, 52),
+            (35, 76),
+            (35, 94),
+            (36, 13),
+            (36, 18),
+            (36, 30),
+            (36, 37),
+            (36, 48),
+            (36, 52),
+            (36, 70),
+            (36, 76),
+            (36, 94),
+            (37, 6),
+            (37, 7),
+            (37, 68),
+            (38, 9),
+            (38, 15),
+            (38, 23),
+            (38, 32),
+            (38, 40),
+            (38, 83),
+            (39, 93),
+            (39, 95),
+            (40, 43),
+            (40, 63),
+            (40, 64),
+            (40, 74),
+            (40, 75),
+            (42, 57),
+            (42, 96),
+            (43, 10),
+            (43, 59),
+            (43, 85),
+            (43, 93),
+            (43, 95),
+            (44, 11),
+            (44, 56),
+            (44, 65),
+            (44, 78),
+            (45, 32),
+            (45, 56),
+            (45, 78),
+            (46, 73),
+            (46, 99),
+            (47, 16),
+            (47, 28),
+            (47, 47),
+            (47, 50),
+            (47, 62),
+            (47, 67),
+            (47, 81),
+            (48, 73),
+            (48, 99),
+            (49, 43),
+            (49, 63),
+            (49, 64),
+            (49, 73),
+            (49, 74),
+            (49, 75),
+            (50, 13),
+            (50, 18),
+            (50, 33),
+            (50, 48),
+            (50, 69),
+            (50, 70),
+            (50, 76),
+            (50, 94),
+            (51, 31),
+            (51, 73),
+            (51, 99),
+            (52, 9),
+            (52, 17),
+            (52, 23),
+            (52, 35),
+            (52, 77),
+            (52, 82),
+            (52, 98),
+            (53, 21),
+            (53, 27),
+            (53, 91),
+            (53, 93),
+            (53, 95),
+            (54, 21),
+            (54, 27),
+            (54, 90),
+            (54, 91),
+            (55, 14),
+            (55, 26),
+            (55, 58),
+            (56, 20),
+            (56, 31),
+            (56, 99),
+            (57, 56),
+            (57, 65),
+            (57, 78),
+            (58, 6),
+            (58, 7),
+            (58, 68),
+            (59, 43),
+            (59, 63),
+            (59, 64),
+            (59, 74),
+            (59, 75),
+            (60, 16),
+            (60, 28),
+            (60, 33),
+            (60, 47),
+            (60, 50),
+            (60, 62),
+            (60, 67),
+            (60, 81),
+            (61, 73),
+            (61, 75),
+            (61, 99),
+            (62, 21),
+            (62, 27),
+            (62, 91),
+            (62, 93),
+            (62, 95),
+            (63, 16),
+            (63, 28),
+            (63, 47),
+            (63, 50),
+            (63, 62),
+            (63, 67),
+            (63, 81),
+            (64, 21),
+            (64, 93),
+            (64, 95),
+            (65, 28),
+            (65, 50),
+            (65, 67),
+            (65, 81),
+            (66, 13),
+            (66, 30),
+            (66, 37),
+            (66, 48),
+            (66, 52),
+            (66, 70),
+            (66, 76),
+            (66, 94),
+            (67, 20),
+            (67, 31),
+            (67, 99),
+            (68, 73),
+            (68, 99),
+            (69, 32),
+            (69, 56),
+            (69, 78),
+            (70, 64),
+            (70, 73),
+            (70, 75),
+            (70, 99),
+            (71, 16),
+            (71, 18),
+            (71, 33),
+            (71, 47),
+            (71, 48),
+            (71, 69),
+            (71, 70),
+            (71, 76),
+            (71, 94),
+            (72, 20),
+            (72, 31),
+            (72, 99),
+            (73, 19),
+            (73, 45),
+            (74, 3),
+            (74, 4),
+            (76, 10),
+            (76, 46),
+            (76, 59),
+            (76, 85),
+            (76, 92),
+            (76, 93),
+            (77, 43),
+            (77, 63),
+            (77, 64),
+            (77, 73),
+            (77, 74),
+            (77, 75),
+            (78, 66),
+            (79, 13),
+            (79, 16),
+            (79, 18),
+            (79, 33),
+            (79, 47),
+            (79, 48),
+            (79, 69),
+            (79, 70),
+            (79, 76),
+            (79, 94),
+            (80, 6),
+            (80, 7),
+            (80, 12),
+            (80, 53),
+            (80, 68),
+            (81, 66),
+            (82, 43),
+            (82, 50),
+            (82, 63),
+            (82, 64),
+            (82, 74),
+            (82, 75),
+            (83, 13),
+            (83, 18),
+            (83, 33),
+            (83, 48),
+            (83, 69),
+            (83, 70),
+            (83, 76),
+            (83, 94),
+            (84, 21),
+            (84, 27),
+            (84, 90),
+            (84, 91),
+            (85, 16),
+            (85, 18),
+            (85, 28),
+            (85, 33),
+            (85, 47),
+            (85, 62),
+            (85, 67),
+            (85, 69),
+            (85, 81),
+            (86, 28),
+            (86, 50),
+            (86, 62),
+            (86, 67),
+            (86, 81),
+            (87, 16),
+            (87, 28),
+            (87, 33),
+            (87, 47),
+            (87, 50),
+            (87, 62),
+            (87, 67),
+            (87, 81),
+            (90, 20),
+            (90, 31),
+            (90, 99),
+            (91, 16),
+            (91, 18),
+            (91, 28),
+            (91, 33),
+            (91, 47),
+            (91, 62),
+            (91, 67),
+            (91, 69),
+            (92, 20),
+            (92, 90),
+            (92, 91),
+            (93, 72),
+            (94, 31),
+            (94, 99),
+            (95, 16),
+            (95, 28),
+            (95, 33),
+            (95, 47),
+            (95, 50),
+            (95, 62),
+            (95, 67),
+            (95, 81),
+            (97, 20),
+            (97, 90),
+            (97, 91),
+            (98, 16),
+            (98, 18),
+            (98, 28),
+            (98, 33),
+            (98, 47),
+            (98, 62),
+            (98, 67),
+            (98, 69),
+            (99, 43),
+            (99, 63),
+            (99, 64),
+            (99, 74),
+            (99, 75),
+        }:
+            return 29
+        return 18
+
+    mlp_1_1_outputs = [mlp_1_1(k0, k1) for k0, k1 in zip(positions, attn_1_2_outputs)]
+    mlp_1_1_output_scores = classifier_weights.loc[
+        [("mlp_1_1_outputs", str(v)) for v in mlp_1_1_outputs]
+    ]
+
+    # num_mlp_1_0 #################################################
+    def num_mlp_1_0(num_attn_1_3_output, num_attn_0_3_output):
+        key = (num_attn_1_3_output, num_attn_0_3_output)
+        return 46
+
+    num_mlp_1_0_outputs = [
+        num_mlp_1_0(k0, k1)
+        for k0, k1 in zip(num_attn_1_3_outputs, num_attn_0_3_outputs)
+    ]
+    num_mlp_1_0_output_scores = classifier_weights.loc[
+        [("num_mlp_1_0_outputs", str(v)) for v in num_mlp_1_0_outputs]
+    ]
+
+    # num_mlp_1_1 #################################################
+    def num_mlp_1_1(num_attn_0_1_output, num_attn_1_1_output):
+        key = (num_attn_0_1_output, num_attn_1_1_output)
+        return 36
+
+    num_mlp_1_1_outputs = [
+        num_mlp_1_1(k0, k1)
+        for k0, k1 in zip(num_attn_0_1_outputs, num_attn_1_1_outputs)
+    ]
+    num_mlp_1_1_output_scores = classifier_weights.loc[
+        [("num_mlp_1_1_outputs", str(v)) for v in num_mlp_1_1_outputs]
+    ]
+
+    # attn_2_0 ####################################################
+    def predicate_2_0(attn_0_1_output, position):
+        if attn_0_1_output in {"5", "0"}:
+            return position == 3
+        elif attn_0_1_output in {"1"}:
+            return position == 0
+        elif attn_0_1_output in {"2"}:
+            return position == 14
+        elif attn_0_1_output in {"3"}:
+            return position == 4
+        elif attn_0_1_output in {"4"}:
+            return position == 51
+        elif attn_0_1_output in {"<s>"}:
+            return position == 84
+
+    attn_2_0_pattern = select_closest(positions, attn_0_1_outputs, predicate_2_0)
+    attn_2_0_outputs = aggregate(attn_2_0_pattern, attn_0_1_outputs)
+    attn_2_0_output_scores = classifier_weights.loc[
+        [("attn_2_0_outputs", str(v)) for v in attn_2_0_outputs]
+    ]
+
+    # attn_2_1 ####################################################
+    def predicate_2_1(q_position, k_position):
+        if q_position in {
+            0,
+            10,
+            15,
+            17,
+            21,
+            22,
+            26,
+            28,
+            31,
+            34,
+            36,
+            37,
+            38,
+            40,
+            42,
+            43,
+            46,
+            47,
+            50,
+            53,
+            54,
+            55,
+            56,
+            60,
+            62,
+            66,
+            67,
+            68,
+            70,
+            72,
+            73,
+            76,
+            78,
+            79,
+            80,
+            82,
+            83,
+            84,
+            85,
+            87,
+            90,
+            92,
+            94,
+            96,
+            99,
+        }:
+            return k_position == 69
+        elif q_position in {1, 7}:
             return k_position == 2
+        elif q_position in {2, 3, 5}:
+            return k_position == 4
+        elif q_position in {98, 4, 30}:
+            return k_position == 3
+        elif q_position in {6}:
+            return k_position == 0
+        elif q_position in {8, 25, 61, 13}:
+            return k_position == 89
+        elif q_position in {
+            64,
+            33,
+            97,
+            39,
+            9,
+            74,
+            12,
+            77,
+            49,
+            18,
+            51,
+            81,
+            86,
+            57,
+            91,
+            95,
+        }:
+            return k_position == 6
+        elif q_position in {11, 45}:
+            return k_position == 21
+        elif q_position in {24, 27, 14}:
+            return k_position == 28
+        elif q_position in {16}:
+            return k_position == 97
+        elif q_position in {19}:
+            return k_position == 14
+        elif q_position in {20, 44}:
+            return k_position == 1
+        elif q_position in {48, 23}:
+            return k_position == 24
+        elif q_position in {29}:
+            return k_position == 53
+        elif q_position in {32, 58}:
+            return k_position == 45
+        elif q_position in {35}:
+            return k_position == 65
+        elif q_position in {41}:
+            return k_position == 39
+        elif q_position in {52}:
+            return k_position == 5
+        elif q_position in {59}:
+            return k_position == 50
+        elif q_position in {63}:
+            return k_position == 33
+        elif q_position in {65}:
+            return k_position == 8
+        elif q_position in {89, 69}:
+            return k_position == 20
+        elif q_position in {71}:
+            return k_position == 75
+        elif q_position in {75}:
+            return k_position == 92
+        elif q_position in {88}:
+            return k_position == 60
+        elif q_position in {93}:
+            return k_position == 40
 
     attn_2_1_pattern = select_closest(positions, positions, predicate_2_1)
-    attn_2_1_outputs = aggregate(attn_2_1_pattern, mlp_0_0_outputs)
+    attn_2_1_outputs = aggregate(attn_2_1_pattern, attn_1_1_outputs)
     attn_2_1_output_scores = classifier_weights.loc[
         [("attn_2_1_outputs", str(v)) for v in attn_2_1_outputs]
     ]
@@ -3912,157 +7730,230 @@ def run(tokens):
         if q_position in {
             0,
             8,
-            9,
-            11,
-            16,
-            19,
-            20,
-            22,
+            12,
+            13,
+            18,
+            21,
             23,
-            25,
-            27,
+            24,
             29,
-            30,
             32,
             34,
             35,
             36,
-            37,
+            38,
+            40,
             41,
-            45,
-            48,
-            49,
+            44,
+            47,
             50,
-            51,
             52,
-            53,
             56,
+            57,
+            58,
             59,
             61,
-            62,
             65,
-            68,
-            71,
+            67,
+            70,
             72,
             73,
             74,
-            75,
-            81,
+            76,
+            77,
+            78,
             82,
-            84,
-            85,
+            83,
             87,
-            88,
             92,
-            96,
-            98,
+            94,
+            95,
+            97,
         }:
-            return k_position == 45
-        elif q_position in {1, 66, 70, 57}:
+            return k_position == 69
+        elif q_position in {1, 7}:
             return k_position == 6
-        elif q_position in {2, 3}:
-            return k_position == 0
-        elif q_position in {4}:
-            return k_position == 3
-        elif q_position in {5, 6}:
-            return k_position == 4
-        elif q_position in {7}:
+        elif q_position in {2, 98, 37, 51, 54}:
             return k_position == 1
-        elif q_position in {10}:
-            return k_position == 23
-        elif q_position in {12}:
-            return k_position == 96
-        elif q_position in {64, 67, 58, 99, 40, 43, 13, 77, 15, 47, 83, 54, 26}:
-            return k_position == 7
-        elif q_position in {14}:
-            return k_position == 20
-        elif q_position in {17}:
-            return k_position == 99
-        elif q_position in {18}:
-            return k_position == 16
-        elif q_position in {90, 60, 21}:
-            return k_position == 50
-        elif q_position in {24, 80, 94}:
+        elif q_position in {96, 3, 5, 14, 22, 60}:
+            return k_position == 4
+        elif q_position in {4, 6}:
+            return k_position == 5
+        elif q_position in {99, 68, 39, 9, 10, 11, 48, 80, 84, 86, 88, 62, 31}:
             return k_position == 89
+        elif q_position in {15}:
+            return k_position == 37
+        elif q_position in {16}:
+            return k_position == 75
+        elif q_position in {17}:
+            return k_position == 83
+        elif q_position in {43, 19}:
+            return k_position == 45
+        elif q_position in {20}:
+            return k_position == 74
+        elif q_position in {25}:
+            return k_position == 58
+        elif q_position in {26}:
+            return k_position == 34
+        elif q_position in {27, 46}:
+            return k_position == 47
         elif q_position in {28}:
             return k_position == 63
-        elif q_position in {78, 31}:
-            return k_position == 37
+        elif q_position in {30}:
+            return k_position == 22
         elif q_position in {33}:
             return k_position == 9
-        elif q_position in {38}:
-            return k_position == 39
-        elif q_position in {55, 39}:
-            return k_position == 5
         elif q_position in {42}:
-            return k_position == 65
-        elif q_position in {44}:
-            return k_position == 57
-        elif q_position in {46}:
-            return k_position == 68
+            return k_position == 27
+        elif q_position in {89, 81, 69, 45}:
+            return k_position == 7
+        elif q_position in {49, 55}:
+            return k_position == 25
+        elif q_position in {91, 53}:
+            return k_position == 8
         elif q_position in {63}:
-            return k_position == 94
-        elif q_position in {69}:
-            return k_position == 14
-        elif q_position in {76}:
-            return k_position == 61
-        elif q_position in {79}:
-            return k_position == 21
-        elif q_position in {86}:
-            return k_position == 38
-        elif q_position in {89}:
-            return k_position == 97
-        elif q_position in {91}:
-            return k_position == 28
-        elif q_position in {93}:
+            return k_position == 72
+        elif q_position in {64}:
+            return k_position == 62
+        elif q_position in {66}:
+            return k_position == 90
+        elif q_position in {93, 71}:
             return k_position == 79
-        elif q_position in {95}:
-            return k_position == 52
-        elif q_position in {97}:
-            return k_position == 82
+        elif q_position in {75}:
+            return k_position == 0
+        elif q_position in {79}:
+            return k_position == 71
+        elif q_position in {85}:
+            return k_position == 53
+        elif q_position in {90}:
+            return k_position == 50
 
     attn_2_2_pattern = select_closest(positions, positions, predicate_2_2)
-    attn_2_2_outputs = aggregate(attn_2_2_pattern, mlp_1_1_outputs)
+    attn_2_2_outputs = aggregate(attn_2_2_pattern, mlp_0_1_outputs)
     attn_2_2_output_scores = classifier_weights.loc[
         [("attn_2_2_outputs", str(v)) for v in attn_2_2_outputs]
     ]
 
     # attn_2_3 ####################################################
-    def predicate_2_3(token, position):
-        if token in {"1", "4", "5", "0", "3"}:
-            return position == 0
-        elif token in {"2"}:
-            return position == 6
-        elif token in {"<s>"}:
-            return position == 74
+    def predicate_2_3(attn_0_1_output, mlp_0_0_output):
+        if attn_0_1_output in {"0"}:
+            return mlp_0_0_output == 98
+        elif attn_0_1_output in {"1"}:
+            return mlp_0_0_output == 30
+        elif attn_0_1_output in {"2"}:
+            return mlp_0_0_output == 68
+        elif attn_0_1_output in {"3"}:
+            return mlp_0_0_output == 6
+        elif attn_0_1_output in {"4"}:
+            return mlp_0_0_output == 33
+        elif attn_0_1_output in {"5"}:
+            return mlp_0_0_output == 0
+        elif attn_0_1_output in {"<s>"}:
+            return mlp_0_0_output == 28
 
-    attn_2_3_pattern = select_closest(positions, tokens, predicate_2_3)
-    attn_2_3_outputs = aggregate(attn_2_3_pattern, mlp_0_1_outputs)
+    attn_2_3_pattern = select_closest(mlp_0_0_outputs, attn_0_1_outputs, predicate_2_3)
+    attn_2_3_outputs = aggregate(attn_2_3_pattern, attn_1_2_outputs)
     attn_2_3_output_scores = classifier_weights.loc[
         [("attn_2_3_outputs", str(v)) for v in attn_2_3_outputs]
     ]
 
     # num_attn_2_0 ####################################################
-    def num_predicate_2_0(token, attn_1_3_output):
-        if token in {"0"}:
-            return attn_1_3_output == "4"
-        elif token in {"1", "4", "5", "3", "2"}:
-            return attn_1_3_output == "0"
-        elif token in {"<s>"}:
-            return attn_1_3_output == ""
+    def num_predicate_2_0(position, token):
+        if position in {
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12,
+            15,
+            17,
+            20,
+            21,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            32,
+            35,
+            36,
+            40,
+            42,
+            43,
+            44,
+            47,
+            48,
+            49,
+            51,
+            53,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            66,
+            67,
+            68,
+            70,
+            71,
+            72,
+            73,
+            76,
+            79,
+            80,
+            83,
+            85,
+            86,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            99,
+        }:
+            return token == ""
+        elif position in {1, 98, 37, 18, 52, 87}:
+            return token == "4"
+        elif position in {33, 8, 13, 78, 81, 84, 95}:
+            return token == "2"
+        elif position in {96, 65, 69, 39, 41, 74, 77, 14, 46, 16, 82, 22, 88, 89, 29}:
+            return token == "1"
+        elif position in {50, 19, 38}:
+            return token == "3"
+        elif position in {34}:
+            return token == "5"
+        elif position in {75, 45, 54}:
+            return token == "0"
 
-    num_attn_2_0_pattern = select(attn_1_3_outputs, tokens, num_predicate_2_0)
-    num_attn_2_0_outputs = aggregate_sum(num_attn_2_0_pattern, num_attn_0_2_outputs)
+    num_attn_2_0_pattern = select(tokens, positions, num_predicate_2_0)
+    num_attn_2_0_outputs = aggregate_sum(num_attn_2_0_pattern, ones)
     num_attn_2_0_output_scores = classifier_weights.loc[
         [("num_attn_2_0_outputs", "_") for v in num_attn_2_0_outputs]
     ].mul(num_attn_2_0_outputs, axis=0)
 
     # num_attn_2_1 ####################################################
     def num_predicate_2_1(attn_0_1_output, token):
-        if attn_0_1_output in {"0"}:
-            return token == "5"
-        elif attn_0_1_output in {"1", "4", "5", "3", "<s>", "2"}:
-            return token == "0"
+        if attn_0_1_output in {"4", "0", "5", "1", "3"}:
+            return token == "2"
+        elif attn_0_1_output in {"2"}:
+            return token == "4"
+        elif attn_0_1_output in {"<s>"}:
+            return token == "<s>"
 
     num_attn_2_1_pattern = select(tokens, attn_0_1_outputs, num_predicate_2_1)
     num_attn_2_1_outputs = aggregate_sum(num_attn_2_1_pattern, ones)
@@ -4071,159 +7962,78 @@ def run(tokens):
     ].mul(num_attn_2_1_outputs, axis=0)
 
     # num_attn_2_2 ####################################################
-    def num_predicate_2_2(position, attn_1_3_output):
-        if position in {
-            0,
-            3,
-            4,
-            5,
-            6,
-            7,
-            10,
-            31,
-            38,
-            40,
-            41,
-            47,
-            53,
-            61,
-            64,
-            66,
-            72,
-            90,
-            95,
-        }:
-            return attn_1_3_output == ""
-        elif position in {
-            1,
-            2,
-            11,
-            15,
-            16,
-            19,
-            20,
-            22,
-            26,
-            32,
-            35,
-            37,
-            39,
-            49,
-            54,
-            57,
-            58,
-            60,
-            63,
-            68,
-            71,
-            73,
-            74,
-            76,
-            80,
-            81,
-            82,
-            86,
-            93,
-            98,
-        }:
-            return attn_1_3_output == "3"
-        elif position in {65, 34, 8, 44, 46, 78, 48, 18, 52, 87, 55, 62}:
-            return attn_1_3_output == "5"
-        elif position in {9, 42, 59, 36}:
-            return attn_1_3_output == "2"
-        elif position in {12, 45, 13, 14, 51, 85}:
-            return attn_1_3_output == "0"
-        elif position in {17, 67}:
-            return attn_1_3_output == "<s>"
-        elif position in {
-            21,
-            24,
-            25,
-            28,
-            30,
-            43,
-            56,
-            69,
-            70,
-            75,
-            77,
-            79,
-            84,
-            88,
-            89,
-            91,
-            94,
-            96,
-            97,
-            99,
-        }:
-            return attn_1_3_output == "4"
-        elif position in {33, 50, 83, 23, 27, 92, 29}:
-            return attn_1_3_output == "1"
+    def num_predicate_2_2(q_attn_0_3_output, k_attn_0_3_output):
+        if q_attn_0_3_output in {"2", "4", "0", "<s>", "5", "1"}:
+            return k_attn_0_3_output == "3"
+        elif q_attn_0_3_output in {"3"}:
+            return k_attn_0_3_output == "5"
 
-    num_attn_2_2_pattern = select(attn_1_3_outputs, positions, num_predicate_2_2)
+    num_attn_2_2_pattern = select(attn_0_3_outputs, attn_0_3_outputs, num_predicate_2_2)
     num_attn_2_2_outputs = aggregate_sum(num_attn_2_2_pattern, ones)
     num_attn_2_2_output_scores = classifier_weights.loc[
         [("num_attn_2_2_outputs", "_") for v in num_attn_2_2_outputs]
     ].mul(num_attn_2_2_outputs, axis=0)
 
     # num_attn_2_3 ####################################################
-    def num_predicate_2_3(q_attn_1_3_output, k_attn_1_3_output):
-        if q_attn_1_3_output in {"1", "4", "5", "0", "2"}:
-            return k_attn_1_3_output == ""
-        elif q_attn_1_3_output in {"3", "<s>"}:
-            return k_attn_1_3_output == "3"
+    def num_predicate_2_3(attn_0_1_output, attn_0_2_output):
+        if attn_0_1_output in {"2", "4", "0", "5", "1"}:
+            return attn_0_2_output == ""
+        elif attn_0_1_output in {"<s>", "3"}:
+            return attn_0_2_output == "3"
 
-    num_attn_2_3_pattern = select(attn_1_3_outputs, attn_1_3_outputs, num_predicate_2_3)
+    num_attn_2_3_pattern = select(attn_0_2_outputs, attn_0_1_outputs, num_predicate_2_3)
     num_attn_2_3_outputs = aggregate_sum(num_attn_2_3_pattern, num_attn_0_3_outputs)
     num_attn_2_3_output_scores = classifier_weights.loc[
         [("num_attn_2_3_outputs", "_") for v in num_attn_2_3_outputs]
     ].mul(num_attn_2_3_outputs, axis=0)
 
     # mlp_2_0 #####################################################
-    def mlp_2_0(attn_1_0_output, num_mlp_1_1_output):
-        key = (attn_1_0_output, num_mlp_1_1_output)
-        if key in {("5", 28)}:
-            return 5
+    def mlp_2_0(num_mlp_1_0_output, attn_1_1_output):
+        key = (num_mlp_1_0_output, attn_1_1_output)
         return 89
 
     mlp_2_0_outputs = [
-        mlp_2_0(k0, k1) for k0, k1 in zip(attn_1_0_outputs, num_mlp_1_1_outputs)
+        mlp_2_0(k0, k1) for k0, k1 in zip(num_mlp_1_0_outputs, attn_1_1_outputs)
     ]
     mlp_2_0_output_scores = classifier_weights.loc[
         [("mlp_2_0_outputs", str(v)) for v in mlp_2_0_outputs]
     ]
 
     # mlp_2_1 #####################################################
-    def mlp_2_1(attn_2_3_output, attn_0_3_output):
-        key = (attn_2_3_output, attn_0_3_output)
-        return 79
+    def mlp_2_1(attn_1_3_output, attn_1_1_output):
+        key = (attn_1_3_output, attn_1_1_output)
+        if key in {(17, 37)}:
+            return 92
+        return 50
 
     mlp_2_1_outputs = [
-        mlp_2_1(k0, k1) for k0, k1 in zip(attn_2_3_outputs, attn_0_3_outputs)
+        mlp_2_1(k0, k1) for k0, k1 in zip(attn_1_3_outputs, attn_1_1_outputs)
     ]
     mlp_2_1_output_scores = classifier_weights.loc[
         [("mlp_2_1_outputs", str(v)) for v in mlp_2_1_outputs]
     ]
 
     # num_mlp_2_0 #################################################
-    def num_mlp_2_0(num_attn_0_1_output):
-        key = num_attn_0_1_output
-        return 55
+    def num_mlp_2_0(num_attn_2_3_output, num_attn_0_0_output):
+        key = (num_attn_2_3_output, num_attn_0_0_output)
+        return 0
 
-    num_mlp_2_0_outputs = [num_mlp_2_0(k0) for k0 in num_attn_0_1_outputs]
+    num_mlp_2_0_outputs = [
+        num_mlp_2_0(k0, k1)
+        for k0, k1 in zip(num_attn_2_3_outputs, num_attn_0_0_outputs)
+    ]
     num_mlp_2_0_output_scores = classifier_weights.loc[
         [("num_mlp_2_0_outputs", str(v)) for v in num_mlp_2_0_outputs]
     ]
 
     # num_mlp_2_1 #################################################
-    def num_mlp_2_1(num_attn_2_3_output, num_attn_0_1_output):
-        key = (num_attn_2_3_output, num_attn_0_1_output)
-        return 38
+    def num_mlp_2_1(num_attn_2_3_output, num_attn_2_1_output):
+        key = (num_attn_2_3_output, num_attn_2_1_output)
+        return 12
 
     num_mlp_2_1_outputs = [
         num_mlp_2_1(k0, k1)
-        for k0, k1 in zip(num_attn_2_3_outputs, num_attn_0_1_outputs)
+        for k0, k1 in zip(num_attn_2_3_outputs, num_attn_2_1_outputs)
     ]
     num_mlp_2_1_output_scores = classifier_weights.loc[
         [("num_mlp_2_1_outputs", str(v)) for v in num_mlp_2_1_outputs]
