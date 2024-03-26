@@ -43,6 +43,7 @@ sort16 =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=1, max_
 
 def test_program(program):
     sequence_lengths = np.arange(10, 100, 10)
+    sequence_lengths = np.insert(sequence_lengths, 0, 8)
 
     results_seq = {}
     results_tok = {}
@@ -54,17 +55,20 @@ def test_program(program):
         for i in range(len(df)):
             found = np.array(program.run(df["sent"][i])[1:-1])
             tags = np.array(df["tags"][i][1:-1])
-            print(f'token_accuracy: {found == tags}')
-            print(f'sent: {df["sent"][i][1:-1]}')
-            print(f'found: {program.run(df["sent"][i])[1:-1]}')
-            print(f'tags: {df["tags"][i][1:-1]}')
+            #print(f'token_accuracy: {found == tags}')
+            #print(f'sent: {df["sent"][i][1:-1]}')
+            #print(f'found: {program.run(df["sent"][i])[1:-1]}')
+            #print(f'tags: {df["tags"][i][1:-1]}')
             same_seq.append(program.run(df["sent"][i])[1:-1] == df["tags"][i][1:-1])
             same_tok.append(found == tags)
 
         unique, counts = np.unique(same_tok, return_counts=True)
         counts_dict = dict(zip(unique, counts))
+
         results_seq[c] = same_seq.count(True)/len(same_seq)
-        results_tok[c] = counts_dict[True]/(counts_dict[True] + counts_dict[False])
+        results_tok[c] = counts_dict[True]/np.sum(counts)
+
+
     return results_seq, results_tok
 
 results_seq, results_tok = test_program(length_sort)
