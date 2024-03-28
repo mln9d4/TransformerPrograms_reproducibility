@@ -48,19 +48,21 @@ def test_program(program):
     results_tok = {}
     for c in sequence_lengths:
         print(f"Sequence length: {c}")
-        df =  data_utils.make_most_freq_beta(vocab_size=8, dataset_size=12, min_length=c-1, max_length=c, seed=0)
-        print(df)
+        df =  data_utils.make_most_freq(vocab_size=8, dataset_size=12, min_length=c-1, max_length=c, seed=0)
         same_seq = []
         same_tok = []
         for i in range(len(df)):
-            found = np.array(program.run(df["sent"][i]))
-            tags = np.array(df["tags"][i][0:-1])
+            sent = np.array(df["sent"][i])[1:]  # Remove the first element
+            found = np.array(program.run(df["sent"][i]))[1:]  # Remove the first element
+            tags = np.array(df["tags"][i])[1:]  # Remove the first element
             print(f'token_accuracy: {found == tags}')
-            print(f'sent: {df["sent"][i]}')
-            print(f'found: {program.run(df["sent"][i])}')
-            print(f'tags: {df["tags"][i][0:-1]}')
+            print(f'sent: {sent}')
+            print(f'found: {found}')
+            print(f'tags: {tags}')
             print('-----------------------------------------')
-            same_seq.append(program.run(df["sent"][i])[1:-1] == df["tags"][i][1:-1])
+
+            #print(f'sequence_accuracy: {np.array_equal(sent, tags)}')
+            same_seq.append(np.array_equal(sent, tags))
             same_tok.append(found == tags)
 
         unique, counts = np.unique(same_tok, return_counts=True)
