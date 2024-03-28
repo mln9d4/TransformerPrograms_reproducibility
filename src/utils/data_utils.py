@@ -151,6 +151,29 @@ def make_most_freq(
         tags.append(t)
     return pd.DataFrame({"sent": sents, "tags": tags})
 
+def make_most_freq_beta(
+    vocab_size, dataset_size, min_length=2, max_length=16, seed=0
+):
+  vocab = np.array([str(i) for i in range(vocab_size - 2)])
+  sents, tags = [], []
+  np.random.seed(seed)
+  for _ in range(dataset_size):
+    l = np.random.randint(min_length, max_length)
+    sent = np.random.choice(vocab, size=l, replace=True).tolist()
+    counts = Counter(sent)
+    first_idx = {}
+    for i, c in enumerate(sent):
+      if c not in first_idx:
+        first_idx[c] = i
+    order = sorted([(-counts[c], first_idx[c], int(c)) for c in counts])  # Added token string for tie-breaker
+    print(f'first_idx[c]: {first_idx[c]}')
+    sents.append([BOS] + sent)
+    t = [PAD] + [sent[i] for _, i, _ in order]  # Use order with tie-breaker
+    t += [BOS] * (len(sents[-1]) - len(t))
+    tags.append(t)
+  return pd.DataFrame({"sent": sents, "tags": tags})
+
+
 
 def sample_dyck(vocab_size=1, max_depth=8, min_depth=1):
     vocab = [("(", ")"), ("{", "}")][:vocab_size]

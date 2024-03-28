@@ -17,8 +17,8 @@ from output.rasp.most_freq.vocab8maxlen8dvar100.transformer_program.headsc4heads
 # We try sequences of 16, 32 and 64
 
 # Create dataset for sort
-c=20
-sort16 =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=1, max_length=c, seed=0)
+#c=20
+#sort16 =  data_utils.make_sort(vocab_size=8, dataset_size=12, min_length=1, max_length=c, seed=0)
 
 # Create rest of datasets
 #reverse16 = data_utils.make_reverse(vocab_size=8, dataset_size=10000, min_length=16, max_length=18, seed=0)
@@ -48,17 +48,18 @@ def test_program(program):
     results_tok = {}
     for c in sequence_lengths:
         print(f"Sequence length: {c}")
-        df =  data_utils.make_most_freq(vocab_size=8, dataset_size=12, min_length=c-1, max_length=c, seed=0)
+        df =  data_utils.make_most_freq_beta(vocab_size=8, dataset_size=12, min_length=c-1, max_length=c, seed=0)
         print(df)
         same_seq = []
         same_tok = []
         for i in range(len(df)):
-            found = np.array(program.run(df["sent"][i])[1:-1])
-            tags = np.array(df["tags"][i][1:-1])
+            found = np.array(program.run(df["sent"][i]))
+            tags = np.array(df["tags"][i][0:-1])
             print(f'token_accuracy: {found == tags}')
-            print(f'sent: {df["sent"][i][1:-1]}')
-            print(f'found: {program.run(df["sent"][i])[1:-1]}')
-            print(f'tags: {df["tags"][i][1:-1]}')
+            print(f'sent: {df["sent"][i]}')
+            print(f'found: {program.run(df["sent"][i])}')
+            print(f'tags: {df["tags"][i][0:-1]}')
+            print('-----------------------------------------')
             same_seq.append(program.run(df["sent"][i])[1:-1] == df["tags"][i][1:-1])
             same_tok.append(found == tags)
 
@@ -74,3 +75,5 @@ results_seq, results_tok = test_program(length_most_freq)
 print(results_seq)
 print(results_tok)
 
+#testing = data_utils.make_most_freq(vocab_size=8, dataset_size=12, min_length=7, max_length=8, seed=2)
+#print(testing)
