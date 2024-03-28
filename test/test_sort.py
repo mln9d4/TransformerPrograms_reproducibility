@@ -56,13 +56,13 @@ def test_program(program):
             found = np.array(program.run(df["sent"][i])[1:-1])
             tags = np.array(df["tags"][i][1:-1])
             #print(f'token_accuracy: {found == tags}')
-            #print(f'sent: {df["sent"][i][1:-1]}')
-            #print(f'found: {program.run(df["sent"][i])[1:-1]}')
-            #print(f'tags: {df["tags"][i][1:-1]}')
-            same_seq.append(program.run(df["sent"][i])[1:-1] == df["tags"][i][1:-1])
+            print(f'sent: {df["sent"][i][1:-1]}')
+            print(f'found: {program.run(df["sent"][i])[1:-1]}')
+            print(f'tags: {df["tags"][i][1:-1]}')
+            same_seq.append(np.array_equal(df["sent"][i][1:-1], df["tags"][i][1:-1]))
             same_tok.append(found == tags)
 
-        print(same_tok)
+        #print(same_tok)
         unique, counts = np.unique(same_tok, return_counts=True)
         counts_dict = dict(zip(unique, counts))
 
